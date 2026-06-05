@@ -1,0 +1,604 @@
+{
+    "items": [
+        {
+            "BillPlanId": 300000107751112,
+            "MajorVersion": 7,
+            "BillMethodId": 300000047569126,
+            "BillMethodName": "Rate Based ",
+            "BillPlanName": "Std Bill Plan",
+            "InvoiceCurrencyOptCode": "CONTRACT",
+            "BillingCurrencyType": "Contract",
+            "PaymentTermsId": 4,
+            "PaymentTerms": "30 Net",
+            "BillSetNumber": 1,
+            "InvHdrGroupingOptions": null,
+            "InvoiceHdrGrpOptName": null,
+            "BillToCustomerAccountId": 300000047394466,
+            "BillToAccountNumber": "10040",
+            "BillToSiteUseId": 300000047394470,
+            "BillToSite": "Tulsa",
+            "BillToContactId": 300000047394727,
+            "BillToContactName": "Laura Burke",
+            "BillToContactEmail": "contact_etao-dev20@oraclepdemos.com",
+            "BillingCycleId": 300000047569119,
+            "BillingCycle": "Monthly",
+            "LaborInvoiceFormatId": 300000047569130,
+            "LaborInvoiceFormat": "Labor",
+            "NlInvoiceFormatId": 300000047569135,
+            "NonlaborInvoiceFormat": "Non Labor",
+            "EventsInvoiceFormatId": 300000047569127,
+            "EventInvoiceFormat": "Event",
+            "FirstBillingOffsetDays": null,
+            "InvoiceInstructions": null,
+            "InvoiceComment": null,
+            "PersonBillRateSchId": 300000047500174,
+            "PersonRateSchedule": "US Person Bill Rates",
+            "JobBillRateSchId": 300000047500117,
+            "JobRateSchedule": "US Job Bill Rates",
+            "LaborSchFixedDate": null,
+            "LaborDiscountPercentage": null,
+            "LaborDiscountReasonCode": null,
+            "LaborRateChangeReason": null,
+            "NlBillRateSchId": 300000047500156,
+            "NonlaborRateSchedule": "US Non Labor Bill Rates",
+            "NlSchFixedDate": null,
+            "NlDiscountPercentage": null,
+            "NlDiscountReasonCode": null,
+            "NonlaborRateChangeReason": null,
+            "BurdenSchId": null,
+            "BurdenSchedule": null,
+            "BurdenSchFixedDate": null,
+            "LaborTpScheduleId": null,
+            "LaborTransferPriceSchedule": null,
+            "LaborTpSchFixedDate": null,
+            "NlTpScheduleId": null,
+            "NonlaborTransferPriceSchedule": null,
+            "NlTpSchFixedDate": null,
+            "OnHoldFlag": false,
+            "ExternalSourceKey": null,
+            "ExternalReferenceKey": null,
+            "InvoiceCurrencyDateType": null,
+            "InvoiceCurrencyConversionDateType": null,
+            "InvoiceCurrencyExchgDate": null,
+            "InvoiceCurrencyRateType": null,
+            "InvoiceCurrencyConversionRateType": null,
+            "InvoiceCurrencyCode": null,
+            "NlBillBasisCode": null,
+            "NonlaborCostBasis": null,
+            "LaborBillBasisCode": null,
+            "LaborCostBasis": null,
+            "LaborMarkupPercentage": null,
+            "NlMarkupPercentage": null,
+            "DocumentNumber": null,
+            "LocFlag": null,
+            "FederalInvoiceFormat": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007",
+                    "name": "BillPlan",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000008378"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007",
+                    "name": "BillPlan",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719",
+                    "name": "contracts",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/LaborDiscountReasonVA",
+                    "name": "LaborDiscountReasonVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/LaborCostBasisVA",
+                    "name": "LaborCostBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/InvoiceFormatPVA",
+                    "name": "InvoiceFormatPVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/InvoiceConversionRateTypeVA",
+                    "name": "InvoiceConversionRateTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/NonLaborDiscountReasonVA",
+                    "name": "NonLaborDiscountReasonVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/JobBillRateSchIdVA",
+                    "name": "JobBillRateSchIdVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BillingMethodVA",
+                    "name": "BillingMethodVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/PaymentTermVA",
+                    "name": "PaymentTermVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/NonLaborCostBasisVA",
+                    "name": "NonLaborCostBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/LaborInvoiceFormatVA",
+                    "name": "LaborInvoiceFormatVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/NonLaborInvoiceFormatVA",
+                    "name": "NonLaborInvoiceFormatVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/InvoiceConvDateTypeLookupVA",
+                    "name": "InvoiceConvDateTypeLookupVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/NonLaborRateScheduleVA",
+                    "name": "NonLaborRateScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/JobRateScheduleVA",
+                    "name": "JobRateScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/InvHdrGrpOptionVA",
+                    "name": "InvHdrGrpOptionVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BillToContactNameVA",
+                    "name": "BillToContactNameVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/EventsInvoiceFormatVA",
+                    "name": "EventsInvoiceFormatVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/CustomerAccountVA",
+                    "name": "CustomerAccountVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BillingCurrencyTypeVA",
+                    "name": "BillingCurrencyTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BillingCycleVA",
+                    "name": "BillingCycleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/TransferPriceScheduleVA",
+                    "name": "TransferPriceScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BillToSiteUseVA",
+                    "name": "BillToSiteUseVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/EmployeeRateScheduleVA",
+                    "name": "EmployeeRateScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BillToContactVA",
+                    "name": "BillToContactVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/lov/BurdenScheduleVA",
+                    "name": "BurdenScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/BillPlanDescriptiveFlexField",
+                    "name": "BillPlanDescriptiveFlexField",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/BillPlanTranslation",
+                    "name": "BillPlanTranslation",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/JobAssignmentOverride",
+                    "name": "JobAssignmentOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/JobRateOverride",
+                    "name": "JobRateOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/JobTitleOverride",
+                    "name": "JobTitleOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/LaborMultiplierOverride",
+                    "name": "LaborMultiplierOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride",
+                    "name": "NonLaborRateOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/PersonRateOverride",
+                    "name": "PersonRateOverride",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "BillPlanId": 300000107751114,
+            "MajorVersion": 7,
+            "BillMethodId": 300000047569121,
+            "BillMethodName": "Amount Based",
+            "BillPlanName": "Fixed Price Billing",
+            "InvoiceCurrencyOptCode": "CONTRACT",
+            "BillingCurrencyType": "Contract",
+            "PaymentTermsId": 4,
+            "PaymentTerms": "30 Net",
+            "BillSetNumber": 1,
+            "InvHdrGroupingOptions": null,
+            "InvoiceHdrGrpOptName": null,
+            "BillToCustomerAccountId": 300000047394466,
+            "BillToAccountNumber": "10040",
+            "BillToSiteUseId": 300000047394470,
+            "BillToSite": "Tulsa",
+            "BillToContactId": 300000047394727,
+            "BillToContactName": "Laura Burke",
+            "BillToContactEmail": "contact_etao-dev20@oraclepdemos.com",
+            "BillingCycleId": 300000047569119,
+            "BillingCycle": "Monthly",
+            "LaborInvoiceFormatId": 300000047569130,
+            "LaborInvoiceFormat": "Labor",
+            "NlInvoiceFormatId": 300000047569135,
+            "NonlaborInvoiceFormat": "Non Labor",
+            "EventsInvoiceFormatId": 300000047569127,
+            "EventInvoiceFormat": "Event",
+            "FirstBillingOffsetDays": null,
+            "InvoiceInstructions": null,
+            "InvoiceComment": null,
+            "PersonBillRateSchId": null,
+            "PersonRateSchedule": null,
+            "JobBillRateSchId": null,
+            "JobRateSchedule": null,
+            "LaborSchFixedDate": null,
+            "LaborDiscountPercentage": null,
+            "LaborDiscountReasonCode": null,
+            "LaborRateChangeReason": null,
+            "NlBillRateSchId": null,
+            "NonlaborRateSchedule": null,
+            "NlSchFixedDate": null,
+            "NlDiscountPercentage": null,
+            "NlDiscountReasonCode": null,
+            "NonlaborRateChangeReason": null,
+            "BurdenSchId": null,
+            "BurdenSchedule": null,
+            "BurdenSchFixedDate": null,
+            "LaborTpScheduleId": null,
+            "LaborTransferPriceSchedule": null,
+            "LaborTpSchFixedDate": null,
+            "NlTpScheduleId": null,
+            "NonlaborTransferPriceSchedule": null,
+            "NlTpSchFixedDate": null,
+            "OnHoldFlag": false,
+            "ExternalSourceKey": null,
+            "ExternalReferenceKey": null,
+            "InvoiceCurrencyDateType": null,
+            "InvoiceCurrencyConversionDateType": null,
+            "InvoiceCurrencyExchgDate": null,
+            "InvoiceCurrencyRateType": null,
+            "InvoiceCurrencyConversionRateType": null,
+            "InvoiceCurrencyCode": null,
+            "NlBillBasisCode": null,
+            "NonlaborCostBasis": null,
+            "LaborBillBasisCode": null,
+            "LaborCostBasis": null,
+            "LaborMarkupPercentage": null,
+            "NlMarkupPercentage": null,
+            "DocumentNumber": null,
+            "LocFlag": null,
+            "FederalInvoiceFormat": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007",
+                    "name": "BillPlan",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000002378"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007",
+                    "name": "BillPlan",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719",
+                    "name": "contracts",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/LaborDiscountReasonVA",
+                    "name": "LaborDiscountReasonVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/LaborCostBasisVA",
+                    "name": "LaborCostBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/InvoiceFormatPVA",
+                    "name": "InvoiceFormatPVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/InvoiceConversionRateTypeVA",
+                    "name": "InvoiceConversionRateTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/NonLaborDiscountReasonVA",
+                    "name": "NonLaborDiscountReasonVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/JobBillRateSchIdVA",
+                    "name": "JobBillRateSchIdVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BillingMethodVA",
+                    "name": "BillingMethodVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/PaymentTermVA",
+                    "name": "PaymentTermVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/NonLaborCostBasisVA",
+                    "name": "NonLaborCostBasisVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/LaborInvoiceFormatVA",
+                    "name": "LaborInvoiceFormatVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/NonLaborInvoiceFormatVA",
+                    "name": "NonLaborInvoiceFormatVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/InvoiceConvDateTypeLookupVA",
+                    "name": "InvoiceConvDateTypeLookupVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/NonLaborRateScheduleVA",
+                    "name": "NonLaborRateScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/JobRateScheduleVA",
+                    "name": "JobRateScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/InvHdrGrpOptionVA",
+                    "name": "InvHdrGrpOptionVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BillToContactNameVA",
+                    "name": "BillToContactNameVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/EventsInvoiceFormatVA",
+                    "name": "EventsInvoiceFormatVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/CustomerAccountVA",
+                    "name": "CustomerAccountVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BillingCurrencyTypeVA",
+                    "name": "BillingCurrencyTypeVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BillingCycleVA",
+                    "name": "BillingCycleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/TransferPriceScheduleVA",
+                    "name": "TransferPriceScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BillToSiteUseVA",
+                    "name": "BillToSiteUseVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/EmployeeRateScheduleVA",
+                    "name": "EmployeeRateScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BillToContactVA",
+                    "name": "BillToContactVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/lov/BurdenScheduleVA",
+                    "name": "BurdenScheduleVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/BillPlanDescriptiveFlexField",
+                    "name": "BillPlanDescriptiveFlexField",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/BillPlanTranslation",
+                    "name": "BillPlanTranslation",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/JobAssignmentOverride",
+                    "name": "JobAssignmentOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/JobRateOverride",
+                    "name": "JobRateOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/JobTitleOverride",
+                    "name": "JobTitleOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/LaborMultiplierOverride",
+                    "name": "LaborMultiplierOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/NonLaborRateOverride",
+                    "name": "NonLaborRateOverride",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6CA0000000EACED000577080000000000000007/child/PersonRateOverride",
+                    "name": "PersonRateOverride",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 2,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan",
+            "name": "BillPlan",
+            "kind": "collection"
+        }
+    ]
+}

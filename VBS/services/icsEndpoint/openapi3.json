@@ -1,0 +1,1668 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v01",
+        "title": "GET_SINGLE_TR_CUSTOMER_DETAILS",
+        "x-vb": {
+            "serviceType": "ics"
+        }
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/ics/ic/api/integration/v1/flows/rest"
+        }
+    ],
+    "paths": {
+        "/GET_SINGLE_TR_CUSTOMER_DETAILS/1.0/TR_CUSTOMER_DETAILS": {
+            "post": {
+                "tags": [
+                    "com.timerite/GET_SINGLE_TR_CUSTOMER_DETAILS|01.00.0000",
+                    "com.timerite"
+                ],
+                "operationId": "postGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILS",
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILSRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "summary": "Example stored by VB User",
+                                    "externalValue": "./examples/postGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILS/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "500": {
+                        "description": "Faults",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/APIInvocationError"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "A sample description of the Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILSResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/postGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILS/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/GET_SINGLE_TR_CONTRACT_DETAILS/1.0/GET_TR_CONTACT_DETAILS": {
+            "post": {
+                "tags": [
+                    "com.timerite/GET_SINGLE_TR_CONTRACT_DETAILS|01.00.0000",
+                    "com.timerite"
+                ],
+                "operationId": "postGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILS",
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILSRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "summary": "Example stored by VB User",
+                                    "externalValue": "./examples/postGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILS/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "500": {
+                        "description": "Faults",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/APIInvocationError-1"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "A sample description of the Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILSResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/postGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILS/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/TR_UPDATE_CUSTOMER_DETAILS/1.0/customers": {
+            "post": {
+                "tags": [
+                    "com.timerite/TR_UPDATE_CUSTOMER_DETAILS|01.00.0000",
+                    "com.timerite"
+                ],
+                "operationId": "postTR_UPDATE_CUSTOMER_DETAILS1_0Customers",
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/request-wrapper-2"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "500": {
+                        "description": "Faults",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/APIInvocationError-2"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "A sample description of the Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/response-wrapper-2"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/CUST_CONTRACT_MASTER_LOAD_TO_DB/1.0/LOAD_DATA_TO_DB": {
+        },
+        "/SUBMIT_TIMESHEETDB_UI/1.0/SubmitTimesheetUI": {
+            "post": {
+                "tags": [
+                    "Default Package/SUBMIT_TIMESHEETDB_UI|01.00.0000",
+                    "Default Package"
+                ],
+                "operationId": "postSUBMIT_TIMESHEETDB_UI1_0SubmitTimesheetUI",
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": "No content defined for this response"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2Authentication": []
+                    },
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/CREATEPROJECTRES_FROMUI/1.0/Add": {
+            "post": {
+                "tags": [
+                    "Default Package/CREATEPROJECTRES_FROMUI|01.00.0000",
+                    "Default Package"
+                ],
+                "operationId": "postCREATEPROJECTRES_FROMUI1_0Add",
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": "No content defined for this response"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2Authentication": []
+                    },
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/CUST_CONTR_MASTE_LOAD_TO_DB/1.0/LOAD_DATA_TO_DB": {
+            "post": {
+                "tags": [
+                    "Default Package/CUST_CONTR_MASTE_LOAD_TO_DB|01.01.0000",
+                    "Default Package"
+                ],
+                "operationId": "postCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DB",
+                "parameters": [],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DBRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "summary": "Example stored by VB User",
+                                    "externalValue": "./examples/postCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DB/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "500": {
+                        "description": "Faults",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/APIInvocationError-4"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "A sample description of the Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DBResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/postCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DB/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2Authentication": []
+                    },
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/HCMEMP_TO_ORACLEDB/1.0/PersonSync": {
+            "post": {
+                "tags": [
+                    "Default Package/HCMEMP_TO_ORACLEDB|01.00.0000",
+                    "Default Package"
+                ],
+                "operationId": "postHCMEMP_TO_ORACLEDB1_0PersonSync",
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": "No content defined for this response"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2Authentication": []
+                    },
+                    {
+                        "basicAuthentication": []
+                    }
+                ]
+            }
+        },
+        "/TRT_EXT00_AR_INV_VBCS_01/1.0/AR_INV": {
+            "post": {
+                "operationId": "postTRT_EXT00_AR_INV_VBCS_01_1_0AR_INV",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostTRT_EXT00_AR_INV_VBCS_01_1_0AR_INVRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postTRT_EXT00_AR_INV_VBCS_01_1_0AR_INV/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/TREQPBILLRATEOVERRIDE/1.0/billRateOverride": {
+            "patch": {
+                "tags": [
+                    "Default Package/TREQPBILLRATEOVERRIDE|01.00.0000",
+                    "Default Package"
+                ],
+                "operationId": "patchTREQPBILLRATEOVERRIDE1_0BillRateOverride",
+                "parameters": [
+                    {
+                        "name": "CREWSETUP_EQP_HEADER_ID",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "202": {
+                        "description": "Accepted"
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2Authentication": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "request-wrapper": {
+                "type": "object",
+                "required": [
+                    "CustomerName"
+                ],
+                "properties": {
+                    "CustomerName": {
+                        "type": "string"
+                    }
+                }
+            },
+            "APIInvocationError": {
+                "type": "object",
+                "required": [
+                    "detail",
+                    "errorCode",
+                    "errorDetails",
+                    "title",
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "type": "string"
+                    },
+                    "errorDetails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "instance": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "errorPath": {
+                                    "type": "string"
+                                },
+                                "errorCode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "errorCode",
+                                "errorPath",
+                                "instance",
+                                "title",
+                                "type"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "response-wrapper": {
+                "type": "object",
+                "required": [
+                    "Items"
+                ],
+                "properties": {
+                    "Items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "CUST_ROW_ID": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_BATCH_ID": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_BATCH_NUMBER": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_ID": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_NUMBER": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_NAME": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_EMAIL_ADDRESS": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_MOBILE_NUMBER": {
+                                    "type": "string"
+                                },
+                                "PO_NUMBER": {
+                                    "type": "string"
+                                },
+                                "PO_START_DATE": {
+                                    "type": "string"
+                                },
+                                "PO_END_DATE": {
+                                    "type": "string"
+                                },
+                                "QUANTITY": {
+                                    "type": "string"
+                                },
+                                "EQUIPMENT_MODULE": {
+                                    "type": "string"
+                                },
+                                "MATERIAL_USAGE": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_WORK_WEEK_START_DATE": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_WORK_WEEK_END_DATE": {
+                                    "type": "string"
+                                },
+                                "NO_OF_DAYS": {
+                                    "type": "string"
+                                },
+                                "OT_ALLOWED": {
+                                    "type": "string"
+                                },
+                                "OT_THRESHOLD_MEASURE": {
+                                    "type": "string"
+                                },
+                                "OT_THRESHOLD_LIMIT": {
+                                    "type": "string"
+                                },
+                                "TIME_CARD_APPROVAL_REQUIRED_FLAG": {
+                                    "type": "string"
+                                },
+                                "BILLING_FREQUENCY": {
+                                    "type": "string"
+                                },
+                                "ACTIVE_FLAG": {
+                                    "type": "string"
+                                },
+                                "TIMECARD_COLLATION": {
+                                    "type": "string"
+                                },
+                                "CLIENT_ERP_SYSTEM": {
+                                    "type": "string"
+                                },
+                                "TIMECARD_BALANCING": {
+                                    "type": "string"
+                                },
+                                "CLIENT_ERS_ENABLED": {
+                                    "type": "string"
+                                },
+                                "EFFECTIVE_START_DATE": {
+                                    "type": "string"
+                                },
+                                "EFFECTIVE_END_DATE": {
+                                    "type": "string"
+                                },
+                                "PER_DIEM": {
+                                    "type": "string"
+                                },
+                                "BONUS": {
+                                    "type": "string"
+                                },
+                                "SAFETY_BONUS": {
+                                    "type": "string"
+                                },
+                                "CONTRACT_LINK": {
+                                    "type": "string"
+                                },
+                                "PROJECT_LINK_0x737063_": {
+                                    "type": "string"
+                                },
+                                "CREATED_BY": {
+                                    "type": "string"
+                                },
+                                "CREATION_DATE": {
+                                    "type": "string"
+                                },
+                                "LAST_UPD_BY": {
+                                    "type": "string"
+                                },
+                                "LAST_UPDATE_DATE": {
+                                    "type": "string"
+                                },
+                                "LAST_UP_LOGIN": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE1": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE2": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE3": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE4": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE5": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE6": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE7": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE8": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE9": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE10": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "ACTIVE_FLAG",
+                                "ATTRIBUTE1",
+                                "ATTRIBUTE10",
+                                "ATTRIBUTE2",
+                                "ATTRIBUTE3",
+                                "ATTRIBUTE4",
+                                "ATTRIBUTE5",
+                                "ATTRIBUTE6",
+                                "ATTRIBUTE7",
+                                "ATTRIBUTE8",
+                                "ATTRIBUTE9",
+                                "BILLING_FREQUENCY",
+                                "BONUS",
+                                "CLIENT_ERP_SYSTEM",
+                                "CLIENT_ERS_ENABLED",
+                                "CONTRACT_LINK",
+                                "CREATED_BY",
+                                "CREATION_DATE",
+                                "CUSTOMER_BATCH_ID",
+                                "CUSTOMER_BATCH_NUMBER",
+                                "CUSTOMER_EMAIL_ADDRESS",
+                                "CUSTOMER_ID",
+                                "CUSTOMER_MOBILE_NUMBER",
+                                "CUSTOMER_NAME",
+                                "CUSTOMER_NUMBER",
+                                "CUSTOMER_WORK_WEEK_END_DATE",
+                                "CUSTOMER_WORK_WEEK_START_DATE",
+                                "CUST_ROW_ID",
+                                "EFFECTIVE_END_DATE",
+                                "EFFECTIVE_START_DATE",
+                                "EQUIPMENT_MODULE",
+                                "LAST_UPDATE_DATE",
+                                "LAST_UPD_BY",
+                                "LAST_UP_LOGIN",
+                                "MATERIAL_USAGE",
+                                "NO_OF_DAYS",
+                                "OT_ALLOWED",
+                                "OT_THRESHOLD_LIMIT",
+                                "OT_THRESHOLD_MEASURE",
+                                "PER_DIEM",
+                                "PO_END_DATE",
+                                "PO_NUMBER",
+                                "PO_START_DATE",
+                                "PROJECT_LINK_0x737063_",
+                                "QUANTITY",
+                                "SAFETY_BONUS",
+                                "TIMECARD_BALANCING",
+                                "TIMECARD_COLLATION",
+                                "TIME_CARD_APPROVAL_REQUIRED_FLAG"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "PostGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILSRequest": {
+                "type": "object",
+                "properties": {
+                    "CustomerName": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostGET_SINGLE_TR_CUSTOMER_DETAILS1_0TR_CUSTOMER_DETAILSResponse": {
+                "type": "object",
+                "properties": {
+                    "Items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "CUST_ROW_ID": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_BATCH_ID": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_BATCH_NUMBER": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_ID": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_NUMBER": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_NAME": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_EMAIL_ADDRESS": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_MOBILE_NUMBER": {
+                                    "type": "string"
+                                },
+                                "PO_NUMBER": {
+                                    "type": "string"
+                                },
+                                "PO_START_DATE": {
+                                    "type": "string"
+                                },
+                                "PO_END_DATE": {
+                                    "type": "string"
+                                },
+                                "QUANTITY": {
+                                    "type": "string"
+                                },
+                                "EQUIPMENT_MODULE": {
+                                    "type": "string"
+                                },
+                                "MATERIAL_USAGE": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_WORK_WEEK_START_DATE": {
+                                    "type": "string"
+                                },
+                                "CUSTOMER_WORK_WEEK_END_DATE": {
+                                    "type": "string"
+                                },
+                                "NO_OF_DAYS": {
+                                    "type": "string"
+                                },
+                                "OT_ALLOWED": {
+                                    "type": "string"
+                                },
+                                "OT_THRESHOLD_MEASURE": {
+                                    "type": "string"
+                                },
+                                "OT_THRESHOLD_LIMIT": {
+                                    "type": "string"
+                                },
+                                "TIME_CARD_APPROVAL_REQUIRED_FLAG": {
+                                    "type": "string"
+                                },
+                                "BILLING_FREQUENCY": {
+                                    "type": "string"
+                                },
+                                "ACTIVE_FLAG": {
+                                    "type": "string"
+                                },
+                                "TIMECARD_COLLATION": {
+                                    "type": "string"
+                                },
+                                "CLIENT_ERP_SYSTEM": {
+                                    "type": "string"
+                                },
+                                "TIMECARD_BALANCING": {
+                                    "type": "string"
+                                },
+                                "CLIENT_ERS_ENABLED": {
+                                    "type": "string"
+                                },
+                                "EFFECTIVE_START_DATE": {
+                                    "type": "string"
+                                },
+                                "EFFECTIVE_END_DATE": {
+                                    "type": "string"
+                                },
+                                "PER_DIEM": {
+                                    "type": "string"
+                                },
+                                "BONUS": {
+                                    "type": "string"
+                                },
+                                "SAFETY_BONUS": {
+                                    "type": "string"
+                                },
+                                "CONTRACT_LINK": {
+                                    "type": "string"
+                                },
+                                "PROJECT_LINK ": {
+                                    "type": "string"
+                                },
+                                "CREATED_BY": {
+                                    "type": "string"
+                                },
+                                "CREATION_DATE": {
+                                    "type": "string"
+                                },
+                                "LAST_UPD_BY": {
+                                    "type": "string"
+                                },
+                                "LAST_UPDATE_DATE": {
+                                    "type": "string"
+                                },
+                                "LAST_UP_LOGIN": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE1": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE2": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE3": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE4": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE5": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE6": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE7": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE8": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE9": {
+                                    "type": "string"
+                                },
+                                "ATTRIBUTE10": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "request-wrapper-1": {
+                "type": "object",
+                "required": [
+                    "Customer_Number"
+                ],
+                "properties": {
+                    "Customer_Number": {
+                        "type": "string"
+                    }
+                }
+            },
+            "APIInvocationError-1": {
+                "type": "object",
+                "required": [
+                    "detail",
+                    "errorCode",
+                    "errorDetails",
+                    "title",
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "type": "string"
+                    },
+                    "errorDetails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "instance": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "errorPath": {
+                                    "type": "string"
+                                },
+                                "errorCode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "errorCode",
+                                "errorPath",
+                                "instance",
+                                "title",
+                                "type"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "response-wrapper-1": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "CONTRACT_ROW_ID": {
+                            "type": "string"
+                        },
+                        "CONTRACT_BATCH_ID": {
+                            "type": "string"
+                        },
+                        "CONTRACT_BATCH_NUMBER": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_ID": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_NUMBER": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_NAME": {
+                            "type": "string"
+                        },
+                        "CONTRACT_ID": {
+                            "type": "string"
+                        },
+                        "CONTRACT_NUMBER": {
+                            "type": "string"
+                        },
+                        "EMAIL_ADDRESS": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_MOBILE_NUMBER": {
+                            "type": "string"
+                        },
+                        "COST_RATE": {
+                            "type": "string"
+                        },
+                        "BILL_RATE_SOURCE_TYPE": {
+                            "type": "string"
+                        },
+                        "BILL_RATE_SOURCE": {
+                            "type": "string"
+                        },
+                        "CONTRACT_START_DATE": {
+                            "type": "string"
+                        },
+                        "CONTRACT_END_DATE": {
+                            "type": "string"
+                        },
+                        "SHIFT_ENABLED": {
+                            "type": "string"
+                        },
+                        "PO_NUMBER": {
+                            "type": "string"
+                        },
+                        "QUANTITY": {
+                            "type": "string"
+                        },
+                        "WEEK_START_DAY": {
+                            "type": "string"
+                        },
+                        "WEEK_END_DAY": {
+                            "type": "string"
+                        },
+                        "NO_OF_DAYS": {
+                            "type": "string"
+                        },
+                        "OT_ALLOWED": {
+                            "type": "string"
+                        },
+                        "OT_THRESHOLD_MEASURE": {
+                            "type": "string"
+                        },
+                        "OT_THRESHOLD_LIMIT": {
+                            "type": "string"
+                        },
+                        "ACTIVE_FLAG": {
+                            "type": "string"
+                        },
+                        "BILLING_FREQUENCY": {
+                            "type": "string"
+                        },
+                        "OT_SHIFT_NAME": {
+                            "type": "string"
+                        },
+                        "TIME_ENTRY_METHOD": {
+                            "type": "string"
+                        },
+                        "EFFECTIVE_START_DATE": {
+                            "type": "string"
+                        },
+                        "EFFECTIVE_END_DATE": {
+                            "type": "string"
+                        },
+                        "PER_DIEM": {
+                            "type": "string"
+                        },
+                        "BONUS": {
+                            "type": "string"
+                        },
+                        "SAFETY_BONUS": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_LINK": {
+                            "type": "string"
+                        },
+                        "PROJECT_LINK": {
+                            "type": "string"
+                        },
+                        "CREATED_BY": {
+                            "type": "string"
+                        },
+                        "CREATION_DATE": {
+                            "type": "string"
+                        },
+                        "LAST_UPDATED_BY": {
+                            "type": "string"
+                        },
+                        "LAST_UPDATE_DATE": {
+                            "type": "string"
+                        },
+                        "LAST_UPDATE_LOGIN": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE1": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE2": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE3": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE4": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE5": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE6": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE7": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE8": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE9": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE10": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "ACTIVE_FLAG",
+                        "ATTRIBUTE1",
+                        "ATTRIBUTE10",
+                        "ATTRIBUTE2",
+                        "ATTRIBUTE3",
+                        "ATTRIBUTE4",
+                        "ATTRIBUTE5",
+                        "ATTRIBUTE6",
+                        "ATTRIBUTE7",
+                        "ATTRIBUTE8",
+                        "ATTRIBUTE9",
+                        "BILLING_FREQUENCY",
+                        "BILL_RATE_SOURCE",
+                        "BILL_RATE_SOURCE_TYPE",
+                        "BONUS",
+                        "CONTRACT_BATCH_ID",
+                        "CONTRACT_BATCH_NUMBER",
+                        "CONTRACT_END_DATE",
+                        "CONTRACT_ID",
+                        "CONTRACT_NUMBER",
+                        "CONTRACT_ROW_ID",
+                        "CONTRACT_START_DATE",
+                        "COST_RATE",
+                        "CREATED_BY",
+                        "CREATION_DATE",
+                        "CUSTOMER_ID",
+                        "CUSTOMER_LINK",
+                        "CUSTOMER_MOBILE_NUMBER",
+                        "CUSTOMER_NAME",
+                        "CUSTOMER_NUMBER",
+                        "EFFECTIVE_END_DATE",
+                        "EFFECTIVE_START_DATE",
+                        "EMAIL_ADDRESS",
+                        "LAST_UPDATED_BY",
+                        "LAST_UPDATE_DATE",
+                        "LAST_UPDATE_LOGIN",
+                        "NO_OF_DAYS",
+                        "OT_ALLOWED",
+                        "OT_SHIFT_NAME",
+                        "OT_THRESHOLD_LIMIT",
+                        "OT_THRESHOLD_MEASURE",
+                        "PER_DIEM",
+                        "PO_NUMBER",
+                        "PROJECT_LINK",
+                        "QUANTITY",
+                        "SAFETY_BONUS",
+                        "SHIFT_ENABLED",
+                        "TIME_ENTRY_METHOD",
+                        "WEEK_END_DAY",
+                        "WEEK_START_DAY"
+                    ]
+                },
+                "minItems": 1
+            },
+            "request-wrapper-2": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "CUSTOMER_ID": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_NUMBER": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_NAME": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_EMAIL_ADDRESS": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_MOBILE_NUMBER": {
+                            "type": "string"
+                        },
+                        "PO_NUMBER": {
+                            "type": "string"
+                        },
+                        "PO_START_DATE": {
+                            "type": "string"
+                        },
+                        "PO_END_DATE": {
+                            "type": "string"
+                        },
+                        "QUANTITY": {
+                            "type": "string"
+                        },
+                        "EQUIPMENT_MODULE": {
+                            "type": "string"
+                        },
+                        "MATERIAL_USAGE": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_WORK_WEEK_START_DATE": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_WORK_WEEK_END_DATE": {
+                            "type": "string"
+                        },
+                        "NO_OF_DAYS": {
+                            "type": "string"
+                        },
+                        "OT_ALLOWED": {
+                            "type": "string"
+                        },
+                        "OT_THRESHOLD_MEASURE": {
+                            "type": "string"
+                        },
+                        "OT_THRESHOLD_LIMIT": {
+                            "type": "string"
+                        },
+                        "TIME_CARD_APPROVAL_REQUIRED_FLAG": {
+                            "type": "string"
+                        },
+                        "BILLING_FREQUENCY": {
+                            "type": "string"
+                        },
+                        "ACTIVE_FLAG": {
+                            "type": "string"
+                        },
+                        "TIMECARD_COLLATION": {
+                            "type": "string"
+                        },
+                        "CLIENT_ERP_SYSTEM": {
+                            "type": "string"
+                        },
+                        "TIMECARD_BALANCING": {
+                            "type": "string"
+                        },
+                        "CLIENT_ERS_ENABLED": {
+                            "type": "string"
+                        },
+                        "EFFECTIVE_START_DATE": {
+                            "type": "string"
+                        },
+                        "EFFECTIVE_END_DATE": {
+                            "type": "string"
+                        },
+                        "PER_DIEM": {
+                            "type": "string"
+                        },
+                        "BONUS": {
+                            "type": "string"
+                        },
+                        "SAFETY_BONUS": {
+                            "type": "string"
+                        },
+                        "CONTRACT_LINK": {
+                            "type": "string"
+                        },
+                        "PROJECT_LINK_0x737063_": {
+                            "type": "string"
+                        },
+                        "CREATED_BY": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "ACTIVE_FLAG",
+                        "BILLING_FREQUENCY",
+                        "BONUS",
+                        "CLIENT_ERP_SYSTEM",
+                        "CLIENT_ERS_ENABLED",
+                        "CONTRACT_LINK",
+                        "CREATED_BY",
+                        "CUSTOMER_EMAIL_ADDRESS",
+                        "CUSTOMER_ID",
+                        "CUSTOMER_MOBILE_NUMBER",
+                        "CUSTOMER_NAME",
+                        "CUSTOMER_NUMBER",
+                        "CUSTOMER_WORK_WEEK_END_DATE",
+                        "CUSTOMER_WORK_WEEK_START_DATE",
+                        "EFFECTIVE_END_DATE",
+                        "EFFECTIVE_START_DATE",
+                        "EQUIPMENT_MODULE",
+                        "MATERIAL_USAGE",
+                        "NO_OF_DAYS",
+                        "OT_ALLOWED",
+                        "OT_THRESHOLD_LIMIT",
+                        "OT_THRESHOLD_MEASURE",
+                        "PER_DIEM",
+                        "PO_END_DATE",
+                        "PO_NUMBER",
+                        "PO_START_DATE",
+                        "PROJECT_LINK_0x737063_",
+                        "QUANTITY",
+                        "SAFETY_BONUS",
+                        "TIMECARD_BALANCING",
+                        "TIMECARD_COLLATION",
+                        "TIME_CARD_APPROVAL_REQUIRED_FLAG"
+                    ]
+                },
+                "minItems": 1
+            },
+            "APIInvocationError-2": {
+                "type": "object",
+                "required": [
+                    "detail",
+                    "errorCode",
+                    "errorDetails",
+                    "title",
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "type": "string"
+                    },
+                    "errorDetails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "instance": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "errorPath": {
+                                    "type": "string"
+                                },
+                                "errorCode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "errorCode",
+                                "errorPath",
+                                "instance",
+                                "title",
+                                "type"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "response-wrapper-2": {
+                "type": "object",
+                "required": [
+                    "Result"
+                ],
+                "properties": {
+                    "Result": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILSRequest": {
+                "type": "object",
+                "properties": {
+                    "Customer_Number": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostGET_SINGLE_TR_CONTRACT_DETAILS1_0GET_TR_CONTACT_DETAILSResponse": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "CONTRACT_ROW_ID": {
+                            "type": "string"
+                        },
+                        "CONTRACT_BATCH_ID": {
+                            "type": "string"
+                        },
+                        "CONTRACT_BATCH_NUMBER": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_ID": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_NUMBER": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_NAME": {
+                            "type": "string"
+                        },
+                        "CONTRACT_ID": {
+                            "type": "string"
+                        },
+                        "CONTRACT_NUMBER": {
+                            "type": "string"
+                        },
+                        "EMAIL_ADDRESS": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_MOBILE_NUMBER": {
+                            "type": "string"
+                        },
+                        "COST_RATE": {
+                            "type": "string"
+                        },
+                        "BILL_RATE_SOURCE_TYPE": {
+                            "type": "string"
+                        },
+                        "BILL_RATE_SOURCE": {
+                            "type": "string"
+                        },
+                        "CONTRACT_START_DATE": {
+                            "type": "string"
+                        },
+                        "CONTRACT_END_DATE": {
+                            "type": "string"
+                        },
+                        "SHIFT_ENABLED": {
+                            "type": "string"
+                        },
+                        "PO_NUMBER": {
+                            "type": "string"
+                        },
+                        "QUANTITY": {
+                            "type": "string"
+                        },
+                        "WEEK_START_DAY": {
+                            "type": "string"
+                        },
+                        "WEEK_END_DAY": {
+                            "type": "string"
+                        },
+                        "NO_OF_DAYS": {
+                            "type": "string"
+                        },
+                        "OT_ALLOWED": {
+                            "type": "string"
+                        },
+                        "OT_THRESHOLD_MEASURE": {
+                            "type": "string"
+                        },
+                        "OT_THRESHOLD_LIMIT": {
+                            "type": "string"
+                        },
+                        "ACTIVE_FLAG": {
+                            "type": "string"
+                        },
+                        "BILLING_FREQUENCY": {
+                            "type": "string"
+                        },
+                        "OT_SHIFT_NAME": {
+                            "type": "string"
+                        },
+                        "TIME_ENTRY_METHOD": {
+                            "type": "string"
+                        },
+                        "EFFECTIVE_START_DATE": {
+                            "type": "string"
+                        },
+                        "EFFECTIVE_END_DATE": {
+                            "type": "string"
+                        },
+                        "PER_DIEM": {
+                            "type": "string"
+                        },
+                        "BONUS": {
+                            "type": "string"
+                        },
+                        "SAFETY_BONUS": {
+                            "type": "string"
+                        },
+                        "CUSTOMER_LINK": {
+                            "type": "string"
+                        },
+                        "PROJECT_LINK": {
+                            "type": "string"
+                        },
+                        "CREATED_BY": {
+                            "type": "string"
+                        },
+                        "CREATION_DATE": {
+                            "type": "string"
+                        },
+                        "LAST_UPDATED_BY": {
+                            "type": "string"
+                        },
+                        "LAST_UPDATE_DATE": {
+                            "type": "string"
+                        },
+                        "LAST_UPDATE_LOGIN": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE1": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE2": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE3": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE4": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE5": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE6": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE7": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE8": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE9": {
+                            "type": "string"
+                        },
+                        "ATTRIBUTE10": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "request-wrapper-3": {
+                "type": "object",
+                "required": [
+                    "contract_num",
+                    "party_id",
+                    "project_num"
+                ],
+                "properties": {
+                    "party_id": {
+                        "type": "string"
+                    },
+                    "contract_num": {
+                        "type": "string"
+                    },
+                    "project_num": {
+                        "type": "string"
+                    }
+                }
+            },
+            "APIInvocationError-3": {
+                "type": "object",
+                "required": [
+                    "detail",
+                    "errorCode",
+                    "errorDetails",
+                    "title",
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "type": "string"
+                    },
+                    "errorDetails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "instance": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "errorPath": {
+                                    "type": "string"
+                                },
+                                "errorCode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "errorCode",
+                                "errorPath",
+                                "instance",
+                                "title",
+                                "type"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "response-wrapper-3": {
+                "type": "object",
+                "required": [
+                    "Status"
+                ],
+                "properties": {
+                    "Status": {
+                        "type": "string"
+                    }
+                }
+            },
+            "request-wrapper-4": {
+                "type": "object",
+                "required": [
+                    "contract_num",
+                    "party_id",
+                    "project_num"
+                ],
+                "properties": {
+                    "party_id": {
+                        "type": "string"
+                    },
+                    "contract_num": {
+                        "type": "string"
+                    },
+                    "project_num": {
+                        "type": "string"
+                    }
+                }
+            },
+            "APIInvocationError-4": {
+                "type": "object",
+                "required": [
+                    "detail",
+                    "errorCode",
+                    "errorDetails",
+                    "title",
+                    "type"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "detail": {
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "type": "string"
+                    },
+                    "errorDetails": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "instance": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "errorPath": {
+                                    "type": "string"
+                                },
+                                "errorCode": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "errorCode",
+                                "errorPath",
+                                "instance",
+                                "title",
+                                "type"
+                            ]
+                        },
+                        "minItems": 1
+                    }
+                }
+            },
+            "response-wrapper-4": {
+                "type": "object",
+                "required": [
+                    "Status"
+                ],
+                "properties": {
+                    "Status": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DBResponse": {
+                "type": "object",
+                "properties": {
+                    "Status": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostCUST_CONTR_MASTE_LOAD_TO_DB1_0LOAD_DATA_TO_DBRequest": {
+                "type": "object",
+                "properties": {
+                    "contract_num": {
+                        "type": "string"
+                    },
+                    "party_id": {
+                        "type": "string"
+                    },
+                    "project_num": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostTRT_EXT00_AR_INV_VBCS_01_1_0AR_INVRequest": {
+                "type": "object",
+                "properties": {
+                    "P_BATCH_ID": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

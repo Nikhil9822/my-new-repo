@@ -1,0 +1,16 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,DropDown
+1,2024-10-21T06:32:03,2024-11-04T06:25:01,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Bill Rate Schedule Level
+2,2024-10-21T06:32:15,2024-11-04T06:25:08,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Costing Details
+3,2024-10-21T06:32:26,2024-11-04T06:25:14,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Crew Type
+4,2024-10-21T06:32:39,2024-11-04T06:25:19,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Equipment Class
+5,2024-10-21T06:32:48,2024-11-04T06:25:28,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Equipment Type
+6,2024-10-21T06:34:27,2024-11-04T06:25:45,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Equipment Sub Class
+8,2024-10-21T06:35:45,2024-11-04T06:50:48,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Hours Type
+9,2024-10-21T06:36:04,2024-11-04T06:25:53,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Location Options
+10,2024-10-21T06:36:16,2024-11-04T06:26:01,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Master Data
+11,2024-10-21T06:36:44,2024-11-04T06:26:08,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Rounding Threshold
+12,2024-10-21T06:36:52,2024-10-21T06:36:52.003,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Status
+13,2024-10-21T06:37:16,2024-11-04T06:26:33,madhu.renangi@rite.digital,madhu.renangi@rite.digital,Timesheet Entry Method LOV
+15,2024-10-21T06:37:54,2024-11-04T09:51:49,madhu.renangi@rite.digital,madhu.renangi@rite.digital,UOM
+16,2025-07-16T07:56:29,2025-07-16T07:56:29.007,OIC_USER3,OIC_USER3,Inspection Type
+17,2025-07-16T09:14:28,2025-07-16T09:14:28.004,OIC_USER3,OIC_USER3,Overall Equipment Condition

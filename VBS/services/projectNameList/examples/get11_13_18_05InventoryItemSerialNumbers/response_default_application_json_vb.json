@@ -1,0 +1,1591 @@
+{
+    "items": [
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-11214",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2017-10-31T15:27:54+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3131323134",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3131323134",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3131323134/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3131323134/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3131323134/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10077",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303737",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000678"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303737",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303737/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303737/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303737/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10078",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303738",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303738",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303738/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303738/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303738/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10079",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303739",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303739",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303739/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303739/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303739/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10080",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303830",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303830",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303830/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303830/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303830/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10081",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303831",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303831",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303831/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303831/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303831/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10082",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303832",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303832",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303832/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303832/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303832/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10083",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303833",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303833",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303833/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303833/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303833/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10084",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303834",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303834",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303834/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303834/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303834/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10085",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303835",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303835",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303835/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303835/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303835/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10087",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303837",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303837",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303837/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303837/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303837/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10088",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303838",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303838",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303838/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303838/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303838/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10089",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303839",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303839",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303839/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303839/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303839/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10090",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303930",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303930",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303930/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303930/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303930/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10091",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303931",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303931",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303931/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303931/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303931/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10092",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303932",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303932",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303932/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303932/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303932/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10093",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303933",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303933",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303933/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303933/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303933/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10095",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303935",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303935",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303935/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303935/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303935/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10096",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303936",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303936",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303936/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303936/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303936/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10097",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303937",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303937",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303937/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303937/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303937/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10098",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303938",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303938",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303938/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303938/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303938/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10099",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303939",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303939",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303939/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303939/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130303939/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10100",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313030",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313030",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313030/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313030/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313030/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10101",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313031",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313031",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313031/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313031/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313031/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "OrganizationName": "Atlanta",
+            "InventoryItemId": 100000209829051,
+            "ItemNumber": "AS4751200",
+            "ItemDescription": "Vision Slimline 5100 Tablet, 32 GB, 8\" Display",
+            "SerialNumber": "AS475-10102",
+            "SubinventoryCode": "Completed",
+            "LocatorId": null,
+            "Locator": null,
+            "LotNumber": null,
+            "Revision": "A",
+            "StatusId": 1,
+            "StatusCode": "Active",
+            "UsageCode": "3",
+            "Usage": "Resides in stores",
+            "ShippedDate": null,
+            "ReceiptDate": "2016-04-15T16:59:32+00:00",
+            "Allocated": "No",
+            "Reserved": "No",
+            "Supplier": null,
+            "SupplierLot": null,
+            "SupplierSerialNumber": null,
+            "OriginalUnitVendorId": null,
+            "UniqueDeviceIdentifier": null,
+            "ItemPrimaryImageURL": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313032",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313032",
+                    "name": "inventoryItemSerialNumbers",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313032/child/inventoryAttributesDFF",
+                    "name": "inventoryAttributesDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313032/child/serialAttributeDFF",
+                    "name": "serialAttributeDFF",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers/00030000000EACED00057708000110D9344019CF0000000EACED0005770800005AF31CFBFCBB0000000B41533437352D3130313032/child/serialStandardDFF",
+                    "name": "serialStandardDFF",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/inventoryItemSerialNumbers",
+            "name": "inventoryItemSerialNumbers",
+            "kind": "collection"
+        }
+    ]
+}

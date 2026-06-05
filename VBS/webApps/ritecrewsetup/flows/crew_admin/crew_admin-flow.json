@@ -1,0 +1,66 @@
+{
+  "id": "crew_admin",
+  "description": "Flow main",
+  "defaultPage": "crew_admin-start",
+  "services": {},
+  "types": {
+    "@decorators.eqpBillRateSchedulesLookup": {
+      "endpoint": "eqpBillRateSchedulesLookup",
+      "service": "fusion_cloud",
+      "path": "response-_-items[0]-_-lookupCodes[0]"
+    },
+    "@decorators.getGetEquipmentClasses": {
+      "endpoint": "getGetEquipmentClasses",
+      "service": "TimeRite_Ords_Service",
+      "path": "response-_-items[0]"
+    },
+    "eqpBillRateSchedulesLookup": {
+      "Description": "string",
+      "LookupCode": "string",
+      "Meaning": "string"
+    },
+    "getGetEquipmentClasses": {
+      "eqp_class_details": "string"
+    }
+  },
+  "variables": {
+    "eqpClassAdp": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getGetEquipmentClasses",
+        "keyAttributes": "eqp_class_details"
+      }
+    },
+    "eqpSubClassADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "keyAttributes": "Meaning",
+        "textFilterAttributes": [
+          "Meaning"
+        ]
+      }
+    },
+    "eqpTypeADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "eqpBillRateSchedulesLookup",
+        "textFilterAttributes": [
+          "Meaning"
+        ],
+        "keyAttributes": "Meaning"
+      }
+    }
+
+  },
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "parameters": {},
+          "chain": "vbEnterListener"
+        }
+      ]
+    }
+  }
+}

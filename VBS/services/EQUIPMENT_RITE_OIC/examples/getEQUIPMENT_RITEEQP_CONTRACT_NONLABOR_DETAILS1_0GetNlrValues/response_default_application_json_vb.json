@@ -1,0 +1,15 @@
+{
+    "items": [
+        {
+            "name": "Onshore Hourly Rate",
+            "non_labor_resource_id": "300000061603042",
+            "expenditure_type_id": "300000030025259",
+            "expenditure_type_name": "Onshore Hourly Rate",
+            "organization": "IMDS Global Ops Management",
+            "organization_id": "300000011197612",
+            "project_name": "Amplitude Casino 4 Remediation-0000244723",
+            "project_number": "0000244723",
+            "project_id": "300000030024060"
+        }
+    ]
+}

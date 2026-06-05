@@ -1,0 +1,378 @@
+{
+    "displayLabel": "ProjectContract",
+    "fields": [
+        {
+            "displayLabel": "Id",
+            "key": true,
+            "name": "id",
+            "oid": "47edc400-85c8-42a6-9176-0cc4b35b998e",
+            "required": true,
+            "type": "number",
+            "unique": true
+        },
+        {
+            "displayLabel": "Created",
+            "historyType": "timeCreated",
+            "name": "creationDate",
+            "oid": "5af06e9d-fb96-46c9-bc4f-3cb4a3199915",
+            "required": true,
+            "type": "datetime"
+        },
+        {
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated",
+            "name": "lastUpdateDate",
+            "oid": "0de66fa6-9853-4b9b-aba5-03c580558dae",
+            "required": true,
+            "type": "datetime"
+        },
+        {
+            "displayLabel": "Created By",
+            "historyType": "createdBy",
+            "name": "createdBy",
+            "oid": "270010d1-76a4-4111-8de9-55babb51705e",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy",
+            "name": "lastUpdatedBy",
+            "oid": "17266228-1f19-4eae-9bb2-72acf34e3171",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber",
+            "name": "versionNumber",
+            "oid": "af8630ef-373b-431d-86ef-d44f333381e0",
+            "type": "number"
+        },
+        {
+            "displayLabel": "weekStartDay",
+            "name": "weekStartDay",
+            "oid": "b39ef322-0985-4b71-9226-abd8dd2f62f3",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "weekEndDay",
+            "name": "weekEndDay",
+            "oid": "21ea0b96-e516-45e6-a140-1524ad967d5c",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "noOfDays",
+            "name": "noOfDays",
+            "oid": "9d7c4b1b-3027-4c30-9f40-9f9a2a108b93",
+            "required": true,
+            "scale": 1,
+            "type": "number"
+        },
+        {
+            "displayLabel": "oTAllowed",
+            "name": "oTAllowed",
+            "oid": "47a0672a-1bc0-49af-b9f1-aaa900a3335a",
+            "required": true,
+            "type": "boolean"
+        },
+        {
+            "displayLabel": "oTThresholdMeasure",
+            "name": "oTThresholdMeasure",
+            "oid": "d6bb7319-c7f6-4fde-b997-687cd6c20fe2",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "oTThresholdLimit",
+            "name": "oTThresholdLimit",
+            "oid": "2d5bcbc9-590d-46e1-bdb2-7490c53f3df1",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "activeFlag",
+            "name": "activeFlag",
+            "oid": "a76b795b-0545-4bcf-94ca-683511a65b1e",
+            "required": true,
+            "type": "boolean"
+        },
+        {
+            "displayLabel": "billingFrequency",
+            "name": "billingFrequency",
+            "oid": "64d15445-fab6-40a6-8ee6-49cb314a064e",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "oTShiftName",
+            "name": "oTShiftName",
+            "oid": "508c57b1-8cf5-4c76-bbaf-0a2f60807c61",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "timeEntryMethod",
+            "name": "timeEntryMethod",
+            "oid": "1c6cfdaf-4837-42fa-947f-61f21daf0573",
+            "required": true,
+            "scale": 1,
+            "type": "number"
+        },
+        {
+            "displayLabel": "effectiveStartDate",
+            "name": "effectiveStartDate",
+            "oid": "227337b9-6d80-4e03-b458-095ba3e1a98e",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "effectiveEndDate",
+            "name": "effectiveEndDate",
+            "oid": "2bd18dba-980e-40f9-ae3a-e7bffe330456",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "perDiem",
+            "name": "perDiem",
+            "oid": "b578d3bf-1649-4c71-95e1-b7121f3fcb5c",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "bonus",
+            "name": "bonus",
+            "oid": "91f78912-0588-4082-8fc8-6a6c604bf6a1",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "safetyBonus",
+            "name": "safetyBonus",
+            "oid": "74cb16da-37a0-4da1-8375-2c7612ecc284",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "contractNumber",
+            "name": "contractNumber",
+            "oid": "196142b3-02bf-436c-9fcf-0246861451d9",
+            "required": true,
+            "type": "number"
+        },
+        {
+            "displayLabel": "projectNumber",
+            "name": "projectNumber",
+            "oid": "ef53d107-fede-44d4-9733-0ea0b0ee28ce",
+            "required": true,
+            "type": "string"
+        },
+        {
+            "displayLabel": "customerName",
+            "name": "customerName",
+            "oid": "50e16cba-c99d-45cd-b017-9a8469f7f182",
+            "required": true,
+            "type": "string"
+        }
+    ],
+    "hidden": false,
+    "name": "ProjectContract",
+    "oid": "a9105eb2-47e6-447f-b129-b82f913ad31e",
+    "security": {
+        "type": "local",
+        "acl": [
+            {
+                "roleId": "AdminRole",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": true
+                    },
+                    {
+                        "name": "create",
+                        "value": true
+                    },
+                    {
+                        "name": "update",
+                        "value": true
+                    },
+                    {
+                        "name": "delete",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "roleId": "approle.anonymous.user",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": true
+                    },
+                    {
+                        "name": "create",
+                        "value": true
+                    },
+                    {
+                        "name": "update",
+                        "value": true
+                    },
+                    {
+                        "name": "delete",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "roleId": "approle.authenticated.user",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": true
+                    },
+                    {
+                        "name": "create",
+                        "value": true
+                    },
+                    {
+                        "name": "update",
+                        "value": true
+                    },
+                    {
+                        "name": "delete",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "roleId": "Administrator",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "roleId": "Approver",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Equipment_Manager",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Project_Reviewer",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Requestor",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Timekeeper",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    }
+}

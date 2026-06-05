@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "eqp_error_id": 1,
+            "eqp_error_code": "EQP-equipment-approver-start",
+            "eqp_request_number": "1299",
+            "eqp_request_id": 1254,
+            "menu_name": "TimeEntry",
+            "page_name": "equipment-approver-start",
+            "error": "PJC-2220247The expenditure item date is outside the project dates. Update the project start and finish dates or the expenditure item date of the transaction. PJC-2220118The expenditure item date isnt within the 2025-08-01 task transaction start date and 2025-12-31 task transaction end date.Either correct the transaction dates of the OP1100 task or revise the expenditure item date of the transaction.",
+            "created_by": "john.dunbar",
+            "creation_date": "2026-01-20T11:07:30Z",
+            "last_updated_date": "2026-01-20T11:07:30Z",
+            "last_updated_by": "john.dunbar"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ErrorDetails?p_eqp_request_id=1254"
+        },
+        {
+            "rel": "edit",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ErrorDetails?p_eqp_request_id=1254"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ErrorDetails?p_eqp_request_id=1254"
+        }
+    ]
+}

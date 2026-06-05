@@ -1,0 +1,2041 @@
+{
+    "items": [
+        {
+            "SubinventoryItemId": "300000158273631_300000158242329",
+            "FixedLotMultiple": 50,
+            "InventoryItemId": 300000158273631,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 500,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 100,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Cath Lab",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 21G X 1.25 INCH",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045331",
+            "CreationDate": "2018-04-25T19:31:06.001+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242329",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242329",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242329/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242329/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242329/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242329/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298621_300000158242325",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298621,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 500,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 50,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Stores",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "3",
+            "SourceTypeMeaning": "Subinventory",
+            "ItemNumber": "HP5001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "STRIP GLUCOSE TEST ONE TOUCH ULTRA BLUE",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046169",
+            "CreationDate": "2018-04-25T19:32:43.467+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000478"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242325/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242325/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242325/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242325/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273631_300000158242330",
+            "FixedLotMultiple": 50,
+            "InventoryItemId": 300000158273631,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "ED",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "3",
+            "SourceTypeMeaning": "Subinventory",
+            "ItemNumber": "HP3001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 21G X 1.25 INCH",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045331",
+            "CreationDate": "2018-04-25T19:38:40.745+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242330",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242330",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242330/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242330/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242330/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242330/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298621_300000158242330",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298621,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "ED",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "3",
+            "SourceTypeMeaning": "Subinventory",
+            "ItemNumber": "HP5001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "STRIP GLUCOSE TEST ONE TOUCH ULTRA BLUE",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046169",
+            "CreationDate": "2018-04-25T19:40:52.005+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242330",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242330",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242330/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242330/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242330/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242330/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000174966063_300000177139869",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000174966063,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 West MS",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP6001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 12,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "SOL IV LACTATED RINGERS 1000ML USP ",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2161211",
+            "CreationDate": "2018-12-03T22:17:20.046+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000174966063_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000174966063_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000174966063_300000177139869/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000174966063_300000177139869/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000174966063_300000177139869/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000174966063_300000177139869/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298621_300000177139870",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298621,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 East HO",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzO",
+            "SourceOrderingUOMMeasure": "Bt",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP5001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 6,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzO",
+            "ParUOMMeasure": "Bt",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "STRIP GLUCOSE TEST ONE TOUCH ULTRA BLUE",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046169",
+            "CreationDate": "2018-12-03T22:50:24.160+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139870/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139870/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139870/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139870/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298621_300000177139869",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298621,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 West MS",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzO",
+            "SourceOrderingUOMMeasure": "Bt",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP5001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 6,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzO",
+            "ParUOMMeasure": "Bt",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "STRIP GLUCOSE TEST ONE TOUCH ULTRA BLUE",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046169",
+            "CreationDate": "2018-12-03T22:51:17.424+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139869/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139869/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139869/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139869/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298621_300000177139871",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298621,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "4 Recovery",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzO",
+            "SourceOrderingUOMMeasure": "Bt",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP5001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 6,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzO",
+            "ParUOMMeasure": "Bt",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "STRIP GLUCOSE TEST ONE TOUCH ULTRA BLUE",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046169",
+            "CreationDate": "2018-12-03T23:07:24.944+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139871/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139871/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139871/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000177139871/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000177734741_300000158242325",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000177734741,
+            "MinimumMaximumPlanningCode": 7,
+            "MinimumMaximumPlanningMeaning": "Supplier managed",
+            "MaximumMinmaxQuantity": 240,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 96,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Stores",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": null,
+            "SourceTypeMeaning": null,
+            "ItemNumber": "HP8003",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "SYRINGE 60CC LL",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2625353",
+            "CreationDate": "2019-01-09T00:08:24.612+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734741_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734741_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734741_300000158242325/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734741_300000158242325/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734741_300000158242325/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734741_300000158242325/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000116266442_300000047299450",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000116266442,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 2,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 1,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": 10,
+            "SecondaryInventory": "Stores",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "V21001",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "Photo Paper Pack, 50 count",
+            "ItemPrimaryImageURL": null,
+            "CreationDate": "2017-12-16T00:04:01.783+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266442_300000047299450",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266442_300000047299450",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266442_300000047299450/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266442_300000047299450/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266442_300000047299450/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266442_300000047299450/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000116266437_300000047299450",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000116266437,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 2,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 1,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000047274447,
+            "OrganizationCode": "002",
+            "PostprocessingLeadTime": 3,
+            "PreprocessingLeadTime": 3,
+            "ProcessingLeadTime": 4,
+            "SecondaryInventory": "Stores",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "V12000",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "Photocopy Paper Letter, Bright White, 20 lb",
+            "ItemPrimaryImageURL": null,
+            "CreationDate": "2017-12-16T00:05:28.371+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266437_300000047299450",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266437_300000047299450",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266437_300000047299450/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266437_300000047299450/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266437_300000047299450/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000116266437_300000047299450/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298609_300000177139870",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298609,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 East HO",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP4001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 250,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE HOLDER VACUTAINER",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046163",
+            "CreationDate": "2018-12-03T17:51:47.739+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139870/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139870/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139870/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139870/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273662_300000177139869",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158273662,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 West MS",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3002",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": 48,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 22G X 1.25 IN",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045367",
+            "CreationDate": "2018-12-03T18:13:20.218+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139869/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139869/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139869/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139869/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273631_300000158242325",
+            "FixedLotMultiple": 50,
+            "InventoryItemId": 300000158273631,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 5000,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 1000,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Stores",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP3001",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 21G X 1.25 INCH",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045331",
+            "CreationDate": "2018-04-25T19:32:08.346+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242325/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242325/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242325/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000158242325/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273631_300000177139870",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158273631,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 East HO",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": 48,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 21G X 1.25 INCH",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045331",
+            "CreationDate": "2018-12-03T17:49:14.001+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139870/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139870/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139870/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139870/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273662_300000177139870",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158273662,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 East HO",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3002",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": 48,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 22G X 1.25 IN",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045367",
+            "CreationDate": "2018-12-03T17:50:52.632+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139870",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139870/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139870/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139870/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139870/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273631_300000177139869",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158273631,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 West MS",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": 48,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 21G X 1.25 INCH",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045331",
+            "CreationDate": "2018-12-03T18:12:22.787+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139869/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139869/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139869/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139869/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298609_300000177139869",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298609,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "3 West MS",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP4001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 250,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE HOLDER VACUTAINER",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046163",
+            "CreationDate": "2018-12-03T22:16:32.392+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139869",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139869/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139869/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139869/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139869/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273631_300000177139871",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158273631,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "4 Recovery",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": 48,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 21G X 1.25 INCH",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045331",
+            "CreationDate": "2018-12-03T22:22:49.642+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139871/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139871/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139871/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273631_300000177139871/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158273662_300000177139871",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158273662,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "4 Recovery",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "1",
+            "SourceTypeMeaning": "Organization",
+            "ItemNumber": "HP3002",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": 48,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE BLOOD COLLECTION 22G X 1.25 IN",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2045367",
+            "CreationDate": "2018-12-03T22:23:33.072+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139871/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139871/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139871/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158273662_300000177139871/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298609_300000177139871",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298609,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "4 Recovery",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP4001",
+            "SourceOrganizationCode": null,
+            "ParLevel": 250,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": "Order par",
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE HOLDER VACUTAINER",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046163",
+            "CreationDate": "2018-12-03T22:24:14.253+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139871",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139871/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139871/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139871/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000177139871/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000177734770_300000158242325",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000177734770,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 240,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 96,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Stores",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": null,
+            "SourceTypeMeaning": null,
+            "ItemNumber": "HP8004",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "SYRINGE 20CC LL",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2625384",
+            "CreationDate": "2019-01-08T23:07:32.775+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734770_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734770_300000158242325",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734770_300000158242325/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734770_300000158242325/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734770_300000158242325/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000177734770_300000158242325/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298635_300000158242326",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298635,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 3,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 1,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Surgery",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP7001",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "IMPL HIP 54MM ACET CUP TRILOGY",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2065029",
+            "CreationDate": "2018-04-25T19:33:18.032+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298635_300000158242326",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298635_300000158242326",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298635_300000158242326/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298635_300000158242326/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298635_300000158242326/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298635_300000158242326/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298609_300000158242330",
+            "FixedLotMultiple": 250,
+            "InventoryItemId": 300000158298609,
+            "MinimumMaximumPlanningCode": 6,
+            "MinimumMaximumPlanningMeaning": "Not planned",
+            "MaximumMinmaxQuantity": null,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": null,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "ED",
+            "SourceOrganizationId": 300000116228124,
+            "SourceSubinventory": "Stores",
+            "SourceOrderingUOM": "zzu",
+            "SourceOrderingUOMMeasure": "Ea",
+            "SourceType": "3",
+            "SourceTypeMeaning": "Subinventory",
+            "ItemNumber": "HP4001",
+            "SourceOrganizationCode": "HC01",
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": "zzu",
+            "ParUOMMeasure": "Ea",
+            "DefaultCountTypeCode": "4",
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "NEEDLE HOLDER VACUTAINER",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046163",
+            "CreationDate": "2018-04-25T19:40:08.765+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": "Wondercare General Hospital",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000158242330",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000158242330",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000158242330/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000158242330/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000158242330/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298609_300000158242330/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "SubinventoryItemId": "300000158298621_300000158242326",
+            "FixedLotMultiple": null,
+            "InventoryItemId": 300000158298621,
+            "MinimumMaximumPlanningCode": 2,
+            "MinimumMaximumPlanningMeaning": "Min-max planning",
+            "MaximumMinmaxQuantity": 500,
+            "MaximumOrderQuantity": null,
+            "MinmaxQuantityUOM": "zzu",
+            "MinmaxQuantityUOMMeasure": "Ea",
+            "MinimumMinmaxQuantity": 50,
+            "MinimumOrderQuantity": null,
+            "OrganizationId": 300000116228124,
+            "OrganizationCode": "HC01",
+            "PostprocessingLeadTime": null,
+            "PreprocessingLeadTime": null,
+            "ProcessingLeadTime": null,
+            "SecondaryInventory": "Surgery",
+            "SourceOrganizationId": null,
+            "SourceSubinventory": null,
+            "SourceOrderingUOM": null,
+            "SourceOrderingUOMMeasure": null,
+            "SourceType": "2",
+            "SourceTypeMeaning": "Supplier",
+            "ItemNumber": "HP5001",
+            "SourceOrganizationCode": null,
+            "ParLevel": null,
+            "ParMaximumQuantity": null,
+            "ParUOMCode": null,
+            "ParUOMMeasure": null,
+            "DefaultCountTypeCode": null,
+            "DefaultCountType": null,
+            "CountRequired": null,
+            "QuantityCountTolerance": null,
+            "ItemDescription": "STRIP GLUCOSE TEST ONE TOUCH ULTRA BLUE",
+            "ItemPrimaryImageURL": "/content/conn/FusionAppsContentRepository/uuid/dDocID%3a2046169",
+            "CreationDate": "2018-06-08T18:59:52.275+00:00",
+            "LastReplenishedDate": null,
+            "SourceOrganizationName": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242326",
+                    "name": "subinventoryItems",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242326",
+                    "name": "subinventoryItems",
+                    "kind": "item"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242326/child/GTINs",
+                    "name": "GTINs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242326/child/MPNs",
+                    "name": "MPNs",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242326/child/onhandQuantity",
+                    "name": "onhandQuantity",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems/300000158298621_300000158242326/child/subinventoryItemsDFF",
+                    "name": "subinventoryItemsDFF",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/subinventoryItems",
+            "name": "subinventoryItems",
+            "kind": "collection"
+        }
+    ]
+}

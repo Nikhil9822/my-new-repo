@@ -1,0 +1,5 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,equipmentcondition
+2,2025-07-16T09:20:29,2025-07-16T09:20:29.004,OIC_USER3,OIC_USER3,Excellent - Like new condition
+3,2025-07-16T09:20:39,2025-07-16T09:20:39.004,OIC_USER3,OIC_USER3,"Fair - Some wear, may need minor repairs"
+4,2025-07-16T09:20:50,2025-07-16T09:20:50.003,OIC_USER3,OIC_USER3,"Good - Minor wear, fully functional"
+5,2025-07-16T09:21:00,2025-07-16T09:21:00.003,OIC_USER3,OIC_USER3,"Poor - Significant wear, needs major repairs"

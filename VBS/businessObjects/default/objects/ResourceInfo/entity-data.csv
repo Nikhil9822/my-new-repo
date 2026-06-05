@@ -1,0 +1,4 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,resourceType,resourceName,billRole,payRate,oTRate,location,equipmentCategory,equipmentRate,activeFlag,effectiveStartDate,effectiveEndDate,date1,timeIn,timeOut
+1,2024-03-08T07:07:38,2024-03-08T07:07:38.015,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Person,John,11.0,3.0,2.0,Houston,Machine,,Y,2024-03-08,2024-03-15,,,
+21,2025-01-26T15:46:29,2025-01-26T15:46:29.016,dinesh.neredu@rite.digital,dinesh.neredu@rite.digital,Person,John,11.0,3.0,2.0,Houston,Machine,,Y,2024-03-08,2024-03-15,,,
+22,2025-01-26T15:46:33,2025-01-26T15:46:33.013,dinesh.neredu@rite.digital,dinesh.neredu@rite.digital,Person,John,11.0,3.0,2.0,Houston,Machine,,Y,2024-03-08,2024-03-15,,,

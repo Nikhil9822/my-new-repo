@@ -1,0 +1,57 @@
+{
+    "items": [
+        {
+            "equipment_request_id": 1048,
+            "project_number": null,
+            "task_number": null,
+            "task_name": null,
+            "equipment_id": 763,
+            "equipment_name": "COG WHEEL G2",
+            "equipment_number": "COG WHEEL G2-56",
+            "effective_start_date": "2025-10-01T00:00:00Z",
+            "effective_end_date": "2025-10-03T00:00:00Z",
+            "requestor_name": "john.dunbar",
+            "margin": "30%",
+            "utilization_percentage": "63%",
+            "bill_rate": "2600",
+            "location": null,
+            "project_id": null,
+            "request_type": "Project",
+            "customer": null,
+            "customer_site": null,
+            "eqp_request_number": 1051,
+            "file_name": null,
+            "file_attachment": null,
+            "status": "SOFT RESERVED",
+            "cost_rate": "2000",
+            "equipment_cart_number": "1051",
+            "equip_req_quantity": "1",
+            "equipment_resource_class": "ROV EQUIPMENT",
+            "estimate_price": "7800",
+            "comments": null,
+            "file_type": null,
+            "file_content": null,
+            "availability": "R",
+            "maintenance_asset_number": "300000019082887",
+            "soft_reservation": "Y"
+        }
+    ],
+    "hasMore": false,
+    "limit": 0,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/getEqpRequestApproval?request_type=Project&p_status=SOFT+RESERVED"
+        },
+        {
+            "rel": "edit",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/getEqpRequestApproval?request_type=Project&p_status=SOFT+RESERVED"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        }
+    ]
+}

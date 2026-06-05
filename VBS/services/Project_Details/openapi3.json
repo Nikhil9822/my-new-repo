@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Ic Api",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/OICSERVICE"
+        }
+    ],
+    "paths": {
+        "/CREWTIME/TRORACLEPROJECTDETAILS/1.0/TROracleProjects": {
+            "post": {
+                "operationId": "postCREWTIMETRORACLEPROJECTDETAILS1_0TROracleProjects",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/CREWTIME/TRORACLEPROJECTTASKDETAILS/1.0/TROracleProjectsTasks": {
+            "post": {
+                "operationId": "postCREWTIMETRORACLEPROJECTTASKDETAILS1_0TROracleProjectsTasks",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/CREWTIME/TRORACLEPROJECTTEAMDETAILS/1.0/TROracleProjectsTeam": {
+            "post": {
+                "operationId": "postCREWTIMETRORACLEPROJECTTEAMDETAILS1_0TROracleProjectsTeam",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    }
+}

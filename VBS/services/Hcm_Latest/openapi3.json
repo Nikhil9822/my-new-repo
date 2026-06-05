@@ -1,0 +1,175 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "HcmRestApi Latest",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/HCM_Latest"
+        }
+    ],
+    "paths": {
+        "/organizations": {
+            "get": {
+                "operationId": "getOrganizations",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "x-vb": {
+                            "defaultValue": "500"
+                        }
+                    },
+                    {
+                        "name": "Name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetOrganizations"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getOrganizations/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetOrganizations": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "EffectiveStartDate": {
+                                    "type": "string"
+                                },
+                                "EffectiveEndDate": {
+                                    "type": "string"
+                                },
+                                "OrganizationId": {
+                                    "type": "integer"
+                                },
+                                "Name": {
+                                    "type": "string"
+                                },
+                                "Title": {
+                                    "nullable": true
+                                },
+                                "ClassificationCode": {
+                                    "type": "string"
+                                },
+                                "InternalAddressLine": {
+                                    "nullable": true
+                                },
+                                "LocationId": {
+                                    "type": "integer"
+                                },
+                                "OrganizationCode": {
+                                    "type": "string"
+                                },
+                                "Status": {
+                                    "type": "string"
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "OrgCode": {
+                                    "nullable": true
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

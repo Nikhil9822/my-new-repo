@@ -1,0 +1,15 @@
+{
+    "items": [],
+    "count": 0,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/projects/300001770540697/child/Tasks",
+            "name": "Tasks",
+            "kind": "collection"
+        }
+    ]
+}

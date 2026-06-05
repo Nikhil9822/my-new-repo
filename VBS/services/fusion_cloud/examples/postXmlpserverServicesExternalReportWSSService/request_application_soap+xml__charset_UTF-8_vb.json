@@ -1,0 +1,19 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pub="http://xmlns.oracle.com/oxp/service/PublicReportService">
+   <soap:Header/>
+   <soap:Body>
+      <pub:runReport>
+         <pub:reportRequest>
+            <pub:parameterNameValues>
+               <pub:item>
+                  <pub:name>?</pub:name>
+                  <pub:values>
+                     <pub:item>?</pub:item>
+                  </pub:values>
+               </pub:item>
+            </pub:parameterNameValues>
+            <pub:reportAbsolutePath>/Custom/EquipmentRite/projects_lov.xdo</pub:reportAbsolutePath>
+            <pub:sizeOfDataChunkDownload>-1</pub:sizeOfDataChunkDownload>
+         </pub:reportRequest>
+      </pub:runReport>
+   </soap:Body>
+</soap:Envelope>

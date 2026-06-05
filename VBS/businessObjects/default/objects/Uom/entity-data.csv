@@ -1,0 +1,9 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,uom
+1,2024-08-05T15:46:45,2024-08-05T15:46:45.01,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Hours
+2,2024-08-05T15:46:50,2024-08-05T15:46:50.011,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Days
+3,2024-08-05T15:47:41,2024-08-05T15:47:41.004,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Cubic Feet
+4,2024-08-05T15:47:56,2024-08-05T15:47:56.006,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Pound
+5,2024-08-05T15:48:03,2024-08-05T15:48:03.004,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Kilogram
+6,2024-08-05T15:48:21,2024-08-05T15:48:21.004,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Dozen
+7,2024-08-05T15:48:26,2024-08-05T15:48:26.004,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Box
+8,2024-08-05T15:55:54,2024-08-05T15:55:54.005,maniteja.polnati@ritesoftware.com,maniteja.polnati@ritesoftware.com,Each

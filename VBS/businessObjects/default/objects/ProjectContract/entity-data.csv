@@ -1,0 +1,6 @@
+id,creationDate,lastUpdateDate,createdBy,lastUpdatedBy,weekStartDay,weekEndDay,noOfDays,oTAllowed,oTThresholdMeasure,oTThresholdLimit,activeFlag,billingFrequency,oTShiftName,timeEntryMethod,effectiveStartDate,effectiveEndDate,perDiem,bonus,safetyBonus,contractNumber,projectNumber,customerName
+1,2024-02-07T21:43:07.331,2024-02-08T11:24:12,manvi.jinesh@ritesoftware.com,manvi.jinesh@ritesoftware.com,Monday,Saturday,1.0,true,Day,8 or 40,true,Day/Week,X,8.0,X,X,X,X,X,101.0,P1,XXX
+2,2024-02-07T21:43:07.355,2024-02-08T11:24:24,manvi.jinesh@ritesoftware.com,manvi.jinesh@ritesoftware.com,Tuesday,Sunday,1.0,true,Day,9 or 40,true,Day/Week,X,8.0,X,X,X,X,X,101.0,P2,XXX
+3,2024-02-07T21:43:07.361,2024-02-08T11:24:35,manvi.jinesh@ritesoftware.com,manvi.jinesh@ritesoftware.com,Wednesday,Monday,1.0,true,Day,10 or 40,true,Day/Week,X,8.0,X,X,X,X,X,102.0,PP1,XXX
+4,2024-02-07T21:43:07.366,2024-02-08T11:24:45,manvi.jinesh@ritesoftware.com,manvi.jinesh@ritesoftware.com,Thursday,Tuesday,1.0,true,Week,11 or 40,false,Day/Week,X,8.0,X,X,X,X,X,102.0,PP2,XXX
+5,2024-02-07T21:43:07.371,2024-02-08T11:24:56,manvi.jinesh@ritesoftware.com,manvi.jinesh@ritesoftware.com,Friday,Wednesday,1.0,true,Week,12 or 40,false,Day/Week,X,8.0,X,X,X,X,X,103.0,PPP1,XXX

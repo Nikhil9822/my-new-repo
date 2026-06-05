@@ -1,0 +1,268 @@
+{
+    "backends": {
+        "ics": {
+            "serviceType": "ics",
+            "description": "casey.brown",
+            "servers": [
+                {
+                    "url": "https://oicdev-axjuvjkpckuf-px.integration.us-phoenix-1.ocp.oraclecloud.com",
+                    "description": "Overridden Integration Server",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "forceProxy": "always",
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_b187fd15-04c7-49fd-b61e-a9467718c330"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_2d977476-ed44-4522-a878-794e3e706b47"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "TimeRite_Ords": {
+            "servers": [
+                {
+                    "url": "https://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite",
+                    "description": "Ords Timerite, timeritedemo , timerite",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                            "Authorization": "Basic eHhlcV9vaWk6RXF1aXBfUml0ZV8zMjQ="
+                        }
+                    }
+                }
+            ]
+        },
+        "Default-APIs": {
+            "servers": [
+                {
+                    "url": "https://ebfr-dev6.fa.ocs.oraclecloud.com/fscmRestApi/resources",
+                    "description": "Default Server",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_2af705c0-3752-43c8-a970-3fe5ddac3743"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_89b01a3d-1d23-46c3-a413-1a7d482a4633"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "approveRejectOIC": {
+            "servers": [
+                {
+                    "url": "https://oicdev-axjuvjkpckuf-px.integration.us-phoenix-1.ocp.oraclecloud.com/ic/api/integration/v2/flows/rest/project/EQUIPMENT_RITE",
+                    "description": "Ic Api",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "headers": {
+                     },
+                        "secureHeaders": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_2fe3e58f-4e59-4a9e-837c-6ba64fe4f8fc"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_30652d70-5daf-4d58-a301-604ce91068f1"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "CRM": {
+            "servers": [
+                {
+                    "url": "https://ebfr-dev6.fa.ocs.oraclecloud.com/crmRestApi/resources",
+                    "description": "Default Server",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "headers": {
+                     },
+                        "secureHeaders": {
+                        },
+                        "forceProxy": "cors",
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_0b69270a-203a-4548-ba5e-0e197259bbda"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_b5c28752-25ab-4072-8ed9-1cb1d156eb8a"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "OICSERVICE": {
+            "servers": [
+                {
+                    "url": "https://oicdev-axjuvjkpckuf-px.integration.us-phoenix-1.ocp.oraclecloud.com/ic/api/integration/v2/flows/rest/project",
+                    "description": "Ic Api",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_5c702179-f3ab-4d23-a09e-6b523814efdd"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_713dbac4-1890-4c7d-b76b-4db40f861ffb"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "SCM": {
+            "servers": [
+                {
+                    "url": "https://ebfr-dev6.fa.ocs.oraclecloud.com/fscmRestApi/resources/11.13.18.05",
+                    "description": "FscmRestApi 11.13.18.05",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_f3c297d5-a5b0-433b-997b-b44dd31e0828"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_1c7ec835-b94b-416f-8dc6-e4fb85f034e9"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "HCM_FusionRestApi": {
+            "servers": [
+                {
+                    "url": "https://ebfr-dev6.fa.ocs.oraclecloud.com/hcmRestApi/resources/11.13.18.05",
+                    "description": "HcmRestApi 11.13.18.05",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_96a75051-814f-40c0-a86e-03d12f736fcf"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_b36907a3-1a43-4e4f-9358-7d32234851ae"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "HCM_Latest": {
+            "servers": [
+                {
+                    "url": "https://ebfr-dev6.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest",
+                    "description": "HcmRestApi Latest",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "headers": {
+                        },
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_e6bd49d3-b503-4619-8e12-9b68ebd35c7a"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_7d59c024-ad87-40d5-a8fa-466364e65de5"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "Cloud": {
+            "servers": [
+                {
+                    "url": "https://ebfr-dev6.fa.ocs.oraclecloud.com",
+                    "description": "fusion_cloud",
+                    "x-vb": {
+
+                        "anonymousAccess": true,
+                        "secureHeaders": {
+                        },
+                        "authentication": {
+
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_0b68148e-71dc-4b93-b360-25cdd7f5ba4c"
+                            },
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_5b9f8a86-39eb-40f8-8f60-5666f662512f"
+                            }
+                        },
+                        "headers": {
+                        }
+                    }
+                }
+            ]
+        },
+        "ORDS": {
+            "servers": [
+                {
+                    "url": "http://ociordsdevdb01.sub08131945241.nonprodvcn.oraclevcn.com:8080/ords/xxeq_oii/EquipmentRite",
+                    "description": "Ords Xxeq Oii"
+                }
+            ]
+        }
+      }
+}

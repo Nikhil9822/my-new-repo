@@ -1,0 +1,98 @@
+{
+    "items": [
+        {
+            "BillRateOverrideId": 300001690757135,
+            "MajorVersion": 7,
+            "ContractLineId": null,
+            "ContractLineNumber": null,
+            "ExpenditureTypeId": 300000047429474,
+            "ExpenditureTypeName": "Equipment",
+            "NonLaborResourceId": 300001690072902,
+            "NonLaborResourceName": "Fleet Truck-2 Ton",
+            "StartDateActive": "2015-08-01",
+            "OrganizationId": 300000301890664,
+            "OrganizationName": "OAK PPM",
+            "Rate": 1000,
+            "RateCurrencyCode": "USD",
+            "RateCurrency": "US Dollar",
+            "DiscountPercentage": null,
+            "RateDiscReasonCode": null,
+            "RateDiscountReason": null,
+            "MarkupPercentage": null,
+            "EndDateActive": "2024-12-31",
+            "ExternalSourceKey": "FUSION7",
+            "ExternalReferenceKey": "300001690757135",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007",
+                    "name": "NonLaborRateOverride",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000778"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007",
+                    "name": "NonLaborRateOverride",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007",
+                    "name": "BillPlan",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007/lov/ExpenditureTypeNameVA",
+                    "name": "ExpenditureTypeNameVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007/lov/PjbLookupPVA2",
+                    "name": "PjbLookupPVA2",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007/lov/NonLaborResourceNameVA",
+                    "name": "NonLaborResourceNameVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007/lov/CurrencyNameVA",
+                    "name": "CurrencyNameVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007/lov/ContractLineBaseVA",
+                    "name": "ContractLineBaseVA",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride/00020000000EACED00057708000110D99635A80F0000000EACED000577080000000000000007/lov/OrganizationNameVA",
+                    "name": "OrganizationNameVA",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/contracts/100002817009719/child/BillPlan/00020000000EACED00057708000110D937DAE6C80000000EACED000577080000000000000007/child/NonLaborRateOverride",
+            "name": "NonLaborRateOverride",
+            "kind": "collection"
+        }
+    ]
+}

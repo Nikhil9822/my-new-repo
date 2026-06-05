@@ -1,0 +1,218 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+</oj-vb-fragment>
+
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]"
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Equipment Rate Schedule" background-color="dark-pebble">
+  <oj-form-layout slot="search" columns="2" label-edge="top" max-columns="2">
+    <oj-select-single item-text="rate_schedule" style="width:20vw" data="[[$variables.getRateSchNamesListSDP]]"
+      on-value-item-changed="[[$listeners.selectValueItem]]">
+    </oj-select-single>
+
+    <oj-button label="Create Rate Schedule" on-oj-action="[[$listeners.buttonAction]]">
+    </oj-button>
+  </oj-form-layout>
+  <div class="oj-flex oj-panel oj-panel-shadow-md" style="margin-top:-48px">
+    <div class="oj-flex-item oj-flex oj-sm-margin-3x-top oj-sm-flex-direction-column">
+      <div class="oj-flex-item">
+        <span class="subheadings">Rate Schedule</span>
+        <div class="oj-flex-item oj-sm-margin-3x-top">
+          <!-- {    "headerText": "Multi Currency Enabled",    "field": "multi_currency_enabled"  }, 
+                           {    "headerText": "Allow Hours Type Rate Differential",    "field": "allow_hours_type_rate_diffrential"  },
+                             {    "headerText": "Allow Location Based Differential",    "field": "allow_location_based_diffrential"  },
+                                 {    "headerText": "Default Flag",    "field": "default_flag"  }, -->
+          <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item" style="width:92vw;max-height:40vh" columns='[ 
+        {    "headerText": "",    "field": "","template":"action" ,"sortable":"disabled" },        
+         {    "headerText": "Rate Schedule",    "field": "rate_schedule","template":"rate_schedule"  },
+          {    "headerText": "Description",    "field": "description"  }, 
+           {    "headerText": "Bill Rate Schedule Level",    "field": "bill_rate_schedule_level"  }, 
+     
+           
+     
+                 {    "headerText": "Active Flag",    "field": "active_flag"  }, 
+              
+                    {    "headerText": "Contract",    "field": "contract"  },
+                      {    "headerText": "Project Number",    "field": "project_number"  }, 
+                       {    "headerText": "Task Number",    "field": "task_number"  }, 
+                        {    "headerText": "Start Date",    "field": "start_date" ,"template":"date" }, 
+                         {    "headerText": "End Date",    "field": "end_date" ,"template":"date" }]'
+            data="[[$variables.getRateScheduleByNameListSDP2]]" selection-mode.row="none" display="grid">
+            <template slot="multiFieldCellTemplate2">
+              <oj-text-area value="[[ $current.row.description ]]" readonly="true"></oj-text-area>
+            </template>
+
+            <template slot="date">
+              <oj-input-date aria-label="Date" value='[[typeof $current.data === "string" ? $current.data : null]]'
+                readonly="true"
+                converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy","timeZone": "UTC"}}'>
+              </oj-input-date>
+
+            </template>
+            <template slot="action">
+              <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-edit" on-click="[[$listeners.iconClick2]]"
+             ></span>
+            </template>
+            <template slot="addNew">
+              <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-add-create-page"
+             ></span>
+            </template>
+            <template slot="rate_schedule">
+
+              <span :title="[[ $current.data ]]">
+  <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+</span>
+
+            </template>
+          </oj-table>
+        </div>
+        <div class="oj-flex-item oj-sm-margin-5x-top">
+          <span class="subheadings">Rate Schedule Details</span>
+          <!-- {    "headerText": "Rounding Threshold",    "field": "rounding_threshold"  },  -->
+          <div class="oj-flex-item oj-sm-margin-3x-top">
+            <oj-table scroll-policy="loadMoreOnScroll" data="[[$variables.getRateScheduleDetailsbyNameListSDP]]"
+              columns='[  {    "headerText": "",    "field": "","template":"action" ,"sortable":"disabled" },    
+                 {    "headerText": "Equipment Class",    "field": "equipment_resource_class"  }, 
+                  {    "headerText": "Location",    "field": "location"  }, 
+                   {    "headerText": "Rate Types",    "field": "rate_types"  }, 
+                    {    "headerText": "UoM",    "field": "uom"  }, 
+                     {    "headerText": "Cost Rate",    "field": "cost_rate",    "template": "cost_rate"  }, 
+                      {    "headerText": "Bill Rate",    "field": "bill_rate",    "template": "Bill Rate"  },
+                        {    "headerText": "Currency",    "field": "currency"  }, 
+                      {    "headerText": "Start Date",    "field": "rate_type_start_date",    "template": "Start Date"  },  {    "headerText": "End Date",    "field": "rate_type_end_date",    "template": "End Date"  }]'
+              class="oj-flex-item" style="width:92vw;max-height:40vh" display="grid">
+
+              <template slot="action">
+                <span style="cursor:pointer;font-size:18px" class="oj-ux-ico-edit" on-click="[[$listeners.iconClick3]]"
+             ></span>
+              </template>
+              <template slot="cost_rate">
+                <oj-input-number value='[[ Number($current.data)]]' readonly="true" style="text-align: right;"
+                  converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+                </oj-input-number>
+              </template>
+              <template slot="Bill Rate">
+                <oj-input-number value='[[ Number($current.data)]]' readonly="true" style="text-align: right;"
+                  converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+                </oj-input-number>
+              </template>
+              <template slot="Start Date">
+                <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"
+                  converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy","timeZone": "UTC"}}'>
+                </oj-input-date>
+              </template>
+              <template slot="End Date">
+                <oj-input-date value='[[typeof $current.data === "string" ? $current.data : null]]' readonly="true"
+                  converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy","timeZone": "UTC"}}'>
+                </oj-input-date>
+              </template>
+            </oj-table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <oj-dialog dialog-title="" id="editschedule">
+    <div slot="body">
+      <div class="oj-flex oj-sm-flex-direction-column oj-sm-margin-3x-top">
+        <div class="oj-flex-item">
+          <span style="font-size:18px;font-weight:600">Edit Schedule Data</span>
+        </div>
+        <div class="oj-flex-item oj-sm-margin-2x-top">
+          <oj-form-layout max-columns="3" columns="3" label-edge="top">
+            <oj-select-single label-hint="Bill Rate Schedule"
+              value="{{ $variables.scheduleRowData.bill_rate_schedule_level }}"
+              data="[[$variables.billRateScheduleLevelListSDP]]" item-text="rateLevel"></oj-select-single>
+
+            <oj-select-single label-hint="Active flag" value="{{ $variables.scheduleRowData.active_flag }}"
+              data="[[ $variables.yesornoAdp ]]"></oj-select-single>
+
+            <!-- <oj-select-single label-hint="Default flag" value="{{ $variables.scheduleRowData.default_flag }}"
+              data="[[ $variables.yesornoAdp ]]"></oj-select-single> -->
+
+            <oj-select-single label-hint="Contract" value="{{ $variables.scheduleRowData.contract }}"
+              disabled="[[ $variables.scheduleRowData.bill_rate_schedule_level !== 'Contract' ]]">
+            </oj-select-single>
+
+            <oj-select-single label-hint="Project Number" value="{{ $variables.scheduleRowData.project_number }}"
+              data="[[$variables.get1113185ProjectsListSDP]]" item-text="ProjectNumber"
+              disabled="[[ $variables.scheduleRowData.bill_rate_schedule_level !== 'Project' ]]"
+              on-value-item-changed="[[$listeners.selectValueItem2]]">
+            </oj-select-single>
+
+            <oj-select-single label-hint="Task Number" value="{{ $variables.scheduleRowData.task_number }}"
+              disabled="[[ $variables.scheduleRowData.bill_rate_schedule_level !== 'Task' ]]"
+              data="[[$variables.get1113185ProjectsProjectIdChildTasks2ListSDP]]" item-text="TaskName">
+            </oj-select-single>
+            <oj-input-date label-hint="Start Date" value="{{ $variables.scheduleRowData.start_date }}"
+              max="[[$variables.scheduleRowData.end_date]]"
+              converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'></oj-input-date>
+            <oj-input-date label-hint="End Date" value="{{ $variables.scheduleRowData.end_date }}"
+              min="[[$variables.scheduleRowData.start_date]]"
+              converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}'></oj-input-date>
+          </oj-form-layout>
+        </div>
+      </div>
+      <div class="oj-flex-item">
+        <oj-toolbar chroming="solid">
+          <oj-button label="Save" on-oj-action="[[$listeners.buttonAction4]]" chroming="callToAction"
+            class="oj-button-sm"></oj-button>
+          <oj-button label="Cancel" on-oj-action="[[$listeners.buttonAction3]]" class="oj-button-sm"
+            chroming="callToAction"></oj-button>
+        </oj-toolbar>
+      </div>
+    </div>
+
+  </oj-dialog>
+
+
+  <oj-dialog dialog-title="" id="editscheduledetails">
+    <div slot="body">
+      <span style="font-size:18px;font-weight:600">Edit Schedule details Data</span>
+    </div>
+    <div class="oj-flex oj-sm-flex-direction-column">
+      <div class="oj-flex-item">
+        <oj-form-layout max-columns="3" columns="3" label-edge="top">
+          <oj-select-single label-hint="Location" value="{{ $variables.ScheduleDetailsRowData.location }}"
+            data="[[$variables.locationOptionsListSDP]]" item-text="location">
+          </oj-select-single>
+          <oj-select-single label-hint="Rate Types" value="{{ $variables.ScheduleDetailsRowData.rate_types }}"
+            data="[[ $variables.Ratetypevariable ]]" item-text="hrsType">
+          </oj-select-single>
+          <oj-select-single label-hint="UOM" value="{{ $variables.ScheduleDetailsRowData.uom }}"
+            data="[[$variables.uomListSDP]]" item-text="uom">
+          </oj-select-single>
+
+          <oj-input-number label-hint="Cost Rate" value="{{ $variables.ScheduleDetailsRowData.cost_rate }}"
+            converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+          </oj-input-number>
+          <oj-input-number label-hint="Bill Rate" value="{{ $variables.ScheduleDetailsRowData.bill_rate }}"
+            min="[[$variables.ScheduleDetailsRowData.cost_rate]]"
+            converter='{"options":{"style":"currency","currency":"USD"},"type":"number"}'>
+          </oj-input-number>
+          <!-- <oj-select-single label-hint="Rounding Threshold"
+            value="{{ $variables.ScheduleDetailsRowData.rounding_threshold }}"
+            data="[[$variables.roundingThresholdListSDP]]" item-text="roundingThreshold"></oj-select-single> -->
+
+          <oj-input-date label-hint="Start Date" value="{{ $variables.ScheduleDetailsRowData.rate_type_start_date }}"
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}' max="[[$variables.ScheduleDetailsRowData.rate_type_end_date ]]"> 
+          </oj-input-date>
+          <oj-input-date label-hint="End Date" value="{{ $variables.ScheduleDetailsRowData.rate_type_end_date }}"
+            converter='{"type": "datetime", "options": {"pattern":"dd-MMM-yyyy"}}' min="[[$variables.ScheduleDetailsRowData.rate_type_start_date ]]">
+          </oj-input-date>
+        </oj-form-layout>
+      </div>
+    </div>
+    <div class="oj-flex-item">
+      <oj-toolbar chroming="solid">
+        <oj-button label="Save" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction6]]"></oj-button>
+        <oj-button label="Cancel" on-oj-action="[[$listeners.buttonAction5]]" class="oj-button-sm"
+          chroming="callToAction"></oj-button>
+      </oj-toolbar>
+
+    </div>
+
+  </oj-dialog>
+</oj-sp-welcome-page>

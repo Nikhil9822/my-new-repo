@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "rental_reservation_number": "RR-20250625203026674",
+            "customer_name": "Loyola Industries",
+            "requestor_name": "rentals@loyolaindustries.com",
+            "start_date": "06/25/2025",
+            "end_date": "06/30/4712",
+            "status": "Quote Requested"
+        }
+    ],
+    "hasMore": false,
+    "limit": 500,
+    "offset": 0,
+    "count": 1,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getManagerQuoteDetails?p_rental_reservation_number=RR-20250625203026674&p_customer_name=Loyola+Industries"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getManagerQuoteDetails?p_rental_reservation_number=RR-20250625203026674&p_customer_name=Loyola+Industries"
+        }
+    ]
+}

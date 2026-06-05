@@ -1,0 +1,1009 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "CRM",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/CRM",
+            "description": "CRM"
+        }
+    ],
+    "paths": {
+        "/11.13.18.05/hubOrganizations": {
+            "get": {
+                "operationId": "get11_13_18_05HubOrganizations",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05HubOrganizations"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05HubOrganizations/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                    }
+                }
+            }
+        },
+        "/11.13.18.05/hubOrganizations/{PartyNumber}/child/Address": {
+            "parameters": [
+                {
+                    "name": "PartyNumber",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "get11_13_18_05HubOrganizationsPartyNumberChildAddress",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05HubOrganizationsPartyNumberChildAddress"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get11_13_18_05HubOrganizationsPartyNumberChildAddress/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/11.13.18.05/hubOrganizations?q=PartyUsageCode=CUSTOMER&fields=PartyNumber,OrganizationName,PartyId&onlyData=true": {
+            "get": {
+                "operationId": "GetCustomers",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Get11_13_18_05HubOrganizations"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/GetCustomers/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {
+                        "q": "PartyUsageCode=CUSTOMER",
+                        "fields": "PartyNumber,OrganizationName,PartyId",
+                        "onlyData": "true"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Get11_13_18_05HubOrganizations": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+
+                                "PartyId": {
+                                    "type": "integer"
+                                },
+                                "PartyNumber": {
+                                    "type": "string"
+                                },
+                                "SourceSystem": {
+                                    "type": "string"
+                                },
+                                "SourceSystemReferenceValue": {
+                                    "type": "string"
+                                },
+                                "OrganizationName": {
+                                    "type": "string"
+                                },
+                                "UniqueNameSuffix": {
+                                    "nullable": true
+                                },
+                                "Status": {
+                                    "type": "string"
+                                },
+                                "CreatedByModule": {
+                                    "type": "string"
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "PartyUsageCode": {
+                                    "type": "string"
+                                },
+                                "RawPhoneNumber": {
+                                    "type": "string"
+                                },
+                                "PhoneVerificationStatus": {
+                                    "nullable": true
+                                },
+                                "PhoneVerificationDate": {
+                                    "nullable": true
+                                },
+                                "EmailAddress": {
+                                    "type": "string"
+                                },
+                                "EmailVerificationStatus": {
+                                    "nullable": true
+                                },
+                                "EmailVerificationDate": {
+                                    "nullable": true
+                                },
+                                "URL": {
+                                    "type": "string"
+                                },
+                                "AddressNumber": {
+                                    "type": "string"
+                                },
+                                "AddressElementAttribute1": {
+                                    "nullable": true
+                                },
+                                "AddressElementAttribute2": {
+                                    "nullable": true
+                                },
+                                "AddressElementAttribute3": {
+                                    "nullable": true
+                                },
+                                "AddressElementAttribute4": {
+                                    "nullable": true
+                                },
+                                "AddressElementAttribute5": {
+                                    "nullable": true
+                                },
+                                "Address1": {
+                                    "type": "string"
+                                },
+                                "Address2": {
+                                    "nullable": true
+                                },
+                                "Address3": {
+                                    "nullable": true
+                                },
+                                "Address4": {
+                                    "nullable": true
+                                },
+                                "AddressLinesPhonetic": {
+                                    "nullable": true
+                                },
+                                "AddressType": {
+                                    "type": "string"
+                                },
+                                "Building": {
+                                    "nullable": true
+                                },
+                                "City": {
+                                    "type": "string"
+                                },
+                                "Country": {
+                                    "type": "string"
+                                },
+                                "County": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "FloorNumber": {
+                                    "nullable": true
+                                },
+                                "Mailstop": {
+                                    "nullable": true
+                                },
+                                "PostalCode": {
+                                    "type": "string"
+                                },
+                                "PostalPlus4Code": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "Province": {
+                                    "type": "string"
+                                },
+                                "State": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ThirdPartyFlag": {
+                                    "nullable": true
+                                },
+                                "ValidatedFlag": {
+                                    "type": "boolean"
+                                },
+                                "AccountScore": {
+                                    "type": "integer"
+                                },
+                                "AccountScoringTier": {
+                                    "nullable": true
+                                },
+                                "AnalysisFiscalYear": {
+                                    "nullable": true
+                                },
+                                "BankCode": {
+                                    "nullable": true
+                                },
+                                "BankOrBranchNumber": {
+                                    "nullable": true
+                                },
+                                "BranchCode": {
+                                    "nullable": true
+                                },
+                                "BranchFlag": {
+                                    "nullable": true
+                                },
+                                "BusinessScope": {
+                                    "nullable": true
+                                },
+                                "CEOName": {
+                                    "nullable": true
+                                },
+                                "CEOTitle": {
+                                    "nullable": true
+                                },
+                                "CertificationLevel": {
+                                    "nullable": true
+                                },
+                                "CertificationReasonCode": {
+                                    "nullable": true
+                                },
+                                "CleanlinessScore": {
+                                    "nullable": true
+                                },
+                                "Comments": {
+                                    "nullable": true
+                                },
+                                "CompletenessScore": {
+                                    "nullable": true
+                                },
+                                "CongressionalDistrictCode": {
+                                    "nullable": true
+                                },
+                                "ControlYear": {
+                                    "nullable": true
+                                },
+                                "CorpCurrencyCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CorporationClass": {
+                                    "nullable": true
+                                },
+                                "CurcyConvRateType": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CurrencyCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CurrentFiscalYearPotentialRevenueAmount": {
+                                    "type": "integer"
+                                },
+                                "DataCloudStatus": {
+                                    "type": "string"
+                                },
+                                "DataConfidenceScore": {
+                                    "nullable": true
+                                },
+                                "DatafoxCompanyId": {
+                                    "type": "string"
+                                },
+                                "Description": {
+                                    "type": "string"
+                                },
+                                "DisadvantageIndicator": {
+                                    "nullable": true
+                                },
+                                "DisplayedDUNSPartyId": {
+                                    "nullable": true
+                                },
+                                "DomesticUltimateDUNSNumber": {
+                                    "nullable": true
+                                },
+                                "DoNotConfuseWith": {
+                                    "nullable": true
+                                },
+                                "DUNSNumber": {
+                                    "type": "string"
+                                },
+                                "DUNSCreditRating": {
+                                    "nullable": true
+                                },
+                                "DuplicateIndicator": {
+                                    "nullable": true
+                                },
+                                "DuplicateScore": {
+                                    "nullable": true
+                                },
+                                "EmployeesAtPrimaryAddress": {
+                                    "nullable": true
+                                },
+                                "EmployeesAtPrimaryAddressEstimation": {
+                                    "nullable": true
+                                },
+                                "EmployeesAtPrimaryAddressMinimum": {
+                                    "nullable": true
+                                },
+                                "EmployeesAtPrimaryAddressText": {
+                                    "nullable": true
+                                },
+                                "EmployeesTotal": {
+                                    "type": "integer"
+                                },
+                                "EnquiryDUNS": {
+                                    "nullable": true
+                                },
+                                "EnrichmentScore": {
+                                    "nullable": true
+                                },
+                                "ExportIndicator": {
+                                    "nullable": true
+                                },
+                                "FiscalYearendMonth": {
+                                    "type": "string"
+                                },
+                                "GlobalUltimateDUNSNumber": {
+                                    "nullable": true
+                                },
+                                "GrowthStrategyDescription": {
+                                    "nullable": true
+                                },
+                                "GeneralServicesAdministrationFlag": {
+                                    "nullable": true
+                                },
+                                "HomeCountry": {
+                                    "nullable": true
+                                },
+                                "HQBranchIndicator": {
+                                    "nullable": true
+                                },
+                                "ImportIndicator": {
+                                    "nullable": true
+                                },
+                                "Keywords": {
+                                    "type": "string"
+                                },
+                                "LaborSurplusIndicator": {
+                                    "nullable": true
+                                },
+                                "LastEnrichmentDate": {
+                                    "type": "string"
+                                },
+                                "LastScoreUpdateDate": {
+                                    "nullable": true
+                                },
+                                "LegalStatus": {
+                                    "nullable": true
+                                },
+                                "LineOfBusiness": {
+                                    "nullable": true
+                                },
+                                "LocalActivityCode": {
+                                    "nullable": true
+                                },
+                                "LocalActivityCodeType": {
+                                    "nullable": true
+                                },
+                                "LocalBusinessIdentifier": {
+                                    "nullable": true
+                                },
+                                "LocalBusinessIdentifierType": {
+                                    "nullable": true
+                                },
+                                "MinorityOwnedIndicator": {
+                                    "nullable": true
+                                },
+                                "MinorityOwnedType": {
+                                    "nullable": true
+                                },
+                                "MissionStatement": {
+                                    "nullable": true
+                                },
+                                "NextFiscalYearPotentialRevenueAmount": {
+                                    "type": "integer"
+                                },
+                                "OutOfBusinessIndicator": {
+                                    "nullable": true
+                                },
+                                "OrganizationSize": {
+                                    "type": "string"
+                                },
+                                "OrganizationType": {
+                                    "nullable": true
+                                },
+                                "ParentDUNSNumber": {
+                                    "nullable": true
+                                },
+                                "ParentOrSubsidiaryIndicator": {
+                                    "nullable": true
+                                },
+                                "PreferredFunctionalCurrency": {
+                                    "type": "string"
+                                },
+                                "PreferredContactMethod": {
+                                    "nullable": true
+                                },
+                                "PrincipalName": {
+                                    "nullable": true
+                                },
+                                "PrincipalTitle": {
+                                    "nullable": true
+                                },
+                                "PublicPrivateOwnershipFlag": {
+                                    "type": "boolean"
+                                },
+                                "RecencyScore": {
+                                    "nullable": true
+                                },
+                                "RegistrationType": {
+                                    "nullable": true
+                                },
+                                "RentOrOwnIndicator": {
+                                    "nullable": true
+                                },
+                                "SmallBusinessIndicator": {
+                                    "nullable": true
+                                },
+                                "StockSymbol": {
+                                    "type": "string"
+                                },
+                                "TaxpayerIdentificationNumber": {
+                                    "type": "string"
+                                },
+                                "TotalEmployeesEstimatedIndicator": {
+                                    "nullable": true
+                                },
+                                "TotalEmployeesIndicator": {
+                                    "nullable": true
+                                },
+                                "TotalEmployeesMinimumIndicator": {
+                                    "nullable": true
+                                },
+                                "TotalEmployeesText": {
+                                    "nullable": true
+                                },
+                                "TotalPaymentAmount": {
+                                    "nullable": true
+                                },
+                                "TradingPartnerIdentifier": {
+                                    "nullable": true
+                                },
+                                "UniqueNameAlias": {
+                                    "type": "string"
+                                },
+                                "ValidityScore": {
+                                    "nullable": true
+                                },
+                                "WomanOwnedIndicator": {
+                                    "nullable": true
+                                },
+                                "YearEstablished": {
+                                    "type": "integer"
+                                },
+                                "YearIncorporated": {
+                                    "nullable": true
+                                },
+                                "FormattedAddress": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_CustomerType_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_CustomerType_cMeaning": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_StrategicPlan_Id_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_StrategicPlan_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_StrategicContact_Id_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_StrategicContact_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_AccountPlanStatus_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_AccountPlanStatus_cMeaning": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_PlanManagerCalc_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_Industry_c": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_LSNumberOfBeds_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_LSNumberOfPhysicians_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_LSCallFrequency_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_LSRoute_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_LSRoute_cMeaning": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_LSAccountType_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_LSAccountType_cMeaning": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_InstitutionType_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_InstitutionType_cMeaning": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DaaSTwitterProfileURL_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DaaSTwitterFollowers_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DaaSYouTubeURL_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DaaSFaceBookURL_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DaaSYouTubeViews_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_CurrentSatisfactionLevel_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_CurrentlyReferring_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_Latitude_c": {
+                                    "type": "number",
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_Longitude_c": {
+                                    "type": "number",
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DaaSFacebookProfileURL_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_ExtnZcmFuseEditCustomerContainerLayout_BPAccountLayout_1513292945122Expr": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_ExtnZcmFuseEditCustomerContainerLayout_AccountBusinessPlanLayout_1515002954905Expr": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_XSD_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_AccountScore_c": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_DatafoxCompanyId_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DatafoxCompanyLegalName_c": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_DatafoxKeywords_c": {
+                                    "nullable": true
+                                },
+                                "OrganizationDEO_DatafoxCompanyURL_c": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_AccountTier_c": {
+                                    "type": "string"
+                                },
+                                "OrganizationDEO_Score_c": {
+                                    "nullable": true
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Get11_13_18_05HubOrganizationsPartyNumberChildAddress": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "PartyId": {
+                                    "type": "integer"
+                                },
+                                "PartyNumber": {
+                                    "type": "string"
+                                },
+                                "PartySourceSystem": {
+                                    "type": "string"
+                                },
+                                "PartySourceSystemReferenceValue": {
+                                    "type": "string"
+                                },
+                                "AddressId": {
+                                    "type": "integer"
+                                },
+                                "AddressNumber": {
+                                    "type": "string"
+                                },
+                                "Comments": {
+                                    "nullable": true
+                                },
+                                "ObjectVersionNumber": {
+                                    "type": "integer"
+                                },
+                                "DoNotMailFlag": {
+                                    "type": "boolean"
+                                },
+                                "CorpCurrencyCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CreatedBy": {
+                                    "type": "string"
+                                },
+                                "CreatedByModule": {
+                                    "type": "string"
+                                },
+                                "CreationDate": {
+                                    "type": "string"
+                                },
+                                "CurcyConvRateType": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "CurrencyCode": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "EndDateActive": {
+                                    "type": "string"
+                                },
+                                "FormattedAddress": {
+                                    "type": "string"
+                                },
+                                "FormattedMultilineAddress": {
+                                    "type": "string"
+                                },
+                                "LastUpdateDate": {
+                                    "type": "string"
+                                },
+                                "LastUpdateLogin": {
+                                    "type": "string"
+                                },
+                                "LastUpdatedBy": {
+                                    "type": "string"
+                                },
+                                "LocationId": {
+                                    "type": "integer"
+                                },
+                                "Mailstop": {
+                                    "nullable": true
+                                },
+                                "PrimaryFlag": {
+                                    "type": "boolean"
+                                },
+                                "StartDateActive": {
+                                    "type": "string"
+                                },
+                                "Status": {
+                                    "type": "string"
+                                },
+                                "AddrElementAttribute1": {
+                                    "nullable": true
+                                },
+                                "ObjectVersionNumber1": {
+                                    "type": "integer"
+                                },
+                                "AddrElementAttribute2": {
+                                    "nullable": true
+                                },
+                                "AddrElementAttribute3": {
+                                    "nullable": true
+                                },
+                                "AddrElementAttribute4": {
+                                    "nullable": true
+                                },
+                                "AddrElementAttribute5": {
+                                    "nullable": true
+                                },
+                                "Address1": {
+                                    "type": "string"
+                                },
+                                "Address2": {
+                                    "nullable": true
+                                },
+                                "Address3": {
+                                    "nullable": true
+                                },
+                                "Address4": {
+                                    "nullable": true
+                                },
+                                "AddressLinesPhonetic": {
+                                    "nullable": true
+                                },
+                                "Building": {
+                                    "nullable": true
+                                },
+                                "CalculateFormattedAddress": {
+                                    "type": "string"
+                                },
+                                "City": {
+                                    "type": "string"
+                                },
+                                "ClliCode": {
+                                    "nullable": true
+                                },
+                                "Country": {
+                                    "type": "string"
+                                },
+                                "County": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "DateValidated": {
+                                    "type": "string"
+                                },
+                                "Description": {
+                                    "nullable": true
+                                },
+                                "FloorNumber": {
+                                    "nullable": true
+                                },
+                                "FormattedAddress1": {
+                                    "type": "string"
+                                },
+                                "FormattedMultilineAddress1": {
+                                    "type": "string"
+                                },
+                                "HouseType": {
+                                    "nullable": true
+                                },
+                                "Latitude": {
+                                    "type": "number"
+                                },
+                                "LocationDirections": {
+                                    "nullable": true
+                                },
+                                "Longitude": {
+                                    "type": "number"
+                                },
+                                "PostalCode": {
+                                    "type": "string"
+                                },
+                                "PostalPlus4Code": {
+                                    "type": "string"
+                                },
+                                "Province": {
+                                    "nullable": true
+                                },
+                                "State": {
+                                    "type": "string"
+                                },
+                                "ValidatedFlag": {
+                                    "type": "boolean",
+                                    "nullable": true
+                                },
+                                "ValidationStartDate": {
+                                    "nullable": true
+                                },
+                                "ValidationStatusCode": {
+                                    "type": "string"
+                                },
+                                "SourceSystem": {
+                                    "type": "string"
+                                },
+                                "SourceSystemReferenceValue": {
+                                    "type": "string"
+                                },
+                                "SSROwnerTableName": {
+                                    "type": "string"
+                                },
+                                "EffectiveDate": {
+                                    "nullable": true
+                                },
+                                "SSRPartyOwnerTableName": {
+                                    "type": "string"
+                                },
+                                "CreatedByModule1": {
+                                    "type": "string"
+                                },
+                                "AddressType": {
+                                    "type": "string"
+                                },
+                                "ConflictId": {
+                                    "type": "integer"
+                                },
+                                "DoNotValidateFlag": {
+                                    "nullable": true
+                                },
+                                "DunsNumberC": {
+                                    "nullable": true
+                                },
+                                "PartySiteName": {
+                                    "nullable": true
+                                },
+                                "PartySiteEO_XSD_c": {
+                                    "nullable": true
+                                },
+                                "links": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "rel": {
+                                                "type": "string"
+                                            },
+                                            "href": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "kind": {
+                                                "type": "string"
+                                            },
+                                            "properties": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "changeIndicator": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

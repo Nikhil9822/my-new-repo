@@ -1,0 +1,73 @@
+{
+    "items": [
+        {
+            "equipment_class": "WINCH DRUM"
+        },
+        {
+            "equipment_class": "WINCH"
+        },
+        {
+            "equipment_class": "UMBILICAL"
+        },
+        {
+            "equipment_class": "TOOLING EQUIPMENT"
+        },
+        {
+            "equipment_class": "TMS"
+        },
+        {
+            "equipment_class": "SKID"
+        },
+        {
+            "equipment_class": "SHEAVE WHEEL"
+        },
+        {
+            "equipment_class": "ROV EQUIPMENT"
+        },
+        {
+            "equipment_class": "MG SET"
+        },
+        {
+            "equipment_class": "LEVELWIND"
+        },
+        {
+            "equipment_class": "EHPU"
+        },
+        {
+            "equipment_class": "CLT"
+        },
+        {
+            "equipment_class": "CL"
+        },
+        {
+            "equipment_class": "AUV EQUIPMENT"
+        },
+        {
+            "equipment_class": "ARM"
+        },
+        {
+            "equipment_class": "APU"
+        },
+        {
+            "equipment_class": "A-FRAME"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 17,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ClassDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_ClassDetails"
+        }
+    ]
+}

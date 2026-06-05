@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "crewsetup_id": 1,
+            "crew_name": "BSS_SUPPORT_CREW",
+            "customer_name": "Business World",
+            "contract_number": "234567",
+            "project_number": "60004",
+            "resource_number": "4929",
+            "resource_name": "ASL Emp1",
+            "resource_role": "ASL Proj Manager",
+            "bill_rate": "55",
+            "pay_rate": "300",
+            "ot_rate": "4.5",
+            "resource_location": "CALIFORNIA",
+            "equipment_category": null,
+            "equipment_rate": null,
+            "crew_day": null,
+            "in_time": null,
+            "day": null,
+            "out_time": null,
+            "active_flag": "Y"
+        },
+        {
+            "crewsetup_id": 1,
+            "crew_name": "BSS_SUPPORT_CREW",
+            "customer_name": "Business World",
+            "contract_number": "234567",
+            "project_number": "60004",
+            "resource_number": "60004",
+            "resource_name": "RS-PPM",
+            "resource_role": "MANAGER",
+            "bill_rate": "50",
+            "pay_rate": "200",
+            "ot_rate": "5.5",
+            "resource_location": "TEXAS",
+            "equipment_category": null,
+            "equipment_rate": null,
+            "crew_day": null,
+            "in_time": null,
+            "day": null,
+            "out_time": null,
+            "active_flag": "Y"
+        },
+        {
+            "crewsetup_id": 1,
+            "crew_name": "BSS_SUPPORT_CREW",
+            "customer_name": "Business World",
+            "contract_number": "234567",
+            "project_number": "60004",
+            "resource_number": "4928",
+            "resource_name": "ASL Emp2",
+            "resource_role": "ASL Project Accountant",
+            "bill_rate": "35",
+            "pay_rate": "150",
+            "ot_rate": "2.5",
+            "resource_location": "HUSTON",
+            "equipment_category": null,
+            "equipment_rate": null,
+            "crew_day": null,
+            "in_time": null,
+            "day": null,
+            "out_time": null,
+            "active_flag": "Y"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 3,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCustomerDetails"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getCustomerDetails"
+        }
+    ]
+}

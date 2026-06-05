@@ -1,0 +1,25 @@
+{
+    "AssetId": 100000082177145,
+    "AssetNumber": "100000082176650",
+    "SerialNumber": "A18821",
+    "InventoryItemId": 100000082147717,
+    "InventoryItemNumber": "RSPL-008",
+    "InventoryItemDescription": "RSPL - MIL PLUS STANDARD VEHIC",
+    "ParentAssetId": 300000049565045,
+    "ParentAssetNumber": "ML090",
+    "NewWoAllowedFlag": true,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/assetHierarchiesLOV/100000082177145",
+            "name": "assetHierarchiesLOV",
+            "kind": "item"
+        },
+        {
+            "rel": "canonical",
+            "href": "https://ebfr-dev3.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/assetHierarchiesLOV/100000082177145",
+            "name": "assetHierarchiesLOV",
+            "kind": "item"
+        }
+    ]
+}

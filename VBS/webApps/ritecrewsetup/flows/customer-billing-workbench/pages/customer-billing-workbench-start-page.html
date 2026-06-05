@@ -1,0 +1,42 @@
+<oj-vb-fragment id="page-header" bridge="[[vbBridge]]" name="page-header">
+  <oj-vb-fragment-param name="title" value=""></oj-vb-fragment-param>
+  <template slot="actions">
+  </template>
+</oj-vb-fragment>
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ require.toUrl($page.variables.illustrationBackground) ]]" 
+  illustration-foreground="[[ require.toUrl($page.variables.illustrationForeground) ]]"
+  display-options.image-stretch="[[ $page.variables.imageStretch ]]"
+  display-options.mobile-image="[[ $page.variables.mobileImage ]]" display-options.responsive-padding="on"
+  page-title="Customer Billing Workbench" background-color="dark-pebble">
+  <div class="oj-panel" style="margin-top:-47px">
+    <oj-form-layout columns="5" max-columns="5" label-edge="top">
+      <oj-select-single label-hint="Reservation Number" item-text="reservation_number"
+        value="{{ $variables.headerobj.reservation_number }}" data="[[ $variables.reseAdp ]]">
+      </oj-select-single>
+      <oj-select-single label-hint="Customer" data="[[$variables.getAdminCustomerLOVListSDP]]" item-text="party_name"
+        value="{{ $variables.headerobj.customer }}"></oj-select-single>
+      <oj-select-single label-hint="Contract" item-text="contract_number"
+        on-value-item-changed="[[$listeners.selectValueItem3]]" value="{{ $variables.headerobj.contract }}"
+        data="[[ $variables.contractAdp ]]"></oj-select-single>
+      <!-- <oj-select-single label-hint="Equipment Class" value="{{ $variables.headerobj.eqpclass }}"
+        data="[[$variables.getGetEquipmentClassLOVListSDP]]" item-text="equipment_class"></oj-select-single> -->
+      <oj-select-single label-hint="Equipment Name" item-text="equipment_name"
+        data="[[$variables.getEQPRentBillingWorkbenchListSDP]]" on-value-item-changed="[[$listeners.selectValueItem]]"
+        value="{{ $variables.headerobj.eqpname }}"></oj-select-single>
+      <oj-input-date label-hint="Bill Date" value="{{ $variables.headerobj.billdate }}"></oj-input-date>
+      <div style="margin-top:20px">
+        <oj-button label="Search" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction2]]">
+          <span class="oj-ux-ico-search" slot="startIcon"></span>
+        </oj-button>
+        <oj-button label="Reset" chroming="callToAction" class="oj-button-sm"
+          on-oj-action="[[$listeners.buttonAction]]">
+          <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+        </oj-button>
+      </div>
+    </oj-form-layout>
+    <oj-table scroll-policy="loadMoreOnScroll" data="[[ $variables.tableData]]" style="width:93vw;height:400px"
+      columns='[{"headerText":"Reservation Number","field":"reservation_number","width":200},{"headerText":"Contract Number","field":"contract_number","width":180},{"headerText":"Equipment Name","field":"equipment_name","width":250},{"headerText":"Start Date","field":"start_date","width":150},{"headerText":"End Date","field":"end_date","width":150},{"headerText":"Duration Billed","field":"duration_billed"},{"headerText":"Duration Remaning","field":"duration_remaning"},{"headerText":"Billing Frequency","field":"billing_frequency","width":180},{"headerText":"Pending Invoice Amount","field":"pending_invoice_amount","width":180},{"headerText":"Invoiced Amount","field":"invoiced_amount"},{"headerText":"Payment Amount Received","field":"payment_amount_received","width":180}]'
+      display="grid"></oj-table>
+  </div>
+</oj-sp-welcome-page>

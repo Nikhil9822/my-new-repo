@@ -1,0 +1,21 @@
+{
+    "items": [
+        {
+            "nonLaborResourceId": "300000019363829",
+            "name": "OII_ROV_Magnum_Resource",
+            "expendituretypeid": "300000019363821",
+            "expendituretypename": "OII_Project_Equipment_Usage_Charges",
+            "organization": "OII_AUS_AUD_BU",
+            "organizationid": "300000003591251"
+        },
+        {
+            "nonLaborResourceId": "300000019594296",
+            "name": "OII_ROV_Freedom",
+            "expendituretypeid": "300000019363821",
+            "expendituretypename": "OII_Project_Equipment_Usage_Charges",
+            "organization": "OII_AUS_AUD_BU",
+            "organizationid": "300000003591251"
+        }
+    ],
+    "count": 2
+}

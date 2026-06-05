@@ -1,0 +1,311 @@
+{
+    "fields": [
+        {
+            "type": "number",
+            "name": "id",
+            "internal": false,
+            "key": true,
+            "oid": "05fc0b33-3536-4d92-a3ed-1730f7c2ecde",
+            "required": true,
+            "unique": true,
+            "displayLabel": "Id"
+        },
+        {
+            "type": "datetime",
+            "name": "creationDate",
+            "internal": false,
+            "oid": "e39b3a1f-b81c-439d-acd3-055494496803",
+            "displayLabel": "Created",
+            "historyType": "timeCreated"
+        },
+        {
+            "type": "datetime",
+            "name": "lastUpdateDate",
+            "internal": false,
+            "oid": "cf2c8030-aaae-4e66-9faf-e7d94a30e89a",
+            "displayLabel": "Last Updated",
+            "historyType": "timeUpdated"
+        },
+        {
+            "type": "string",
+            "name": "createdBy",
+            "internal": false,
+            "oid": "88adbd87-a749-48c9-b7dd-e2921a9aa456",
+            "displayLabel": "Created By",
+            "historyType": "createdBy"
+        },
+        {
+            "type": "string",
+            "name": "lastUpdatedBy",
+            "internal": false,
+            "oid": "df2ea6ab-903c-49b5-9dd8-f5301073000d",
+            "displayLabel": "Last Updated By",
+            "historyType": "updatedBy"
+        },
+        {
+            "type": "number",
+            "name": "versionNumber",
+            "internal": false,
+            "oid": "a406806f-b0d9-45ba-ac98-e0a33509d282",
+            "displayLabel": "Version Number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "nonLaborResource",
+            "oid": "856b4439-9cda-44dd-b0f1-bc7cff9145a1",
+            "displayLabel": "Non Labor Resource"
+        },
+        {
+            "type": "string",
+            "name": "expenditureType",
+            "oid": "67709616-4039-45bc-b9f6-e4f7fc7edd35",
+            "displayLabel": "Expenditure Type"
+        },
+        {
+            "type": "string",
+            "name": "location",
+            "oid": "6fb52de5-4a6f-4dc5-ba38-197d772c5583",
+            "displayLabel": "Location"
+        },
+        {
+            "type": "string",
+            "name": "hoursType",
+            "oid": "99bd8e59-e378-4b04-bb91-fbe34f5ee2cf",
+            "displayLabel": "Hours Type"
+        },
+        {
+            "type": "string",
+            "name": "costRate",
+            "oid": "fb2eabbf-2476-446f-b380-7a8947435542",
+            "displayLabel": "Cost Rate"
+        },
+        {
+            "type": "string",
+            "name": "billRate",
+            "oid": "7e9d186d-b5ea-4cfa-92ea-c0de79aa1b18",
+            "displayLabel": "Bill Rate"
+        },
+        {
+            "type": "string",
+            "name": "currency",
+            "oid": "33782e80-7ee0-442a-b507-717184bc7419",
+            "displayLabel": "Currency"
+        },
+        {
+            "type": "string",
+            "name": "startDate",
+            "oid": "d7dc3c2b-7915-4b45-b522-fa5451ca1a39",
+            "displayLabel": "Start Date"
+        },
+{
+            "type": "string",
+            "name": "endDate",
+            "oid": "bb6edd2e-ac6b-4873-b127-8385200fa366",
+            "displayLabel": "End Date"
+        },
+        {
+            "type": "string",
+            "name": "uom",
+            "oid": "244e5533-b335-4c52-9636-ba2a33458ce2",
+            "displayLabel": "uom"
+        }
+    ],
+    "name": "RateScheduleDetail",
+    "oid": "9e061d39-255c-43bf-99c6-df8a1c5136bb",
+    "displayLabel": "Rate Schedule Detail",
+    "security": {
+        "type": "local",
+        "acl": [
+            {
+                "roleId": "AdminRole",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": true
+                    },
+                    {
+                        "name": "create",
+                        "value": true
+                    },
+                    {
+                        "name": "update",
+                        "value": true
+                    },
+                    {
+                        "name": "delete",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "roleId": "approle.anonymous.user",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": true
+                    },
+                    {
+                        "name": "create",
+                        "value": true
+                    },
+                    {
+                        "name": "update",
+                        "value": true
+                    },
+                    {
+                        "name": "delete",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "roleId": "approle.authenticated.user",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": true
+                    },
+                    {
+                        "name": "create",
+                        "value": true
+                    },
+                    {
+                        "name": "update",
+                        "value": true
+                    },
+                    {
+                        "name": "delete",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "roleId": "Administrator",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "roleId": "Approver",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Equipment_Manager",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Project_Reviewer",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Requestor",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }            ,
+            {
+                "roleId": "Timekeeper",
+                "privileges": [
+                    {
+                        "name": "view",
+                        "value": false
+                    },
+                    {
+                        "name": "create",
+                        "value": false
+                    },
+                    {
+                        "name": "update",
+                        "value": false
+                    },
+                    {
+                        "name": "delete",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    }
+}

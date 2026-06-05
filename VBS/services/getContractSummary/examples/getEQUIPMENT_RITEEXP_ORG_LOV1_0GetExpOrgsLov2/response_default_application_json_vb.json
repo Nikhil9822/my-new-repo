@@ -1,0 +1,1621 @@
+{
+    "items": [
+        {
+            "orgId": "300000003591251",
+            "name": "OII_AUS_AUD_BU"
+        },
+        {
+            "orgId": "300000007535766",
+            "name": "OPG Integrated Projects Constrution  GRP 1"
+        },
+        {
+            "orgId": "300000007535776",
+            "name": "IMDS Software Software Products  GRP 3"
+        },
+        {
+            "orgId": "300000007535777",
+            "name": "ADTECH OSS EVA and Habitability Systems  "
+        },
+        {
+            "orgId": "300000007535786",
+            "name": "IMDS Software Vision  GRP 4"
+        },
+        {
+            "orgId": "300000007535787",
+            "name": "OPG Integrated Projects IMR  GRP 2"
+        },
+        {
+            "orgId": "300000007535816",
+            "name": "SSR Tooling Service and Maintenance  GRP 3"
+        },
+        {
+            "orgId": "300000007535827",
+            "name": "IMDS Digital COMMS  GRP 2"
+        },
+        {
+            "orgId": "300000007535836",
+            "name": "OPG Subsea Services Storage & Maintenance  GRP 1"
+        },
+        {
+            "orgId": "300000007535846",
+            "name": "MP Speciality Products Grayloc  GPC"
+        },
+        {
+            "orgId": "300000007535857",
+            "name": "MP Speciality Products Manufactured Services  MSAM"
+        },
+        {
+            "orgId": "300000007535866",
+            "name": "IMDS Inspection Crane & Lifitng  GRP 2"
+        },
+        {
+            "orgId": "300000007535867",
+            "name": "OPG Integrated Projects Intervention  GRP 3"
+        },
+        {
+            "orgId": "300000007535877",
+            "name": "IMDS Inspection Crane & Lifitng  GRP 4"
+        },
+        {
+            "orgId": "300000007535886",
+            "name": "IMDS Inspection Subsea Inspection  GRP 4"
+        },
+        {
+            "orgId": "300000007535897",
+            "name": "IMDS Software Vision  GRP 2"
+        },
+        {
+            "orgId": "300000007535946",
+            "name": "OPG Integrated Projects Decomissioning  GRP 1"
+        },
+        {
+            "orgId": "300000007535956",
+            "name": "IMDS Engineering Fabric Maintenance  GRP 2"
+        },
+        {
+            "orgId": "300000007535957",
+            "name": "IMDS Software Vision  GRP 3"
+        },
+        {
+            "orgId": "300000007535966",
+            "name": "MP Distrubution SPL  EMEA"
+        },
+        {
+            "orgId": "300000007535996",
+            "name": "OPG Subsea Services Controls  GRP 3"
+        },
+        {
+            "orgId": "300000007535756",
+            "name": "MP Speciality Products Grayloc  GPM"
+        },
+        {
+            "orgId": "300000007535767",
+            "name": "IMDS Engineering Maintenace & Reliability  GRP 3"
+        },
+        {
+            "orgId": "300000007535797",
+            "name": "IMDS Software Advanced Modeller  GRP 1"
+        },
+        {
+            "orgId": "300000007535806",
+            "name": "ADTECH MSD Dry Deck Shelters  "
+        },
+        {
+            "orgId": "300000007535817",
+            "name": "OPG Engineered Solutions Engineered Solutions  GRP 4"
+        },
+        {
+            "orgId": "300000007535825",
+            "name": "IMDS Engineering Integrity Engineering  GRP 1"
+        },
+        {
+            "orgId": "300000007535837",
+            "name": "MP Speciality Products Grayloc  GPA"
+        },
+        {
+            "orgId": "300000007535847",
+            "name": "IMDS Inspection NDT  GRP 2"
+        },
+        {
+            "orgId": "300000007535856",
+            "name": "IMDS Inspection Subsea Inspection  GRP 1"
+        },
+        {
+            "orgId": "300000007535876",
+            "name": "OPG Engineered Solutions Engineered Solutions  GRP 3"
+        },
+        {
+            "orgId": "300000007535887",
+            "name": "IMDS Software Software Products  GRP 4"
+        },
+        {
+            "orgId": "300000007535896",
+            "name": "SSR Tooling Rental  GRP 1"
+        },
+        {
+            "orgId": "300000007535906",
+            "name": "IMDS Software Vision  GRP 1"
+        },
+        {
+            "orgId": "300000007535916",
+            "name": "IMDS Digital FNS  GRP 3"
+        },
+        {
+            "orgId": "300000007535925",
+            "name": "ADTECH MSD Shop Manufacturing  "
+        },
+        {
+            "orgId": "300000007535927",
+            "name": "SSR ROV Drill Support  GRP 2"
+        },
+        {
+            "orgId": "300000007535935",
+            "name": "OPG Subsea Services UWILD  GRP 4"
+        },
+        {
+            "orgId": "300000007535937",
+            "name": "SSR Tooling Rental  GRP 2"
+        },
+        {
+            "orgId": "300000007535967",
+            "name": "IMDS Digital AMIC  GRP 4"
+        },
+        {
+            "orgId": "300000007535977",
+            "name": "IMDS Digital COMMS  GRP 4"
+        },
+        {
+            "orgId": "300000007535987",
+            "name": "OPG Subsea Services Storage & Maintenance  GRP 4"
+        },
+        {
+            "orgId": "300000007535986",
+            "name": "SSR ROV Drill Support  GRP 3"
+        },
+        {
+            "orgId": "300000007535997",
+            "name": "IMDS Engineering Integrity Engineering  GRP 2"
+        },
+        {
+            "orgId": "300000007536007",
+            "name": "IMDS Software Advanced Modeller  GRP 2"
+        },
+        {
+            "orgId": "300000007531776",
+            "name": "SSR ROV Drill Support  GRP 1"
+        },
+        {
+            "orgId": "300000007535757",
+            "name": "MP Speciality Products Rotator  ROT"
+        },
+        {
+            "orgId": "300000007535796",
+            "name": "OPG Integrated Projects Constrution  GRP 4"
+        },
+        {
+            "orgId": "300000007535807",
+            "name": "OPG Integrated Projects IMR  GRP 4"
+        },
+        {
+            "orgId": "300000007535907",
+            "name": "MP Distrubution SPL  AMER"
+        },
+        {
+            "orgId": "300000007535917",
+            "name": "OPG Integrated Projects Decomissioning  GRP 4"
+        },
+        {
+            "orgId": "300000007535947",
+            "name": "OPG Subsea Services Controls  GRP 4"
+        },
+        {
+            "orgId": "300000007535976",
+            "name": "OPG Integrated Projects Intervention  GRP 1"
+        },
+        {
+            "orgId": "300000007536006",
+            "name": "IMDS Digital FNS  GRP 4"
+        },
+        {
+            "orgId": "300000007536016",
+            "name": "IMDS Software INFORM  GRP 2"
+        },
+        {
+            "orgId": "300000007536017",
+            "name": "IMDS Engineering Fabric Maintenance  GRP 4"
+        },
+        {
+            "orgId": "300000007536025",
+            "name": "MP Robotic Systems OES  OESA"
+        },
+        {
+            "orgId": "300000007536031",
+            "name": "MP Distrubution Umbilicals  ROSY"
+        },
+        {
+            "orgId": "300000003591697",
+            "name": "OII_NOR_NOK_BU"
+        },
+        {
+            "orgId": "300000007536041",
+            "name": "SSR Survey GEO  GRP 4"
+        },
+        {
+            "orgId": "300000007536051",
+            "name": "IMDS Engineering Maintenace & Reliability  GRP 1"
+        },
+        {
+            "orgId": "300000007536153",
+            "name": "OPG Engineered Solutions Engineered Solutions  GRP 1"
+        },
+        {
+            "orgId": "300000007536183",
+            "name": "IMDS Software Focus AI  GRP 3"
+        },
+        {
+            "orgId": "300000007536223",
+            "name": "ADTECH OSS Engineering Services  "
+        },
+        {
+            "orgId": "300000007545551",
+            "name": "AdTech.Operations.Project Management"
+        },
+        {
+            "orgId": "300000007545619",
+            "name": "Enterprise Services.Human Resources.HR Operations"
+        },
+        {
+            "orgId": "300000007545849",
+            "name": "OPG.Operations.Commercial"
+        },
+        {
+            "orgId": "300000007545931",
+            "name": "MFP.Operations.Engineering"
+        },
+        {
+            "orgId": "300000007545951",
+            "name": "OPG.Operations.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007546151",
+            "name": "OPG.Operations.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546292",
+            "name": "Enterprise Services.Legal & Compliance.Legal"
+        },
+        {
+            "orgId": "300000007546550",
+            "name": "IMDS.Operations.Payroll"
+        },
+        {
+            "orgId": "300000008009595",
+            "name": "AdTech - GRP 1 - OSS - Thermal Protection Systems"
+        },
+        {
+            "orgId": "300000008009610",
+            "name": "OPG - GRP 1 - Integrated Projects - Decommissioning"
+        },
+        {
+            "orgId": "300000008009655",
+            "name": "OPG - GRP 1 - Integrated Projects - Construction"
+        },
+        {
+            "orgId": "300000008009670",
+            "name": "IMDS - GRP 1 - Engineering - Fabric Maintenance"
+        },
+        {
+            "orgId": "300000008009680",
+            "name": "AdTech - GRP 1 - OTECH - Products & Services"
+        },
+        {
+            "orgId": "300000008009685",
+            "name": "AdTech - GRP 1 - MSD - Shop Manufacturing"
+        },
+        {
+            "orgId": "300000008009720",
+            "name": "IMDS - GRP 1 - Engineering - Integrity Engineering"
+        },
+        {
+            "orgId": "300000008009730",
+            "name": "SSR - GRP 1 - ROV - Vessel Support"
+        },
+        {
+            "orgId": "300000008009810",
+            "name": "OPG - GRP 1 - Subsea Services - Storage & Maintenance"
+        },
+        {
+            "orgId": "300000008009825",
+            "name": "SSR - GRP 1 - ROV - Drill Support"
+        },
+        {
+            "orgId": "300000007536046",
+            "name": "SSR Tooling Service and Maintenance  GRP 2"
+        },
+        {
+            "orgId": "300000007536056",
+            "name": "OPG Integrated Projects IMR  GRP 3"
+        },
+        {
+            "orgId": "300000007536076",
+            "name": "IMDS Digital AMIC  GRP 2"
+        },
+        {
+            "orgId": "300000007536188",
+            "name": "IMDS Inspection Subsea Inspection  GRP 2"
+        },
+        {
+            "orgId": "300000007536248",
+            "name": "IMDS Digital FNS  GRP 1"
+        },
+        {
+            "orgId": "300000007536253",
+            "name": "ADTECH OSS Thermal Protection Systems  "
+        },
+        {
+            "orgId": "300000007536258",
+            "name": "IMDS Inspection NDT  GRP 4"
+        },
+        {
+            "orgId": "300000007536268",
+            "name": "IMDS Software Focus AI  GRP 2"
+        },
+        {
+            "orgId": "300000007536278",
+            "name": "SSR ROV Vessel Support  GRP 3"
+        },
+        {
+            "orgId": "300000007536288",
+            "name": "IMDS Inspection NDT  GRP 1"
+        },
+        {
+            "orgId": "300000007536293",
+            "name": "MP Robotic Systems OMR  OMRU"
+        },
+        {
+            "orgId": "300000007536298",
+            "name": "IMDS Inspection Crane & Lifitng  GRP 1"
+        },
+        {
+            "orgId": "300000007536378",
+            "name": "ADTECH OTECH Large Vehicles  "
+        },
+        {
+            "orgId": "300000007545624",
+            "name": "AdTech.Operations.Fixed Asset Accounting"
+        },
+        {
+            "orgId": "300000007546131",
+            "name": "AdTech.MSD.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546171",
+            "name": "Enterprise Services.Supply Chain.Order Management"
+        },
+        {
+            "orgId": "300000007546231",
+            "name": "AdTech.Operations.Enterprise Architecture"
+        },
+        {
+            "orgId": "300000007546470",
+            "name": "AdTech.OTECH.Controllership"
+        },
+        {
+            "orgId": "300000008009605",
+            "name": "MFP - GRP 1 - Speciality Products - Manufactured Services"
+        },
+        {
+            "orgId": "300000008009635",
+            "name": "AdTech - GRP 1 - Functional - Support - Management"
+        },
+        {
+            "orgId": "300000008009645",
+            "name": "AdTech - GRP 1 - OTECH - Small Vehicles"
+        },
+        {
+            "orgId": "300000008009750",
+            "name": "IMDS - GRP 1 - Digital - FNS"
+        },
+        {
+            "orgId": "300000008009755",
+            "name": "SSR - GRP 1 - Functional - Support - Management"
+        },
+        {
+            "orgId": "300000008009760",
+            "name": "AdTech - GRP 1 - OTECH - Support"
+        },
+        {
+            "orgId": "300000008009775",
+            "name": "MFP - GRP 1 - Speciality Products - Grayloc"
+        },
+        {
+            "orgId": "300000008009780",
+            "name": "AdTech - GRP 1 - OSS - Support - Management"
+        },
+        {
+            "orgId": "300000008009785",
+            "name": "AdTech - GRP 1 - MSD - Dry Deck Shelters"
+        },
+        {
+            "orgId": "300000008009830",
+            "name": "IMDS - GRP 1 - Inspection - Subsea Inspection"
+        },
+        {
+            "orgId": "300000007536096",
+            "name": "IMDS Software INFORM  GRP 1"
+        },
+        {
+            "orgId": "300000007536103",
+            "name": "IMDS Software Focus AI  GRP 1"
+        },
+        {
+            "orgId": "300000007536106",
+            "name": "MP Speciality Products Grayloc  GPH"
+        },
+        {
+            "orgId": "300000007536146",
+            "name": "OPG Integrated Projects Intervention  GRP 2"
+        },
+        {
+            "orgId": "300000007536158",
+            "name": "OPG Integrated Projects Decomissioning  GRP 2"
+        },
+        {
+            "orgId": "300000007536168",
+            "name": "OPG Subsea Services Intervention  GRP 2"
+        },
+        {
+            "orgId": "300000007536173",
+            "name": "OPG Subsea Services Intervention  GRP 3"
+        },
+        {
+            "orgId": "300000007536193",
+            "name": "IMDS Software Focus AI  GRP 4"
+        },
+        {
+            "orgId": "300000007536198",
+            "name": "IMDS Software INFORM  GRP 4"
+        },
+        {
+            "orgId": "300000007536208",
+            "name": "SSR Tooling Service and Maintenance  GRP 1"
+        },
+        {
+            "orgId": "300000007536213",
+            "name": "IMDS Digital COMMS  GRP 3"
+        },
+        {
+            "orgId": "300000007536383",
+            "name": "IMDS Digital COMMS  GRP 1"
+        },
+        {
+            "orgId": "300000007536393",
+            "name": "SSR Survey CNAV  GRP 4"
+        },
+        {
+            "orgId": "300000007536398",
+            "name": "OPG Subsea Services Intervention  GRP 1"
+        },
+        {
+            "orgId": "300000007536408",
+            "name": "MP Robotic Systems OMR  OMRA"
+        },
+        {
+            "orgId": "300000007536413",
+            "name": "MP Distrubution Manufactured Hardware  AMER"
+        },
+        {
+            "orgId": "300000007536428",
+            "name": "IMDS Digital AMIC  GRP 3"
+        },
+        {
+            "orgId": "300000007545689",
+            "name": "SSR.Operations.Time & Labor"
+        },
+        {
+            "orgId": "300000007545909",
+            "name": "Enterprise Services.Business Development.Sales"
+        },
+        {
+            "orgId": "300000007546011",
+            "name": "AdTech.Operations.Marketing"
+        },
+        {
+            "orgId": "300000007546071",
+            "name": "AdTech.OTECH.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007546211",
+            "name": "AdTech.Operations.Application Support"
+        },
+        {
+            "orgId": "300000007546312",
+            "name": "SSR.Operations.Business Support"
+        },
+        {
+            "orgId": "300000007546370",
+            "name": "AdTech.Operations.Engineering"
+        },
+        {
+            "orgId": "300000007546430",
+            "name": "AdTech.Space Systems.Management"
+        },
+        {
+            "orgId": "300000007546490",
+            "name": "AdTech.Operations.People Relations"
+        },
+        {
+            "orgId": "300000008009590",
+            "name": "SSR - GRP 1 - Survey - Survey & Positioning"
+        },
+        {
+            "orgId": "300000008009615",
+            "name": "IMDS - GRP 1 - Functional - Support - Management"
+        },
+        {
+            "orgId": "300000008009620",
+            "name": "IMDS - GRP 1 - Engineering - Maintenance & Reliability"
+        },
+        {
+            "orgId": "300000008009695",
+            "name": "MFP - GRP 1 - Robotic Systems - OMR"
+        },
+        {
+            "orgId": "300000008009700",
+            "name": "IMDS - GRP 1 - Engineering - Integrity Engineering - "
+        },
+        {
+            "orgId": "300000008009725",
+            "name": "OPG - GRP 1 - Functional - Support - Management"
+        },
+        {
+            "orgId": "300000008009795",
+            "name": "MFP - GRP 1 - Distribution - Manufactured Hardware"
+        },
+        {
+            "orgId": "300000008009800",
+            "name": "SSR - GRP 1 - Survey - CNAV"
+        },
+        {
+            "orgId": "300000007536036",
+            "name": "IMDS Software INFORM  GRP 3"
+        },
+        {
+            "orgId": "300000007536063",
+            "name": "MP Speciality Products Grayloc  "
+        },
+        {
+            "orgId": "300000007536066",
+            "name": "OPG Subsea Services UWILD  GRP 1"
+        },
+        {
+            "orgId": "300000007536086",
+            "name": "IMDS Inspection Crane & Lifitng  GRP 3"
+        },
+        {
+            "orgId": "300000007536303",
+            "name": "MP Robotic Systems OMR  "
+        },
+        {
+            "orgId": "300000007536338",
+            "name": "OPG Subsea Services Controls  GRP 1"
+        },
+        {
+            "orgId": "300000007536403",
+            "name": "MP Distrubution Umbilicals  PANC"
+        },
+        {
+            "orgId": "300000007536433",
+            "name": "OPG Integrated Projects Constrution  GRP 2"
+        },
+        {
+            "orgId": "300000007536438",
+            "name": "IMDS Software Advanced Modeller  GRP 3"
+        },
+        {
+            "orgId": "300000007536448",
+            "name": "OPG Integrated Projects Intervention  GRP 4"
+        },
+        {
+            "orgId": "300000007545644",
+            "name": "Enterprise Services.Operations.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007545646",
+            "name": "AdTech.MSD.Controllership"
+        },
+        {
+            "orgId": "300000007545669",
+            "name": "AdTech.OTECH.Manufacturing / Production / Warehouse"
+        },
+        {
+            "orgId": "300000007545729",
+            "name": "IMDS.Operations.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000007545749",
+            "name": "AdTech.OTECH.Training & Competency"
+        },
+        {
+            "orgId": "300000007545891",
+            "name": "AdTech.Space Systems.Business Development"
+        },
+        {
+            "orgId": "300000007546031",
+            "name": "AdTech.OTECH.Project Management"
+        },
+        {
+            "orgId": "300000007546091",
+            "name": "AdTech.MSD.Project Management"
+        },
+        {
+            "orgId": "300000007546450",
+            "name": "OPG.Operations.Project Accounting"
+        },
+        {
+            "orgId": "300000007546510",
+            "name": "Enterprise Services.Business Development.Marketing"
+        },
+        {
+            "orgId": "300000008009580",
+            "name": "OPG - GRP 1 - Subsea Services - Intervention"
+        },
+        {
+            "orgId": "300000008009585",
+            "name": "AdTech - GRP 1 - OTECH - Large Vehicles"
+        },
+        {
+            "orgId": "300000008009600",
+            "name": "AdTech - GRP 1 - OTECH - Maritime Operations"
+        },
+        {
+            "orgId": "300000008009625",
+            "name": "MFP - GRP 1 - Speciality Products - Rotator"
+        },
+        {
+            "orgId": "300000008009630",
+            "name": "AdTech - GRP 1 - MSD - Public Shipyard"
+        },
+        {
+            "orgId": "300000008009640",
+            "name": "AdTech - GRP 1 - MSD - Shop Manufacturing - "
+        },
+        {
+            "orgId": "300000008009650",
+            "name": "MFP - GRP 1 - Robotic Systems - OES"
+        },
+        {
+            "orgId": "300000008009660",
+            "name": "AdTech - GRP 1 - OTECH - Marine Systems"
+        },
+        {
+            "orgId": "300000008009665",
+            "name": "AdTech - GRP 1 - MSD - Support"
+        },
+        {
+            "orgId": "300000008009690",
+            "name": "AdTech - GRP 1 - OTECH - Hyperbaric Systems"
+        },
+        {
+            "orgId": "300000008009705",
+            "name": "MFP - GRP 1 - Distribution - Umbilicals"
+        },
+        {
+            "orgId": "300000008009710",
+            "name": "OPG - GRP 1 - Subsea Services - Controls"
+        },
+        {
+            "orgId": "300000008009715",
+            "name": "MFP - GRP 1 - Distribution - SPL"
+        },
+        {
+            "orgId": "300000007536123",
+            "name": "ADTECH MSD Private Shipyard  "
+        },
+        {
+            "orgId": "300000007536126",
+            "name": "IMDS Engineering Fabric Maintenance  GRP 1"
+        },
+        {
+            "orgId": "300000007536133",
+            "name": "ADTECH OTECH Marine Operations  "
+        },
+        {
+            "orgId": "300000007536203",
+            "name": "SSR Tooling Rental  GRP 3"
+        },
+        {
+            "orgId": "300000007536238",
+            "name": "MP Robotic Systems ATS  ATSA"
+        },
+        {
+            "orgId": "300000007536243",
+            "name": "ADTECH OTECH Products & Services  "
+        },
+        {
+            "orgId": "300000007536273",
+            "name": "OPG Subsea Services UWILD  GRP 2"
+        },
+        {
+            "orgId": "300000007536318",
+            "name": "SSR ROV Vessel Support  GRP 1"
+        },
+        {
+            "orgId": "300000007536333",
+            "name": "OPG Subsea Services Storage & Maintenance  GRP 3"
+        },
+        {
+            "orgId": "300000007536353",
+            "name": "MP Speciality Products Manufactured Services  MSAN"
+        },
+        {
+            "orgId": "300000007536358",
+            "name": "OPG Engineered Solutions Engineered Solutions  GRP 2"
+        },
+        {
+            "orgId": "300000007536363",
+            "name": "IMDS Engineering Integrity Engineering  GRP 3"
+        },
+        {
+            "orgId": "300000007536373",
+            "name": "OPG Subsea Services Controls  GRP 2"
+        },
+        {
+            "orgId": "300000007536418",
+            "name": "OPG Subsea Services Storage & Maintenance  GRP 2"
+        },
+        {
+            "orgId": "300000007536423",
+            "name": "ADTECH OTECH Small Vehicles  "
+        },
+        {
+            "orgId": "300000007545552",
+            "name": "MFP.Operations.Controllership"
+        },
+        {
+            "orgId": "300000007545573",
+            "name": "AdTech.Space Systems.Controllership"
+        },
+        {
+            "orgId": "300000007545571",
+            "name": "MFP.Operations.Training & Competency"
+        },
+        {
+            "orgId": "300000007545598",
+            "name": "IMDS.Operations.Application Support"
+        },
+        {
+            "orgId": "300000007545709",
+            "name": "OPG.Operations.Facilities"
+        },
+        {
+            "orgId": "300000007545811",
+            "name": "SSR.Operations.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007545831",
+            "name": "AdTech.OTECH.Accounting"
+        },
+        {
+            "orgId": "300000007545869",
+            "name": "Enterprise Services.Legal & Compliance.Compliance & Ethics"
+        },
+        {
+            "orgId": "300000007545971",
+            "name": "AdTech.OTECH.Talent Acquisition"
+        },
+        {
+            "orgId": "300000007546051",
+            "name": "OPG.Operations.Project Management"
+        },
+        {
+            "orgId": "300000007546191",
+            "name": "SSR.Operations.Application Support"
+        },
+        {
+            "orgId": "300000007546251",
+            "name": "IMDS.Operations.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007546271",
+            "name": "OPG.Operations.Logistics and Distribution"
+        },
+        {
+            "orgId": "300000007546332",
+            "name": "AdTech.Operations.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546390",
+            "name": "IMDS.Operations.Accounting"
+        },
+        {
+            "orgId": "300000007546410",
+            "name": "OPG.Operations.Engineering"
+        },
+        {
+            "orgId": "300000008009675",
+            "name": "IMDS - GRP 1 - Digital - COMMS"
+        },
+        {
+            "orgId": "300000007536073",
+            "name": "SSR Survey S&P  GRP 4"
+        },
+        {
+            "orgId": "300000007536083",
+            "name": "IMDS Digital FNS  GRP 2"
+        },
+        {
+            "orgId": "300000007536093",
+            "name": "IMDS Inspection Subsea Inspection  GRP 3"
+        },
+        {
+            "orgId": "300000007536113",
+            "name": "OPG Integrated Projects IMR  GRP 1"
+        },
+        {
+            "orgId": "300000007536116",
+            "name": "OPG Integrated Projects Decomissioning  GRP 3"
+        },
+        {
+            "orgId": "300000007536136",
+            "name": "SSR ROV Vessel Support  GRP 2"
+        },
+        {
+            "orgId": "300000007536143",
+            "name": "MP Distrubution Umbilicals  NITR"
+        },
+        {
+            "orgId": "300000007536163",
+            "name": "IMDS Inspection NDT  GRP 3"
+        },
+        {
+            "orgId": "300000007536178",
+            "name": "MP Distrubution SPL  APAC"
+        },
+        {
+            "orgId": "300000007536218",
+            "name": "IMDS Engineering Fabric Maintenance  GRP 3"
+        },
+        {
+            "orgId": "300000007536228",
+            "name": "ADTECH OTECH Hyperbaric Systems  "
+        },
+        {
+            "orgId": "300000007536233",
+            "name": "ADTECH OTECH Maritime Systems  "
+        },
+        {
+            "orgId": "300000007536263",
+            "name": "IMDS Software Advanced Modeller  GRP 4"
+        },
+        {
+            "orgId": "300000007536308",
+            "name": "IMDS Engineering Maintenace & Reliability  GRP 4"
+        },
+        {
+            "orgId": "300000007536313",
+            "name": "OPG Subsea Services UWILD  GRP 3"
+        },
+        {
+            "orgId": "300000007536323",
+            "name": "ADTECH MSD Public Shipyard  "
+        },
+        {
+            "orgId": "300000007536328",
+            "name": "IMDS Engineering Maintenace & Reliability  GRP 2"
+        },
+        {
+            "orgId": "300000007536348",
+            "name": "IMDS Software Software Products  GRP 1"
+        },
+        {
+            "orgId": "300000007536368",
+            "name": "IMDS Digital AMIC  GRP 1"
+        },
+        {
+            "orgId": "300000007536388",
+            "name": "OPG Integrated Projects Constrution  GRP 3"
+        },
+        {
+            "orgId": "300000007536443",
+            "name": "IMDS Software Software Products  GRP 2"
+        },
+        {
+            "orgId": "300000007546530",
+            "name": "Enterprise Services.Operations.Health & Safety"
+        },
+        {
+            "orgId": "300000008009735",
+            "name": "IMDS - GRP 1 - Software - INFORM"
+        },
+        {
+            "orgId": "300000008009740",
+            "name": "AdTech - GRP 1 - MSD - Private Shipyard"
+        },
+        {
+            "orgId": "300000008009745",
+            "name": "IMDS - GRP 1 - Inspection - NDT"
+        },
+        {
+            "orgId": "300000008009765",
+            "name": "IMDS - GRP 1 - Digital - AMIC - "
+        },
+        {
+            "orgId": "300000008009770",
+            "name": "IMDS - GRP 1 - Software - Software Products"
+        },
+        {
+            "orgId": "300000008009790",
+            "name": "IMDS - GRP 1 - Inspection - Crane and Lifting"
+        },
+        {
+            "orgId": "300000008009805",
+            "name": "OPG - GRP 1 - Engineered Solutions - Engineered Solutions"
+        },
+        {
+            "orgId": "300000008009815",
+            "name": "AdTech - GRP 1 - OSS - Engineering Services"
+        },
+        {
+            "orgId": "300000008009820",
+            "name": "AdTech - GRP 1 - OTECH - "
+        },
+        {
+            "orgId": "300000008009835",
+            "name": "SSR - GRP 1 - Survey - Geosciences"
+        },
+        {
+            "orgId": "300000008009840",
+            "name": "SSR - GRP 1 - Tooling - Rental"
+        },
+        {
+            "orgId": "300000008009845",
+            "name": "AdTech - GRP 1 - OSS - EVA and Habitability Systems"
+        },
+        {
+            "orgId": "300000008009850",
+            "name": "OPG - GRP 1 - Integrated Projects - IMR"
+        },
+        {
+            "orgId": "300000007536283",
+            "name": "OPG Subsea Services Intervention  GRP 4"
+        },
+        {
+            "orgId": "300000007536343",
+            "name": "IMDS Engineering Integrity Engineering  GRP 4"
+        },
+        {
+            "orgId": "300000007545769",
+            "name": "Enterprise Services.Operations.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007545789",
+            "name": "SSR.Operations.Project Management"
+        },
+        {
+            "orgId": "300000007545991",
+            "name": "SSR.Operations.Facilities"
+        },
+        {
+            "orgId": "300000007546111",
+            "name": "MFP.Operations.Talent Management"
+        },
+        {
+            "orgId": "300000007546350",
+            "name": "OPG.Operations.FP&A"
+        },
+        {
+            "orgId": "300000007545596",
+            "name": "AdTech.MSD.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000007545629",
+            "name": "AdTech.Operations.Accounting"
+        },
+        {
+            "orgId": "300000007545654",
+            "name": "Enterprise Services.Operations.Business Support"
+        },
+        {
+            "orgId": "300000007545657",
+            "name": "Enterprise Services.Finance.Internal Audit"
+        },
+        {
+            "orgId": "300000007545678",
+            "name": "MFP.Operations.Health & Safety"
+        },
+        {
+            "orgId": "300000007545718",
+            "name": "AdTech.MSD.Manufacturing / Production / Warehouse"
+        },
+        {
+            "orgId": "300000007545836",
+            "name": "Enterprise Services.Business Development.Commercial"
+        },
+        {
+            "orgId": "300000007545839",
+            "name": "Enterprise Services.Information Technology.Emerging Technologies"
+        },
+        {
+            "orgId": "300000007545844",
+            "name": "AdTech.OTECH.Health & Safety"
+        },
+        {
+            "orgId": "300000007545856",
+            "name": "IMDS.Operations.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007545918",
+            "name": "AdTech.MSD.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007546024",
+            "name": "SSR.Operations.Engineering"
+        },
+        {
+            "orgId": "300000007546033",
+            "name": "Enterprise Services.Information Technology.Enterprise Architecture"
+        },
+        {
+            "orgId": "300000007546061",
+            "name": "AdTech.Space Systems.Business Support"
+        },
+        {
+            "orgId": "300000007546064",
+            "name": "Enterprise Services.Finance.Tax, Treasury, & Investor Relations"
+        },
+        {
+            "orgId": "300000007546201",
+            "name": "AdTech.OTECH.Engineering"
+        },
+        {
+            "orgId": "300000007546214",
+            "name": "Enterprise Services.Operations.Engineering"
+        },
+        {
+            "orgId": "300000007546445",
+            "name": "AdTech.MSD.Management"
+        },
+        {
+            "orgId": "300000007546461",
+            "name": "AdTech.MSD.Talent Acquisition"
+        },
+        {
+            "orgId": "300000007546505",
+            "name": "IMDS.Operations.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007546521",
+            "name": "IMDS.Operations.Manufacturing / Production / Warehouse"
+        },
+        {
+            "orgId": "300000007546541",
+            "name": "IMDS.Operations.Project Management"
+        },
+        {
+            "orgId": "300000007546545",
+            "name": "SSR.Operations.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546561",
+            "name": "AdTech.OTECH.Management"
+        },
+        {
+            "orgId": "300000007545698",
+            "name": "SSR.Operations.Commercial"
+        },
+        {
+            "orgId": "300000007545758",
+            "name": "AdTech.MSD.Project Accounting"
+        },
+        {
+            "orgId": "300000007546004",
+            "name": "Enterprise Services.Operations.Facilities"
+        },
+        {
+            "orgId": "300000007546174",
+            "name": "AdTech.Space Systems.Talent Acquisition"
+        },
+        {
+            "orgId": "300000007546181",
+            "name": "Enterprise Services.Information Technology.Monitoring & Operations Center"
+        },
+        {
+            "orgId": "300000007546479",
+            "name": "Enterprise Services.Operations.Organization Development"
+        },
+        {
+            "orgId": "300000007546481",
+            "name": "MFP.Operations.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007545554",
+            "name": "AdTech.OTECH.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007545562",
+            "name": "SSR.Operations.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007545604",
+            "name": "AdTech.Space Systems.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007545608",
+            "name": "Enterprise Services.Human Resources.Talent Management"
+        },
+        {
+            "orgId": "300000007545612",
+            "name": "AdTech.Space Systems.Commercial"
+        },
+        {
+            "orgId": "300000007545632",
+            "name": "Enterprise Services.Executive.Board of Directors"
+        },
+        {
+            "orgId": "300000007545637",
+            "name": "AdTech.Space Systems.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000007545764",
+            "name": "Enterprise Services.Supply Chain.Management"
+        },
+        {
+            "orgId": "300000007545799",
+            "name": "Enterprise Services.Human Resources.Total Rewards"
+        },
+        {
+            "orgId": "300000007545816",
+            "name": "SSR.Operations.Training & Competency"
+        },
+        {
+            "orgId": "300000007545819",
+            "name": "AdTech.Operations.Data Sciences"
+        },
+        {
+            "orgId": "300000007545824",
+            "name": "MFP.Operations.Accounting"
+        },
+        {
+            "orgId": "300000007545858",
+            "name": "AdTech.MSD.Enterprise Architecture"
+        },
+        {
+            "orgId": "300000007546013",
+            "name": "MP.Operations.Application Support"
+        },
+        {
+            "orgId": "300000007546094",
+            "name": "AdTech.Operations.Business Support"
+        },
+        {
+            "orgId": "300000007546104",
+            "name": "Enterprise Services.Operations.Global Mobility Ops"
+        },
+        {
+            "orgId": "300000007546121",
+            "name": "AdTech.Space Systems.Manufacturing / Production / Warehouse"
+        },
+        {
+            "orgId": "300000007546133",
+            "name": "AdTech.OTECH.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007546276",
+            "name": "Enterprise Services.Business Development.Business Development"
+        },
+        {
+            "orgId": "300000007546282",
+            "name": "Enterprise Services.Human Resources.Talent Acquisition"
+        },
+        {
+            "orgId": "300000007546283",
+            "name": "SSR.Operations.Project Accounting"
+        },
+        {
+            "orgId": "300000007546324",
+            "name": "Enterprise Services.Finance.Fixed Asset Accounting"
+        },
+        {
+            "orgId": "300000007546419",
+            "name": "IMDS.Operations.Commercial"
+        },
+        {
+            "orgId": "300000007546459",
+            "name": "Enterprise Services.Finance.Accounting"
+        },
+        {
+            "orgId": "300000007546465",
+            "name": "MFP.Operations.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000007545704",
+            "name": "Enterprise Services.Information Technology.Management"
+        },
+        {
+            "orgId": "300000007545724",
+            "name": "IMDS.Operations.Project Accounting"
+        },
+        {
+            "orgId": "300000007545738",
+            "name": "Enterprise Services.Finance.FP&A"
+        },
+        {
+            "orgId": "300000007545776",
+            "name": "MFP.Operations.Project Management"
+        },
+        {
+            "orgId": "300000007545796",
+            "name": "AdTech.OTECH.Business Support"
+        },
+        {
+            "orgId": "300000007545936",
+            "name": "OPG.Operations.Service Excellence"
+        },
+        {
+            "orgId": "300000007545944",
+            "name": "Enterprise Services.Strategy & Transformation.Corporate Strategy"
+        },
+        {
+            "orgId": "300000007545999",
+            "name": "AdTech.Space Systems.Project Accounting"
+        },
+        {
+            "orgId": "300000007546084",
+            "name": "SSR.Operations.Quality"
+        },
+        {
+            "orgId": "300000007546101",
+            "name": "AdTech.OTECH.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000007546114",
+            "name": "SSR.Operations.Fixed Asset Accounting"
+        },
+        {
+            "orgId": "300000007546141",
+            "name": "SSR.Operations.Service Excellence"
+        },
+        {
+            "orgId": "300000007546144",
+            "name": "AdTech.OTECH.Project Accounting"
+        },
+        {
+            "orgId": "300000007546154",
+            "name": "Enterprise Services.Operations.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546161",
+            "name": "AdTech.OTECH.People Relations"
+        },
+        {
+            "orgId": "300000007546263",
+            "name": "Enterprise Services.Business Development.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007546261",
+            "name": "AdTech.MSD.Engineering"
+        },
+        {
+            "orgId": "300000007546299",
+            "name": "OPG.Operations.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546319",
+            "name": "Enterprise Services.Finance.Management"
+        },
+        {
+            "orgId": "300000007546322",
+            "name": "IMDS.Operations.Training & Competency"
+        },
+        {
+            "orgId": "300000007546339",
+            "name": "OPG.Operations.Accounting"
+        },
+        {
+            "orgId": "300000007546359",
+            "name": "OPG.Operations.Management"
+        },
+        {
+            "orgId": "300000007546364",
+            "name": "Enterprise Services.Finance.Project Accounting"
+        },
+        {
+            "orgId": "300000007546399",
+            "name": "MFP.Operations.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007546401",
+            "name": "MFP.Operations.Logistics and Distribution"
+        },
+        {
+            "orgId": "300000007546421",
+            "name": "SSR.Operations.Health & Safety"
+        },
+        {
+            "orgId": "300000007546440",
+            "name": "MFP.Operations.Commercial"
+        },
+        {
+            "orgId": "300000007546441",
+            "name": "SSR.Operations.Customer Relationship Management"
+        },
+        {
+            "orgId": "300000007546537",
+            "name": "Enterprise Services.Strategy & Transformation.Operational Excellence"
+        },
+        {
+            "orgId": "300000007545584",
+            "name": "IMDS.Operations.Facilities"
+        },
+        {
+            "orgId": "300000007545587",
+            "name": "MFP.Operations.Customer Relationship Management"
+        },
+        {
+            "orgId": "300000007545676",
+            "name": "AdTech.MSD.Logistics and Distribution"
+        },
+        {
+            "orgId": "300000007545684",
+            "name": "AdTech.Space Systems.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007545804",
+            "name": "IMDS.Operations.Health & Safety"
+        },
+        {
+            "orgId": "300000007545864",
+            "name": "AdTech.Operations.Legal"
+        },
+        {
+            "orgId": "300000007545898",
+            "name": "AdTech.OTECH.Logistics and Distribution"
+        },
+        {
+            "orgId": "300000007545897",
+            "name": "AdTech.Space Systems.Engineering"
+        },
+        {
+            "orgId": "300000007545904",
+            "name": "MFP.Operations.Project Accounting"
+        },
+        {
+            "orgId": "300000007545924",
+            "name": "AdTech.Operations.Internal Audit"
+        },
+        {
+            "orgId": "300000007546041",
+            "name": "OPG.Operations.Customer Relationship Management"
+        },
+        {
+            "orgId": "300000007546074",
+            "name": "IMDS.Operations.Service Excellence"
+        },
+        {
+            "orgId": "300000007546196",
+            "name": "AdTech.MSD.Commercial"
+        },
+        {
+            "orgId": "300000007546204",
+            "name": "AdTech.MSD.Business Support"
+        },
+        {
+            "orgId": "300000007546234",
+            "name": "AdTech.MSD.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007546241",
+            "name": "OPG.Operations.Business Development"
+        },
+        {
+            "orgId": "300000007546243",
+            "name": "Enterprise Services.Executive.Executive Leadership"
+        },
+        {
+            "orgId": "300000007546303",
+            "name": "AdTech.OTECH.Business Development"
+        },
+        {
+            "orgId": "300000007546342",
+            "name": "IMDS.Operations.Enterprise Architecture"
+        },
+        {
+            "orgId": "300000007546344",
+            "name": "MFP.Operations.Enterprise Architecture"
+        },
+        {
+            "orgId": "300000007546379",
+            "name": "AdTech.MSD.Health & Safety"
+        },
+        {
+            "orgId": "300000007546381",
+            "name": "IMDS.Operations.Engineering"
+        },
+        {
+            "orgId": "300000007546385",
+            "name": "MFP.Operations.Management"
+        },
+        {
+            "orgId": "300000007546519",
+            "name": "Enterprise Services.Human Resources.Training & Competency"
+        },
+        {
+            "orgId": "300000007546525",
+            "name": "SSR.Operations.Controllership"
+        },
+        {
+            "orgId": "300000007546557",
+            "name": "IMDS.Operations.Business Development"
+        },
+        {
+            "orgId": "300000007546565",
+            "name": "Enterprise Services.Strategy & Transformation.Enterprise Transformation"
+        },
+        {
+            "orgId": "300000008009825",
+            "name": "SSR - GRP 1 - ROV - Drill Support"
+        },
+        {
+            "orgId": "300000007545876",
+            "name": "AdTech.OTECH.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007545884",
+            "name": "OPG.Operations.Manufacturing / Production"
+        },
+        {
+            "orgId": "300000007545917",
+            "name": "MFP.Operations.Manufacturing / Production / Warehouse"
+        },
+        {
+            "orgId": "300000007545959",
+            "name": "SSR.Operations.FP&A"
+        },
+        {
+            "orgId": "300000007545964",
+            "name": "Enterprise Services.Supply Chain.Logistics and Distribution"
+        },
+        {
+            "orgId": "300000007545973",
+            "name": "MFP.Operations.Business Development"
+        },
+        {
+            "orgId": "300000007545984",
+            "name": "IMDS.Operations.Customer Relationship Management"
+        },
+        {
+            "orgId": "300000007545993",
+            "name": "MFP.Operations.Onshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546021",
+            "name": "Enterprise Services.Supply Chain.Supply Chain Technology"
+        },
+        {
+            "orgId": "300000007546164",
+            "name": "Enterprise Services.Supply Chain.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000008009830",
+            "name": "IMDS - GRP 1 - Inspection - Subsea Inspection"
+        },
+        {
+            "orgId": "300000007545559",
+            "name": "MFP.Operations.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007545579",
+            "name": "OPG.Operations.Health & Safety"
+        },
+        {
+            "orgId": "300000007545662",
+            "name": "AdTech.Operations.Management"
+        },
+        {
+            "orgId": "300000007545697",
+            "name": "AdTech.OTECH.Commercial"
+        },
+        {
+            "orgId": "300000007545716",
+            "name": "Enterprise Services.Operations.Quality"
+        },
+        {
+            "orgId": "300000007545737",
+            "name": "AdTech.MSD.Training & Competency"
+        },
+        {
+            "orgId": "300000007545744",
+            "name": "MFP.Operations.Marketing"
+        },
+        {
+            "orgId": "300000007545757",
+            "name": "AdTech.MSD.Application Support"
+        },
+        {
+            "orgId": "300000007545778",
+            "name": "Enterprise Services.Operations.Project Management"
+        },
+        {
+            "orgId": "300000007545784",
+            "name": "Enterprise Services.Information Technology.Application Support"
+        },
+        {
+            "orgId": "300000007545878",
+            "name": "Enterprise Services.Finance.Payroll,Time & Labor"
+        },
+        {
+            "orgId": "300000007545938",
+            "name": "AdTech.Operations.Procurement, Sourcing, & Planning"
+        },
+        {
+            "orgId": "300000007545956",
+            "name": "Enterprise Services.Information Technology.Data Sciences"
+        },
+        {
+            "orgId": "300000007545979",
+            "name": "IMDS.Operations.Fixed Asset Accounting"
+        },
+        {
+            "orgId": "300000007546044",
+            "name": "AdTech.OTECH.Enterprise Architecture"
+        },
+        {
+            "orgId": "300000007546054",
+            "name": "Enterprise Services.Finance.Quote to Cash"
+        },
+        {
+            "orgId": "300000007546081",
+            "name": "AdTech.Space Systems.Project Management"
+        },
+        {
+            "orgId": "300000007546124",
+            "name": "Enterprise Services.Finance.Controllership"
+        },
+        {
+            "orgId": "300000007546184",
+            "name": "AdTech.Operations.Bids and Proposals"
+        },
+        {
+            "orgId": "300000007546221",
+            "name": "IMDS.Operations.Management"
+        },
+        {
+            "orgId": "300000007546223",
+            "name": "Enterprise Services.Operations.Compliance & Ethics"
+        },
+        {
+            "orgId": "300000007546254",
+            "name": "IMDS.Operations.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546304",
+            "name": "SSR.Operations.Management"
+        },
+        {
+            "orgId": "300000007546362",
+            "name": "Enterprise Services.Operations.Management"
+        },
+        {
+            "orgId": "300000007546405",
+            "name": "IMDS.Operations.FP&A"
+        },
+        {
+            "orgId": "300000007546425",
+            "name": "Enterprise Services.Human Resources.Organization Development"
+        },
+        {
+            "orgId": "300000007546485",
+            "name": "SSR.Operations.Offshore Service Excellence Techs"
+        },
+        {
+            "orgId": "300000007546501",
+            "name": "AdTech.Operations.Controllership"
+        },
+        {
+            "orgId": "300000007546499",
+            "name": "AdTech.Space Systems.Talent Mangement"
+        }
+    ],
+    "count": 404
+}

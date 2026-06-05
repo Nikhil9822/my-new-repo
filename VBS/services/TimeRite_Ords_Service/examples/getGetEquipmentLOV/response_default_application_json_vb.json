@@ -1,0 +1,57 @@
+{
+    "items": [
+        {
+            "lkpvalue": "Freedom ROV-SRL_76543469",
+            "lkpid": 555,
+            "equipment_number": "SRL_76543469",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned"
+        },
+        {
+            "lkpvalue": "Nexxus ROV-SRL_76543465",
+            "lkpid": 551,
+            "equipment_number": "SRL_76543465",
+            "default_location": "Florida",
+            "equipment_type": "Company-Owned"
+        },
+        {
+            "lkpvalue": "Isurus ROV-SRL_76543467",
+            "lkpid": 553,
+            "equipment_number": "SRL_76543467",
+            "default_location": "New York",
+            "equipment_type": "Company-Owned"
+        },
+        {
+            "lkpvalue": "Magnum Plus ROV-SRL_76543466",
+            "lkpid": 552,
+            "equipment_number": "SRL_76543466",
+            "default_location": "California",
+            "equipment_type": "Company-Owned"
+        },
+        {
+            "lkpvalue": "eNovus ROV-SRL_76543468",
+            "lkpid": 554,
+            "equipment_number": "SRL_76543468",
+            "default_location": "Florida",
+            "equipment_type": "Company-Owned"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 5,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentLOV?pClass=ROV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/timerite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/timerite/getEquipmentLOV?pClass=ROV"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "root": "forEachInFilteredData",
+  "description": "",
+  "actions": {
+    "forEachInFilteredData": {
+      "module": "vb/action/builtin/forEachAction",
+      "parameters": {
+        "items": "{{ $page.variables.FilteredData }}",
+        "actionId": "callFunctionCreateRejectReq"
+      },
+      "outcomes": {
+        "success": "fireNotification2"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestPutEqpSubmitTimeEntry.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestPutEqpSubmitTimeEntry": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "TimeRite_Ords_Service/putEqpSubmitTimeEntry",
+        "body": "{{ $chain.results.callFunctionCreateRejectReq }}"
+      },
+      "outcomes": {
+        "failure": "fireNotification"
+      }
+    },
+    "callFunctionCreateRejectReq": {
+      "module": "vb/action/builtin/callModuleFunctionAction",
+      "parameters": {
+        "module": "[[ $functions ]]",
+        "functionName": "createRejectReq",
+        "params": [
+          "{{ $current.data }}"
+        ]
+      },
+      "outcomes": {
+        "success": "callRestPutEqpSubmitTimeEntry"
+      }
+    },
+    "fireNotification2": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "Reject is Success",
+        "displayMode": "transient",
+        "type": "confirmation"
+      }
+    }
+  }
+}

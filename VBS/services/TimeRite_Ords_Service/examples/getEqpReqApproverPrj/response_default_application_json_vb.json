@@ -1,0 +1,47 @@
+{
+    "items": [
+        {
+            "project_id": 300000019363780,
+            "project_name": "Exploration Project",
+            "project_number": "12345"
+        },
+        {
+            "project_id": 300000012096120,
+            "project_name": "WEL Minerva OPG-0000240194",
+            "project_number": "0000240194"
+        },
+        {
+            "project_id": 300000012096066,
+            "project_name": "WEL - Stybarrow Flowline-0000243133",
+            "project_number": "0000243133"
+        },
+        {
+            "project_id": 300000010814643,
+            "project_name": "25-SCD-006 MG125 Upgrade for E-0000240008",
+            "project_number": "0000240008"
+        },
+        {
+            "project_id": 300000019661738,
+            "project_name": "Girassol Life Extension project",
+            "project_number": "10001"
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 5,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EqpReqApproverPrj"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EqpReqApproverPrj"
+        }
+    ]
+}

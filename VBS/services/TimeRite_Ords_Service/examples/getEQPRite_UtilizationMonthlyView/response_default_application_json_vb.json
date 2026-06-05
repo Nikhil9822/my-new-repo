@@ -1,0 +1,43 @@
+{
+    "items": [
+        {
+            "month_label": "DEC 25",
+            "business_unit": "OII_AUS_AUD_BU",
+            "total_equipment": 20,
+            "used_equipment": 15,
+            "util_percent": 75
+        },
+        {
+            "month_label": "FEB 26",
+            "business_unit": "OII_AUS_AUD_BU",
+            "total_equipment": 2,
+            "used_equipment": 1,
+            "util_percent": 50
+        },
+        {
+            "month_label": "JAN 26",
+            "business_unit": "OII_AUS_AUD_BU",
+            "total_equipment": 41,
+            "used_equipment": 20,
+            "util_percent": 48.78
+        }
+    ],
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "count": 3,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_UtilizationMonthlyView"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/metadata-catalog/EquipmentRite/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://ordsdev.oceaneering.com/ords/xxeq_oii/EquipmentRite/EQPRite_UtilizationMonthlyView"
+        }
+    ]
+}
