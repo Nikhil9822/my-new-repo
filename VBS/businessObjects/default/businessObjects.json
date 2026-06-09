@@ -1,6 +1,0 @@
-{
-    "type": "default",
-    "security": {
-        "anonAccessForDataDescribe": true
-    }
-}

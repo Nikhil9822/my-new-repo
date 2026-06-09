@@ -1,0 +1,85 @@
+{
+  "title": "Dashboard",
+  "description": "Overview KPIs, environment health, active migrations and recent jobs",
+  "variables": {
+    "isLoading": {
+      "type": "boolean",
+      "defaultValue": true
+    },
+    "kpiTotalObjects": {
+      "type": "number",
+      "defaultValue": 0
+    },
+    "kpiActiveMigrations": {
+      "type": "number",
+      "defaultValue": 0
+    },
+    "kpiFailedJobs": {
+      "type": "number",
+      "defaultValue": 0
+    },
+    "kpiEnvironments": {
+      "type": "number",
+      "defaultValue": 0
+    },
+    "kpiSuccessRate": {
+      "type": "number",
+      "defaultValue": 0
+    },
+    "envHealthData": {
+      "type": "object[]",
+      "defaultValue": []
+    },
+    "activeMigrations": {
+      "type": "object[]",
+      "defaultValue": []
+    },
+    "recentJobsData": {
+      "type": "object[]",
+      "defaultValue": []
+    },
+    "recentJobsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "$page.variables.recentJobsData",
+        "keyAttributes": "id"
+      }
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "loadDashboardData"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {
+        "path": "oj-sp/general-overview-page/loader"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      },
+      "oj-tag": {
+        "path": "ojs/ojtag"
+      },
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-illustration-message": {
+        "path": "ojs/ojillustrationmessage"
+      },
+      "oj-c-progress-bar": {
+        "path": "oj-c/progress-bar/loader"
+      },
+      "oj-c-skeleton": {
+        "path": "oj-c/skeleton/loader"
+      }
+    }
+  }
+}

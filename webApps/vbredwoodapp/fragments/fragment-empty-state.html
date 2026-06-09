@@ -1,0 +1,16 @@
+<!-- fragment-empty-state: Standardised empty state using oj-illustration-message.
+     Parameters: title (string), description (string), actionLabel (string, optional) -->
+
+<div class="fmt-empty-state oj-flex oj-sm-align-items-center oj-sm-justify-content-center oj-sm-padding-8x-vertical">
+  <oj-illustration-message
+    title="{{ $variables.title }}"
+    description="{{ $variables.description }}">
+  </oj-illustration-message>
+  <oj-bind-if test="[[$variables.actionLabel]]">
+    <div class="oj-sm-padding-4x-top">
+      <oj-button chroming="outlined" on-oj-action="[[$listeners.onAction]]">
+        <span><oj-bind-text value="[[$variables.actionLabel]]"></oj-bind-text></span>
+      </oj-button>
+    </div>
+  </oj-bind-if>
+</div>

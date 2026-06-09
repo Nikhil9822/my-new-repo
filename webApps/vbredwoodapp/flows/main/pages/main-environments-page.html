@@ -1,0 +1,391 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="environmentsPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Environments"
+  page-subtitle="Manage Oracle Fusion environment connections">
+
+  <div slot="main">
+    <div class="oj-flex" style="gap:var(--oj-spacing-4x); min-height:600px;">
+
+      <!-- ── Left: environment list ─────────────────────────────────── -->
+      <div class="oj-flex-item oj-sm-12 oj-md-4"
+           style="border-right:1px solid var(--oj-core-divider-color); padding-right:var(--oj-spacing-4x);">
+
+        <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+          <span class="oj-typography-heading-sm">Environments</span>
+          <oj-button chroming="callToAction" id="addEnvBtn" on-oj-action="[[$listeners.addEnvironment]]">
+            <span slot="startIcon" class="oj-ux-ico-plus"></span>
+            <span>Add</span>
+          </oj-button>
+        </div>
+
+        <oj-bind-if test="[[$variables.isLoading]]">
+          <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-center oj-sm-padding-4x">
+            <oj-progress-circle size="sm" value="-1"></oj-progress-circle>
+          </div>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[!$variables.isLoading && $variables.environments.length === 0]]">
+          <oj-illustration-message
+            title="No environments"
+            description="Add your first Oracle Fusion environment to get started.">
+          </oj-illustration-message>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[!$variables.isLoading]]">
+          <oj-bind-for-each data="[[$variables.environments]]">
+            <template>
+              <div
+                class="fmt-env-list-item oj-sm-padding-3x oj-sm-margin-2x-bottom"
+                on-click="[[$listeners.selectEnvironment]]"
+                data-env-id="[[$current.data.id]]">
+                <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between">
+                  <div style="min-width:0; flex:1;">
+                    <div class="oj-typography-subheading-sm fmt-env-name-link">
+                      <oj-bind-text value="[[$current.data.name]]"></oj-bind-text>
+                    </div>
+                    <div class="oj-typography-body-xs oj-text-color-secondary"
+                         style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:2px;">
+                      <oj-bind-text value="[[$current.data.fusionUrl || 'Oracle Fusion']]"></oj-bind-text>
+                    </div>
+                  </div>
+                  <div class="oj-flex oj-sm-align-items-center" style="gap:var(--oj-spacing-2x); margin-left:var(--oj-spacing-2x); flex-shrink:0;">
+                    <oj-tag severity="[[$current.data.statusSeverity || 'neutral']]">
+                      <span><oj-bind-text value="[[$current.data.status || 'Not Tested']]"></oj-bind-text></span>
+                    </oj-tag>
+                    <span class="oj-ux-ico-chevron-right fmt-env-card-chevron"></span>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </oj-bind-for-each>
+        </oj-bind-if>
+
+      </div>
+
+      <!-- ── Right: environment detail form ────────────────────────── -->
+      <div class="oj-flex-item oj-sm-12 oj-md-8">
+
+        <!-- Placeholder: nothing selected -->
+        <oj-bind-if test="[[!($variables.selectedEnv && $variables.selectedEnv.id)]]">
+          <oj-illustration-message
+            title="Select an environment"
+            description="Choose an environment from the list, or click Add to create a new one.">
+          </oj-illustration-message>
+        </oj-bind-if>
+
+        <!-- Detail form: env selected -->
+        <oj-bind-if test="[[$variables.selectedEnv && $variables.selectedEnv.id]]">
+
+          <!-- Header row -->
+          <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+            <span class="oj-typography-heading-sm">
+              <oj-bind-text value="[[$variables.selectedEnv.name || 'New Environment']]"></oj-bind-text>
+            </span>
+            <div class="oj-flex" style="gap:var(--oj-spacing-2x);">
+              <oj-button chroming="outlined" on-oj-action="[[$listeners.viewEnvironmentDetails]]">
+                <span slot="startIcon" class="oj-ux-ico-inspect"></span>
+                <span>View Details</span>
+              </oj-button>
+              <oj-button chroming="outlined" on-oj-action="[[$listeners.testConnection]]">
+                <span slot="startIcon" class="oj-ux-ico-link"></span>
+                <span>Test Connection</span>
+              </oj-button>
+              <oj-button chroming="callToAction" on-oj-action="[[$listeners.saveEnvironment]]">
+                <span slot="startIcon" class="oj-ux-ico-save"></span>
+                <span>Save</span>
+              </oj-button>
+              <oj-button chroming="danger" on-oj-action="[[$listeners.confirmDeleteEnv]]">
+                <span slot="startIcon" class="oj-ux-ico-trash"></span>
+                <span>Delete</span>
+              </oj-button>
+            </div>
+          </div>
+
+          <!-- General Details -->
+          <div class="fmt-form-section">
+            <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">General Details</div>
+            <oj-form-layout max-columns="2" label-edge="top" direction="column">
+              <oj-input-text
+                label-hint="Connection Name"
+                value="{{ $variables.selectedEnv.name }}"
+                placeholder="e.g. Production Oracle Fusion"
+                required="true">
+              </oj-input-text>
+              <oj-input-text
+                label-hint="Description"
+                value="{{ $variables.selectedEnv.description }}">
+              </oj-input-text>
+              <oj-select-single
+                label-hint="Environment Type"
+                value="{{ $variables.selectedEnv.type }}"
+                data="[[$variables.envTypesADP]]"
+                item-text="label"
+                required="true">
+              </oj-select-single>
+            </oj-form-layout>
+          </div>
+
+          <!-- Oracle Fusion Connection -->
+          <div class="fmt-form-section">
+            <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Oracle Fusion Connection</div>
+            <oj-form-layout max-columns="2" label-edge="top" direction="column">
+              <oj-input-text
+                label-hint="Fusion Application URL"
+                value="{{ $variables.selectedEnv.fusionUrl }}"
+                placeholder="https://your-instance.fa.em2.oraclecloud.com"
+                required="true">
+              </oj-input-text>
+              <oj-select-single
+                label-hint="Authentication Type"
+                value="{{ $variables.selectedEnv.authMethod }}"
+                data="[[$variables.authMethodsADP]]"
+                item-text="label"
+                required="true">
+              </oj-select-single>
+            </oj-form-layout>
+          </div>
+
+          <!-- Authentication (conditional on authMethod) -->
+          <div class="fmt-form-section">
+            <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Authentication</div>
+
+            <oj-bind-if test="[[!$variables.selectedEnv.authMethod]]">
+              <div class="oj-typography-body-sm oj-text-color-secondary oj-sm-padding-2x-top">
+                Select an Authentication Type above to configure credentials.
+              </div>
+            </oj-bind-if>
+
+            <oj-bind-if test="[[$variables.selectedEnv.authMethod === 'basic']]">
+              <oj-form-layout max-columns="2" label-edge="top" direction="column">
+                <oj-input-text
+                  label-hint="Username"
+                  value="{{ $variables.selectedEnv.username }}"
+                  required="true">
+                </oj-input-text>
+                <oj-input-password
+                  label-hint="Password"
+                  value="{{ $variables.selectedEnv.password }}"
+                  required="true">
+                </oj-input-password>
+              </oj-form-layout>
+            </oj-bind-if>
+
+            <oj-bind-if test="[[$variables.selectedEnv.authMethod === 'oauth2']]">
+              <oj-form-layout max-columns="2" label-edge="top" direction="column">
+                <oj-input-text
+                  label-hint="Client ID"
+                  value="{{ $variables.selectedEnv.clientId }}"
+                  required="true">
+                </oj-input-text>
+                <oj-input-password
+                  label-hint="Client Secret"
+                  value="{{ $variables.selectedEnv.clientSecret }}"
+                  required="true">
+                </oj-input-password>
+                <oj-input-text
+                  label-hint="Token Endpoint URL"
+                  value="{{ $variables.selectedEnv.tokenUrl }}"
+                  required="true">
+                </oj-input-text>
+              </oj-form-layout>
+            </oj-bind-if>
+
+            <oj-bind-if test="[[$variables.selectedEnv.authMethod === 'jwt']]">
+              <oj-form-layout max-columns="2" label-edge="top" direction="column">
+                <oj-input-text
+                  label-hint="JWT Issuer"
+                  value="{{ $variables.selectedEnv.jwtIssuer }}"
+                  required="true">
+                </oj-input-text>
+                <oj-input-text
+                  label-hint="JWT Subject"
+                  value="{{ $variables.selectedEnv.jwtSubject }}"
+                  required="true">
+                </oj-input-text>
+              </oj-form-layout>
+            </oj-bind-if>
+          </div>
+
+          <!-- Storage Configuration (conditional on storageProvider) -->
+          <div class="fmt-form-section">
+            <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Storage Configuration</div>
+            <oj-form-layout max-columns="1" label-edge="top" direction="column">
+              <oj-select-single
+                label-hint="Storage Provider"
+                value="{{ $variables.selectedEnv.storageProvider }}"
+                data="[[$variables.storageProvidersADP]]"
+                item-text="label">
+              </oj-select-single>
+            </oj-form-layout>
+
+            <oj-bind-if test="[[$variables.selectedEnv.storageProvider === 'oci']]">
+              <oj-form-layout max-columns="2" label-edge="top" direction="column">
+                <oj-input-text label-hint="OCI Namespace" value="{{ $variables.selectedEnv.ociNamespace }}"></oj-input-text>
+                <oj-input-text label-hint="OCI Bucket" value="{{ $variables.selectedEnv.ociBucket }}"></oj-input-text>
+                <oj-input-text label-hint="OCI Region" value="{{ $variables.selectedEnv.ociRegion }}"></oj-input-text>
+              </oj-form-layout>
+            </oj-bind-if>
+
+            <oj-bind-if test="[[$variables.selectedEnv.storageProvider === 'git']]">
+              <oj-form-layout max-columns="2" label-edge="top" direction="column">
+                <oj-input-text label-hint="Repository URL" value="{{ $variables.selectedEnv.gitRepoUrl }}"></oj-input-text>
+                <oj-input-text label-hint="Branch" value="{{ $variables.selectedEnv.gitBranch }}" placeholder="main"></oj-input-text>
+                <oj-input-password label-hint="Personal Access Token" value="{{ $variables.selectedEnv.gitToken }}"></oj-input-password>
+              </oj-form-layout>
+            </oj-bind-if>
+          </div>
+
+        </oj-bind-if><!-- end: env selected -->
+
+      </div><!-- end right panel -->
+
+    </div><!-- end oj-flex -->
+
+    <!-- ── Delete Confirmation Dialog ────────────────────────────────── -->
+    <oj-dialog id="deleteEnvDialog" dialog-title="Delete Environment">
+      <div slot="body">
+        <p class="oj-typography-body-md">
+          Are you sure you want to delete
+          <strong><oj-bind-text value="[[$variables.selectedEnv.name || 'this environment']]"></oj-bind-text></strong>?
+          This action cannot be undone.
+        </p>
+      </div>
+      <div slot="footer">
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.cancelDeleteEnv]]">
+          <span>Cancel</span>
+        </oj-button>
+        <oj-button chroming="danger" on-oj-action="[[$listeners.deleteEnvironment]]">
+          <span>Delete</span>
+        </oj-button>
+      </div>
+    </oj-dialog>
+
+    <!-- ── Connection Details Dialog ─────────────────────────────────── -->
+    <oj-dialog id="envDetailDialog" class="fmt-detail-dialog" dialog-title="Connection Details">
+
+      <div slot="body">
+
+        <!-- Test connection result messages — shown at top so user sees them immediately -->
+        <oj-bind-if test="[[$variables.connectionTestResult.status === 'success']]">
+          <div class="fmt-test-result fmt-test-result--success oj-sm-margin-3x-bottom">
+            <span class="oj-ux-ico-check-circle fmt-test-result__icon"></span>
+            <span class="oj-typography-body-sm">
+              <oj-bind-text value="[[$variables.connectionTestResult.message]]"></oj-bind-text>
+            </span>
+          </div>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.connectionTestResult.status === 'error']]">
+          <div class="fmt-test-result fmt-test-result--error oj-sm-margin-3x-bottom">
+            <span class="oj-ux-ico-warning fmt-test-result__icon"></span>
+            <span class="oj-typography-body-sm">
+              <oj-bind-text value="[[$variables.connectionTestResult.message]]"></oj-bind-text>
+            </span>
+          </div>
+        </oj-bind-if>
+
+        <!-- Connection section -->
+        <div class="fmt-dialog-section-label">Connection</div>
+        <oj-form-layout max-columns="1" label-edge="top" direction="column">
+          <oj-input-text
+            label-hint="Connection Name"
+            value="{{ $variables.selectedEnv.name }}"
+            placeholder="e.g. Production Oracle Fusion"
+            required="true">
+          </oj-input-text>
+          <oj-input-text
+            label-hint="Fusion Application URL"
+            value="{{ $variables.selectedEnv.fusionUrl }}"
+            placeholder="https://your-instance.fa.em2.oraclecloud.com"
+            required="true">
+          </oj-input-text>
+        </oj-form-layout>
+
+        <!-- Authentication section -->
+        <div class="fmt-dialog-section-label oj-sm-margin-4x-top">Authentication</div>
+        <oj-form-layout max-columns="1" label-edge="top" direction="column">
+          <oj-select-single
+            label-hint="Authentication Type"
+            value="{{ $variables.selectedEnv.authMethod }}"
+            data="[[$variables.authMethodsADP]]"
+            item-text="label"
+            required="true">
+          </oj-select-single>
+        </oj-form-layout>
+
+        <oj-bind-if test="[[$variables.selectedEnv.authMethod === 'basic']]">
+          <oj-form-layout max-columns="1" label-edge="top" direction="column">
+            <oj-input-text
+              label-hint="Username"
+              value="{{ $variables.selectedEnv.username }}"
+              required="true">
+            </oj-input-text>
+            <oj-input-password
+              label-hint="Password"
+              value="{{ $variables.selectedEnv.password }}"
+              required="true">
+            </oj-input-password>
+          </oj-form-layout>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.selectedEnv.authMethod === 'oauth2']]">
+          <oj-form-layout max-columns="1" label-edge="top" direction="column">
+            <oj-input-text
+              label-hint="Client ID"
+              value="{{ $variables.selectedEnv.clientId }}"
+              required="true">
+            </oj-input-text>
+            <oj-input-password
+              label-hint="Client Secret"
+              value="{{ $variables.selectedEnv.clientSecret }}"
+              required="true">
+            </oj-input-password>
+            <oj-input-text
+              label-hint="Token Endpoint URL"
+              value="{{ $variables.selectedEnv.tokenUrl }}"
+              required="true">
+            </oj-input-text>
+          </oj-form-layout>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.selectedEnv.authMethod === 'jwt']]">
+          <oj-form-layout max-columns="1" label-edge="top" direction="column">
+            <oj-input-text
+              label-hint="JWT Issuer"
+              value="{{ $variables.selectedEnv.jwtIssuer }}"
+              required="true">
+            </oj-input-text>
+            <oj-input-text
+              label-hint="JWT Subject"
+              value="{{ $variables.selectedEnv.jwtSubject }}"
+              required="true">
+            </oj-input-text>
+          </oj-form-layout>
+        </oj-bind-if>
+
+
+      </div><!-- end body slot -->
+
+      <div slot="footer">
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.testConnectionPanel]]">
+          <span slot="startIcon" class="oj-ux-ico-link"></span>
+          <span>Test Connection</span>
+        </oj-button>
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.closeDetailPanel]]">
+          <span>Cancel</span>
+        </oj-button>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.saveAndClosePanel]]">
+          <span slot="startIcon" class="oj-ux-ico-save"></span>
+          <span>Save</span>
+        </oj-button>
+      </div>
+
+    </oj-dialog><!-- end envDetailDialog -->
+
+  </div><!-- end main slot -->
+</oj-sp-general-overview-page>

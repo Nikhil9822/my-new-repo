@@ -1,8 +1,0 @@
-{
-  "id": "equipment-requisition-new-screen",
-  "description": "Flow main",
-  "defaultPage": "equipment-requisition-new-screen-start",
-  "services": {},
-  "types": {},
-  "variables": {}
-}

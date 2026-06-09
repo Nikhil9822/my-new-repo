@@ -1,0 +1,20 @@
+{
+    "backends": {
+        "fmtAtpService": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/DeployRite",
+                    "description": "129.158.228.138",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_37e17f3b-4e55-4dcd-af46-79ca3fa98708"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+      }
+}

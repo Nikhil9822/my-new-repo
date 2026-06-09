@@ -1,0 +1,24 @@
+<!-- fragment-log-viewer: Scrollable monospace log viewer with colour-coded severity lines. -->
+
+<div
+  class="fmt-log-viewer"
+  style="height:var(--fmt-log-height, 300px); overflow-y:auto; background:var(--oj-core-bg-color-neutral); border-radius:var(--oj-border-radius-md); padding:var(--oj-spacing-3x); font-family:monospace; font-size:0.8125rem;">
+
+  <oj-bind-if test="[[$variables.logLines && $variables.logLines.length > 0]]">
+    <oj-bind-for-each data="[[$variables.logLines]]">
+      <template>
+        <div class="fmt-log-line">
+          <span class="oj-text-color-secondary">[<oj-bind-text value="[[$current.data.time]]"></oj-bind-text>]&nbsp;</span>
+          <span class="[[$current.data.level === 'ERROR' ? 'oj-text-color-danger' : $current.data.level === 'WARN' ? 'oj-text-color-warning' : $current.data.level === 'INFO' ? '' : 'oj-text-color-secondary']]">
+            <oj-bind-text value="[[$current.data.message]]"></oj-bind-text>
+          </span>
+        </div>
+      </template>
+    </oj-bind-for-each>
+  </oj-bind-if>
+
+  <oj-bind-if test="[[!$variables.logLines || $variables.logLines.length === 0]]">
+    <span class="oj-text-color-secondary">No log output yet…</span>
+  </oj-bind-if>
+
+</div>

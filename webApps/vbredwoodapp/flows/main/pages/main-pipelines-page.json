@@ -1,0 +1,42 @@
+{
+  "title": "Pipelines",
+  "description": "Define and run automated migration pipelines",
+  "variables": {
+    "isLoading": {"type": "boolean", "defaultValue": true},
+    "pipelines": {"type": "object[]", "defaultValue": []},
+    "selectedPipeline": {"type": "object", "defaultValue": null},
+    "pipelineDetailTab": {"type": "string", "defaultValue": "def-tab"},
+    "pipelineRunsData": {"type": "object[]", "defaultValue": []},
+    "pipelineRunsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.pipelineRunsData", "keyAttributes": "id"}
+    },
+    "pipelineYaml": {"type": "string", "defaultValue": ""},
+    "activeRun": {"type": "object", "defaultValue": null}
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadPipelines"}]},
+    "createPipeline": {"chains": [{"chain": "createPipeline"}]},
+    "selectPipeline": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "selectPipeline"}]},
+    "runPipeline": {"chains": [{"chain": "runPipeline"}]},
+    "editPipeline": {"chains": [{"chain": "editPipeline"}]},
+    "pipelineDetailTabChanged": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "pipelineDetailTabChanged"}]},
+    "approveRun": {"chains": [{"chain": "approveRun"}]},
+    "rejectRun": {"chains": [{"chain": "rejectRun"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-tab-bar": {"path": "ojs/ojtabbar"},
+      "oj-table": {"path": "ojs/ojtable"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-tag": {"path": "ojs/ojtag"},
+      "oj-c-form-layout": {"path": "oj-c/form-layout/loader"},
+      "oj-c-input-text": {"path": "oj-c/input-text/loader"},
+      "oj-c-skeleton": {"path": "oj-c/skeleton/loader"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

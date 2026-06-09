@@ -1,8 +1,0 @@
-{
-  "id": "equipment-rental-workbench",
-  "description": "Flow main",
-  "defaultPage": "equipment-rental-workbench-start",
-  "services": {},
-  "types": {},
-  "variables": {}
-}

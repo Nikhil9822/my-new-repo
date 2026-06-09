@@ -1,8 +1,0 @@
-{
-  "id": "security",
-  "description": "Flow main",
-  "defaultPage": "security-start",
-  "services": {},
-  "types": {},
-  "variables": {}
-}

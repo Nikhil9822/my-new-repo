@@ -1,0 +1,57 @@
+{
+  "title": "Audit Trail",
+  "description": "Read-only log of all system actions and changes",
+  "variables": {
+    "isLoading": {"type": "boolean", "defaultValue": true},
+    "totalRecords": {"type": "number", "defaultValue": 0},
+    "searchText": {"type": "string", "defaultValue": ""},
+    "filterAction": {"type": "string", "defaultValue": null},
+    "filterUser": {"type": "string", "defaultValue": null},
+    "filterDateRange": {"type": "object", "defaultValue": null},
+    "actionFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value": null, "label": "All Actions"},
+          {"value": "LOGIN", "label": "Login"},
+          {"value": "LOGOUT", "label": "Logout"},
+          {"value": "MIGRATE", "label": "Migration"},
+          {"value": "SCAN", "label": "Inventory Scan"},
+          {"value": "CONFIG_CHANGE", "label": "Config Change"},
+          {"value": "USER_CHANGE", "label": "User Change"}
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "userFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": [{"value": null, "label": "All Users"}], "keyAttributes": "value"}
+    },
+    "auditData": {"type": "object[]", "defaultValue": []},
+    "auditADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.auditData", "keyAttributes": "id"}
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadAuditTrail"}]},
+    "applyFilters": {"chains": [{"chain": "applyFilters"}]},
+    "clearFilters": {"chains": [{"chain": "clearFilters"}]},
+    "exportAudit": {"chains": [{"chain": "exportAudit"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-table": {"path": "ojs/ojtable"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-tag": {"path": "ojs/ojtag"},
+      "oj-c-input-text": {"path": "oj-c/input-text/loader"},
+      "oj-c-select-single": {"path": "oj-c/select-single/loader"},
+      "oj-c-skeleton": {"path": "oj-c/skeleton/loader"},
+      "oj-input-date-range": {"path": "ojs/ojdaterangepicker"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

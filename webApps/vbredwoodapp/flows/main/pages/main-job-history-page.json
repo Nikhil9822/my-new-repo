@@ -1,0 +1,72 @@
+{
+  "title": "Job History",
+  "description": "View, search and inspect past migration job runs",
+  "variables": {
+    "isLoading": {"type": "boolean", "defaultValue": true},
+    "totalJobs": {"type": "number", "defaultValue": 0},
+    "searchText": {"type": "string", "defaultValue": ""},
+    "filterStatus": {"type": "string", "defaultValue": null},
+    "filterEnv": {"type": "string", "defaultValue": null},
+    "filterDateRange": {"type": "object", "defaultValue": null},
+    "statusFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value": null, "label": "All Statuses"},
+          {"value": "SUCCESS", "label": "Success"},
+          {"value": "FAILED", "label": "Failed"},
+          {"value": "RUNNING", "label": "Running"},
+          {"value": "QUEUED", "label": "Queued"},
+          {"value": "ABORTED", "label": "Aborted"}
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "envFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": [{"value": null, "label": "All Environments"}], "keyAttributes": "value"}
+    },
+    "jobsData": {"type": "object[]", "defaultValue": []},
+    "jobsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.jobsData", "keyAttributes": "id"}
+    },
+    "drawerOpen": {"type": "boolean", "defaultValue": false},
+    "selectedJob": {"type": "object", "defaultValue": {"id": "", "migrationName": "", "source": "", "target": "", "status": "", "objectCount": 0, "startedAt": "", "completedAt": "", "duration": "", "triggeredBy": ""}},
+    "jobDetailTab": {"type": "string", "defaultValue": "summary-tab"},
+    "jobObjectsData": {"type": "object[]", "defaultValue": []},
+    "jobObjectsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.jobObjectsData", "keyAttributes": "id"}
+    },
+    "jobLog": {"type": "object[]", "defaultValue": []},
+    "jobDiff": {"type": "string", "defaultValue": ""}
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadJobs"}]},
+    "applyFilters": {"chains": [{"chain": "applyFilters"}]},
+    "clearFilters": {"chains": [{"chain": "clearFilters"}]},
+    "exportJobs": {"chains": [{"chain": "exportJobs"}]},
+    "viewJobDetail": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "viewJobDetail"}]},
+    "closeJobDrawer": {"chains": [{"chain": "closeJobDrawer"}]},
+    "jobDetailTabChanged": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "jobDetailTabChanged"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-table": {"path": "ojs/ojtable"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-tag": {"path": "ojs/ojtag"},
+      "oj-c-input-text": {"path": "oj-c/input-text/loader"},
+      "oj-c-select-single": {"path": "oj-c/select-single/loader"},
+      "oj-c-form-layout": {"path": "oj-c/form-layout/loader"},
+      "oj-c-skeleton": {"path": "oj-c/skeleton/loader"},
+      "oj-input-date-range": {"path": "ojs/ojdaterangepicker"},
+      "oj-tab-bar": {"path": "ojs/ojtabbar"},
+      "oj-drawer-popup": {"path": "ojs/ojdrawerpopup"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

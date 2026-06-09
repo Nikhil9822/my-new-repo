@@ -1,0 +1,188 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="userManagementPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="User Management"
+  page-subtitle="Manage users, roles and sessions">
+
+  <div slot="main">
+
+    <!-- Admin-only guard -->
+    <oj-bind-if test="[[!$variables.isAdmin]]">
+      <oj-illustration-message
+        title="Access Denied"
+        description="User Management is restricted to Administrators. Contact your system admin to request access.">
+      </oj-illustration-message>
+    </oj-bind-if>
+
+    <oj-bind-if test="[[$variables.isAdmin]]">
+
+      <!-- Users table -->
+      <div class="fmt-card oj-sm-padding-4x oj-sm-margin-4x-bottom">
+        <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+          <span class="oj-typography-heading-sm">Users</span>
+          <div class="oj-flex" style="gap:var(--oj-spacing-2x);">
+            <oj-c-input-text
+              label-hint="Search users"
+              value="{{ $variables.searchText }}"
+              on-value-changed="[[$listeners.filterUsers]]"
+              style="min-width:200px;">
+            </oj-c-input-text>
+            <oj-button chroming="callToAction" id="addUserBtn" on-oj-action="[[$listeners.openAddUser]]">
+              <span slot="startIcon" class="oj-ux-ico-plus"></span>
+              <span>Add User</span>
+            </oj-button>
+          </div>
+        </div>
+
+        <oj-table
+          id="usersTable"
+          data="[[$variables.usersADP]]"
+          scroll-policy="loadMoreOnScroll"
+          scroll-policy-options.fetch-size="20"
+          columns='[
+            {"headerText":"Name","field":"displayName","sortable":"enabled"},
+            {"headerText":"Email","field":"email","sortable":"enabled"},
+            {"headerText":"Role","field":"role","template":"roleCell","width":"130px"},
+            {"headerText":"Status","field":"status","template":"statusCell","width":"100px"},
+            {"headerText":"Last Login","field":"lastLogin","sortable":"enabled","width":"140px"},
+            {"headerText":"","field":"_actions","template":"userActionsCell","width":"90px","sortable":"disabled"}
+          ]'>
+          <template slot="roleCell">
+            <oj-tag severity="[[$current.row.role === 'ADMIN' ? 'error' : $current.row.role === 'OPERATOR' ? 'info' : 'neutral']]">
+              <span><oj-bind-text value="[[$current.row.role]]"></oj-bind-text></span>
+            </oj-tag>
+          </template>
+          <template slot="statusCell">
+            <oj-tag severity="[[$current.row.status === 'ACTIVE' ? 'success' : 'neutral']]">
+              <span><oj-bind-text value="[[$current.row.status]]"></oj-bind-text></span>
+            </oj-tag>
+          </template>
+          <template slot="userActionsCell">
+            <div class="oj-flex" style="gap:var(--oj-spacing-1x);">
+              <oj-button display="icons" chroming="borderless" on-oj-action="[[$listeners.editUser]]" data-user-id="[[$current.row.id]]">
+                <span slot="startIcon" class="oj-ux-ico-edit"></span>
+                <span>Edit</span>
+              </oj-button>
+              <oj-button display="icons" chroming="borderless" on-oj-action="[[$listeners.confirmDeactivate]]" data-user-id="[[$current.row.id]]">
+                <span slot="startIcon" class="oj-ux-ico-person-unavailable"></span>
+                <span>Deactivate</span>
+              </oj-button>
+            </div>
+          </template>
+          <template slot="noData">
+            <oj-bind-if test="[[$variables.isLoading]]">
+              <div class="oj-sm-padding-4x">
+                <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+                <oj-c-skeleton height="40px"></oj-c-skeleton>
+              </div>
+            </oj-bind-if>
+            <oj-bind-if test="[[!$variables.isLoading]]">
+              <oj-illustration-message title="No users found"></oj-illustration-message>
+            </oj-bind-if>
+          </template>
+        </oj-table>
+      </div>
+
+      <!-- Active Sessions panel -->
+      <div class="fmt-card oj-sm-padding-4x oj-sm-margin-4x-bottom">
+        <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+          <span class="oj-typography-heading-sm">Active Sessions</span>
+          <oj-button chroming="outlined" on-oj-action="[[$listeners.terminateAllSessions]]">
+            <span slot="startIcon" class="oj-ux-ico-sign-out"></span>
+            <span>Terminate All</span>
+          </oj-button>
+        </div>
+        <oj-table
+          data="[[$variables.sessionsADP]]"
+          columns='[
+            {"headerText":"User","field":"userEmail"},
+            {"headerText":"IP Address","field":"ip","width":"130px"},
+            {"headerText":"Started","field":"startedAt","width":"140px"},
+            {"headerText":"Last Active","field":"lastActive","width":"140px"},
+            {"headerText":"","field":"_del","template":"sessionActionsCell","width":"80px","sortable":"disabled"}
+          ]'>
+          <template slot="sessionActionsCell">
+            <oj-button display="icons" chroming="borderless" on-oj-action="[[$listeners.terminateSession]]" data-session-id="[[$current.row.id]]">
+              <span slot="startIcon" class="oj-ux-ico-sign-out"></span>
+              <span>Terminate</span>
+            </oj-button>
+          </template>
+          <template slot="noData">
+            <oj-illustration-message title="No active sessions"></oj-illustration-message>
+          </template>
+        </oj-table>
+      </div>
+
+      <!-- Role Permission Matrix -->
+      <div class="fmt-card oj-sm-padding-4x">
+        <div class="oj-typography-heading-sm oj-sm-padding-3x-bottom">Role Permission Matrix</div>
+        <oj-table
+          data="[[$variables.permissionsADP]]"
+          columns='[
+            {"headerText":"Feature","field":"feature"},
+            {"headerText":"Admin","field":"admin","template":"permCell","width":"100px"},
+            {"headerText":"Operator","field":"operator","template":"permCell","width":"100px"},
+            {"headerText":"Viewer","field":"viewer","template":"permCell","width":"100px"}
+          ]'>
+          <template slot="permCell">
+            <span class="[[$current.columnKey === 'admin' ? ($current.row.admin ? 'oj-ux-ico-checkmark oj-text-color-success' : 'oj-ux-ico-cross oj-text-color-danger') : $current.columnKey === 'operator' ? ($current.row.operator ? 'oj-ux-ico-checkmark oj-text-color-success' : 'oj-ux-ico-cross oj-text-color-danger') : ($current.row.viewer ? 'oj-ux-ico-checkmark oj-text-color-success' : 'oj-ux-ico-cross oj-text-color-danger')]]"></span>
+          </template>
+          <template slot="noData">
+            <oj-illustration-message title="No permission data"></oj-illustration-message>
+          </template>
+        </oj-table>
+      </div>
+
+    </oj-bind-if>
+
+    <!-- Add/Edit User Drawer -->
+    <oj-drawer-popup
+      id="userEditDrawer"
+      opened="{{ $variables.editDrawerOpen }}"
+      edge="end"
+      modality="modal"
+      on-oj-dismiss="[[$listeners.closeEditDrawer]]">
+      <div style="width:400px; padding:var(--oj-spacing-4x); overflow-y:auto; height:100%;">
+        <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+          <span class="oj-typography-heading-sm">
+            <oj-bind-text value="[[$variables.editMode === 'add' ? 'Add User' : 'Edit User']]"></oj-bind-text>
+          </span>
+          <oj-button display="icons" chroming="borderless" on-oj-action="[[$listeners.closeEditDrawer]]">
+            <span slot="startIcon" class="oj-ux-ico-cross"></span>
+            <span>Close</span>
+          </oj-button>
+        </div>
+        <oj-c-form-layout label-edge="top" columns="1">
+          <oj-c-input-text label-hint="Display Name" value="{{ $variables.editUser.displayName }}" required="true"></oj-c-input-text>
+          <oj-c-input-text label-hint="Email Address" value="{{ $variables.editUser.email }}" required="true"></oj-c-input-text>
+          <oj-c-select-single
+            label-hint="Role"
+            value="{{ $variables.editUser.role }}"
+            data="[[$variables.rolesADP]]"
+            item-text="label"
+            required="true">
+          </oj-c-select-single>
+          <oj-bind-if test="[[$variables.editMode === 'add']]">
+            <oj-c-input-password
+              label-hint="Temporary Password"
+              value="{{ $variables.editUser.tempPassword }}"
+              mask-icon="visible"
+              required="true">
+            </oj-c-input-password>
+          </oj-bind-if>
+        </oj-c-form-layout>
+        <div class="oj-flex oj-sm-justify-content-end oj-sm-padding-4x-top" style="gap:var(--oj-spacing-2x);">
+          <oj-button chroming="outlined" on-oj-action="[[$listeners.closeEditDrawer]]"><span>Cancel</span></oj-button>
+          <oj-button chroming="callToAction" on-oj-action="[[$listeners.saveUser]]">
+            <span><oj-bind-text value="[[$variables.editMode === 'add' ? 'Create User' : 'Save Changes']]"></oj-bind-text></span>
+          </oj-button>
+        </div>
+      </div>
+    </oj-drawer-popup>
+
+  </div>
+</oj-sp-general-overview-page>

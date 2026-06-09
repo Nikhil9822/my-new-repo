@@ -1,0 +1,44 @@
+<!-- fragment-confirm-dialog: Generic confirmation dialog using oj-dialog (never browser confirm).
+     Slots: title (string), message (string), confirmLabel (string), cancelLabel (string)
+     Events: onConfirm, onCancel -->
+
+<oj-dialog
+  id="confirmDialog"
+  opened="{{ $variables.opened }}"
+  on-oj-close="[[$listeners.onCancel]]"
+  cancel-behavior="icon">
+
+  <div slot="header">
+    <span class="oj-typography-heading-sm"><oj-bind-text value="[[$variables.title]]"></oj-bind-text></span>
+  </div>
+
+  <div slot="body">
+    <p class="oj-typography-body-md">
+      <oj-bind-text value="[[$variables.message]]"></oj-bind-text>
+    </p>
+    <oj-bind-if test="[[$variables.isDangerous]]">
+      <div class="fmt-danger-confirm oj-sm-padding-3x oj-sm-margin-3x-top" style="background:var(--oj-core-bg-color-danger-light); border-radius:var(--oj-border-radius-sm);">
+        <div class="oj-flex oj-sm-align-items-center oj-sm-padding-2x-bottom" style="gap:var(--oj-spacing-2x);">
+          <span class="oj-ux-ico-warning oj-text-color-danger"></span>
+          <span class="oj-typography-subheading-sm oj-text-color-danger">This action cannot be undone.</span>
+        </div>
+      </div>
+    </oj-bind-if>
+  </div>
+
+  <div slot="footer">
+    <oj-button
+      chroming="outlined"
+      id="cancelDialogBtn"
+      on-oj-action="[[$listeners.onCancel]]">
+      <span><oj-bind-text value="[[$variables.cancelLabel || 'Cancel']]"></oj-bind-text></span>
+    </oj-button>
+    <oj-button
+      chroming="{{ $variables.isDangerous ? 'danger' : 'callToAction' }}"
+      id="confirmDialogBtn"
+      on-oj-action="[[$listeners.onConfirm]]">
+      <span><oj-bind-text value="[[$variables.confirmLabel || 'Confirm']]"></oj-bind-text></span>
+    </oj-button>
+  </div>
+
+</oj-dialog>

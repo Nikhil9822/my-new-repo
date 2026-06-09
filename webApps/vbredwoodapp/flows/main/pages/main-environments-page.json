@@ -1,0 +1,127 @@
+{
+  "title": "Environments",
+  "description": "Manage Oracle Fusion environment connections and credentials",
+  "variables": {
+    "isLoading": {
+      "type": "boolean",
+      "defaultValue": true
+    },
+    "environments": {
+      "type": "object[]",
+      "defaultValue": []
+    },
+    "selectedEnv": {
+      "type": "object",
+      "defaultValue": {}
+    },
+    "connectionTestResult": {
+      "type": "object",
+      "defaultValue": {}
+    },
+    "envTypesADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value":"oracle_fusion","label":"Oracle Fusion"}
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "authMethodsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value":"basic","label":"Basic Authentication"},
+          {"value":"oauth2","label":"OAuth 2.0 Client Credentials"},
+          {"value":"jwt","label":"JWT Bearer Token"}
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "storageProvidersADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value":"none","label":"None"},
+          {"value":"oci","label":"OCI Object Storage"},
+          {"value":"git","label":"Git Repository"}
+        ],
+        "keyAttributes": "value"
+      }
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [{"chain": "loadEnvironments"}]
+    },
+    "addEnvironment": {
+      "chains": [{"chain": "addEnvironment"}]
+    },
+    "selectEnvironment": {
+      "chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "selectEnvironment"}]
+    },
+    "viewEnvironmentDetails": {
+      "chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "viewEnvironmentDetails"}]
+    },
+    "closeDetailPanel": {
+      "chains": [{"chain": "closeDetailPanel"}]
+    },
+    "testConnectionPanel": {
+      "chains": [{"chain": "testConnectionPanel"}]
+    },
+    "saveAndClosePanel": {
+      "chains": [{"chain": "saveAndClosePanel"}]
+    },
+    "saveEnvironment": {
+      "chains": [{"chain": "saveEnvironment"}]
+    },
+    "testConnection": {
+      "chains": [{"chain": "testConnection"}]
+    },
+    "confirmDeleteEnv": {
+      "chains": [{"chain": "confirmDeleteEnv"}]
+    },
+    "cancelDeleteEnv": {
+      "chains": [{"chain": "cancelDeleteEnv"}]
+    },
+    "deleteEnvironment": {
+      "chains": [{"chain": "deleteEnvironment"}]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {
+        "path": "oj-sp/general-overview-page/loader"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-input-password": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-progress-circle": {
+        "path": "ojs/ojprogress"
+      },
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-tag": {
+        "path": "ojs/ojtag"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-illustration-message": {
+        "path": "ojs/ojillustrationmessage"
+      }
+    }
+  }
+}

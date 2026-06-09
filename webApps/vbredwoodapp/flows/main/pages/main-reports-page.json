@@ -1,0 +1,50 @@
+{
+  "title": "Reports",
+  "description": "Charts and metrics summarising migration activity",
+  "variables": {
+    "isLoading": {"type": "boolean", "defaultValue": true},
+    "dateRange": {"type": "object", "defaultValue": null},
+    "filterEnv": {"type": "string", "defaultValue": null},
+    "envFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": [{"value": null, "label": "All Environments"}], "keyAttributes": "value"}
+    },
+    "trendChartData": {"type": "object", "defaultValue": null},
+    "trendGroups": {"type": "string[]", "defaultValue": []},
+    "trendSeries": {"type": "object[]", "defaultValue": []},
+    "typeChartData": {"type": "object", "defaultValue": null},
+    "typeGroups": {"type": "string[]", "defaultValue": []},
+    "typeSeries": {"type": "object[]", "defaultValue": []},
+    "statusChartData": {"type": "object", "defaultValue": null},
+    "statusGroups": {"type": "string[]", "defaultValue": []},
+    "statusSeries": {"type": "object[]", "defaultValue": []},
+    "successRateData": {"type": "object", "defaultValue": null},
+    "successRateGroups": {"type": "string[]", "defaultValue": []},
+    "successRateSeries": {"type": "object[]", "defaultValue": []},
+    "metricsData": {"type": "object[]", "defaultValue": []},
+    "metricsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.metricsData", "keyAttributes": "environment"}
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadReports"}]},
+    "refreshReports": {"chains": [{"chain": "loadReports"}]},
+    "exportPDF": {"chains": [{"chain": "exportPDF"}]},
+    "exportCSV": {"chains": [{"chain": "exportCSV"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-chart": {"path": "ojs/ojchart"},
+      "oj-table": {"path": "ojs/ojtable"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-c-select-single": {"path": "oj-c/select-single/loader"},
+      "oj-c-skeleton": {"path": "oj-c/skeleton/loader"},
+      "oj-input-date-range": {"path": "ojs/ojdaterangepicker"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

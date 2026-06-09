@@ -1,0 +1,66 @@
+{
+  "title": "User Management",
+  "description": "Manage users, roles and sessions (Admin only)",
+  "variables": {
+    "isAdmin": {"type": "boolean", "defaultValue": false},
+    "isLoading": {"type": "boolean", "defaultValue": true},
+    "searchText": {"type": "string", "defaultValue": ""},
+    "usersData": {"type": "object[]", "defaultValue": []},
+    "usersADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.usersData", "keyAttributes": "id"}
+    },
+    "sessionsData": {"type": "object[]", "defaultValue": []},
+    "sessionsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.sessionsData", "keyAttributes": "id"}
+    },
+    "permissionsData": {"type": "object[]", "defaultValue": []},
+    "permissionsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.permissionsData", "keyAttributes": "feature"}
+    },
+    "rolesADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value": "ADMIN", "label": "Administrator"},
+          {"value": "OPERATOR", "label": "Operator"},
+          {"value": "VIEWER", "label": "Viewer (Read Only)"}
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "editDrawerOpen": {"type": "boolean", "defaultValue": false},
+    "editMode": {"type": "string", "defaultValue": "add"},
+    "editUser": {"type": "object", "defaultValue": {"id": null, "displayName": "", "email": "", "role": "VIEWER", "tempPassword": ""}}
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadUserManagement"}]},
+    "filterUsers": {"chains": [{"chain": "filterUsers"}]},
+    "openAddUser": {"chains": [{"chain": "openAddUser"}]},
+    "editUser": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "openEditUser"}]},
+    "saveUser": {"chains": [{"chain": "saveUser"}]},
+    "closeEditDrawer": {"chains": [{"chain": "closeEditDrawer"}]},
+    "confirmDeactivate": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "confirmDeactivate"}]},
+    "terminateSession": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "terminateSession"}]},
+    "terminateAllSessions": {"chains": [{"chain": "terminateAllSessions"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-table": {"path": "ojs/ojtable"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-tag": {"path": "ojs/ojtag"},
+      "oj-c-input-text": {"path": "oj-c/input-text/loader"},
+      "oj-c-input-password": {"path": "oj-c/input-password/loader"},
+      "oj-c-select-single": {"path": "oj-c/select-single/loader"},
+      "oj-c-form-layout": {"path": "oj-c/form-layout/loader"},
+      "oj-c-skeleton": {"path": "oj-c/skeleton/loader"},
+      "oj-drawer-popup": {"path": "ojs/ojdrawerpopup"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

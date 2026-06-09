@@ -1,0 +1,213 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="jobHistoryPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Job History"
+  page-subtitle="View and inspect past migration job runs">
+
+  <div slot="main">
+
+    <!-- Filter toolbar -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom">
+      <div class="oj-flex oj-sm-flex-wrap oj-sm-align-items-end" style="gap:var(--oj-spacing-3x);">
+        <oj-c-input-text
+          label-hint="Search by Job ID or Migration"
+          value="{{ $variables.searchText }}"
+          class="oj-flex-item"
+          style="min-width:220px;"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-c-input-text>
+        <oj-c-select-single
+          label-hint="Status"
+          value="{{ $variables.filterStatus }}"
+          data="[[$variables.statusFilterADP]]"
+          item-text="label"
+          class="oj-flex-item"
+          style="min-width:160px;"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-c-select-single>
+        <oj-c-select-single
+          label-hint="Environment"
+          value="{{ $variables.filterEnv }}"
+          data="[[$variables.envFilterADP]]"
+          item-text="label"
+          class="oj-flex-item"
+          style="min-width:160px;"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-c-select-single>
+        <oj-input-date-range
+          label-hint="Date Range"
+          value="{{ $variables.filterDateRange }}"
+          class="oj-flex-item"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-input-date-range>
+        <div class="oj-flex-item oj-sm-flex-initial">
+          <oj-button chroming="borderless" on-oj-action="[[$listeners.clearFilters]]">
+            <span slot="startIcon" class="oj-ux-ico-filter-remove"></span>
+            <span>Clear</span>
+          </oj-button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jobs table with pagination (20/page) -->
+    <div class="fmt-card oj-sm-padding-4x">
+      <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+        <span class="oj-typography-body-sm oj-text-color-secondary">
+          Showing <oj-bind-text value="[[$variables.totalJobs]]"></oj-bind-text> jobs
+        </span>
+        <oj-button chroming="outlined" id="exportBtn" on-oj-action="[[$listeners.exportJobs]]">
+          <span slot="startIcon" class="oj-ux-ico-download"></span>
+          <span>Export CSV</span>
+        </oj-button>
+      </div>
+
+      <oj-table
+        id="jobsTable"
+        data="[[$variables.jobsADP]]"
+        scroll-policy="loadMoreOnScroll"
+        scroll-policy-options.fetch-size="20"
+        columns='[
+          {"headerText":"Job ID","field":"id","sortable":"enabled","width":"100px"},
+          {"headerText":"Migration","field":"migrationName","sortable":"enabled"},
+          {"headerText":"Source","field":"source","width":"130px"},
+          {"headerText":"Target","field":"target","width":"130px"},
+          {"headerText":"Objects","field":"objectCount","width":"80px"},
+          {"headerText":"Status","field":"status","template":"statusCell","width":"110px"},
+          {"headerText":"Started","field":"startedAt","sortable":"enabled","width":"140px"},
+          {"headerText":"Duration","field":"duration","width":"90px"},
+          {"headerText":"","field":"_actions","template":"actionsCell","width":"60px","sortable":"disabled"}
+        ]'>
+        <template slot="statusCell">
+          <oj-tag severity="[[$current.row.status === 'SUCCESS' ? 'success' : $current.row.status === 'FAILED' ? 'error' : $current.row.status === 'RUNNING' ? 'info' : $current.row.status === 'ABORTED' ? 'warning' : 'neutral']]">
+            <span><oj-bind-text value="[[$current.row.status]]"></oj-bind-text></span>
+          </oj-tag>
+        </template>
+        <template slot="actionsCell">
+          <oj-button display="icons" chroming="borderless" on-oj-action="[[$listeners.viewJobDetail]]" data-job-id="[[$current.row.id]]">
+            <span slot="startIcon" class="oj-ux-ico-info-s"></span>
+            <span>Detail</span>
+          </oj-button>
+        </template>
+        <template slot="noData">
+          <oj-bind-if test="[[$variables.isLoading]]">
+            <div class="oj-sm-padding-4x">
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px"></oj-c-skeleton>
+            </div>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isLoading]]">
+            <oj-illustration-message title="No jobs found" description="Adjust your filters or run a migration to create jobs."></oj-illustration-message>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+    </div>
+
+    <!-- Job detail side drawer (80vw) -->
+    <oj-drawer-popup
+      id="jobDetailDrawer"
+      opened="{{ $variables.drawerOpen }}"
+      edge="end"
+      modality="modeless"
+      on-oj-dismiss="[[$listeners.closeJobDrawer]]">
+      <div style="width:80vw; max-width:1100px; padding:var(--oj-spacing-4x); overflow-y:auto; height:100%;">
+
+        <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+          <div>
+            <div class="oj-typography-heading-sm">
+              Job: <oj-bind-text value="[[$variables.selectedJob.id]]"></oj-bind-text>
+            </div>
+            <div class="oj-typography-body-sm oj-text-color-secondary">
+              <oj-bind-text value="[[$variables.selectedJob.migrationName]]"></oj-bind-text>
+            </div>
+          </div>
+          <div class="oj-flex" style="gap:var(--oj-spacing-2x);">
+            <oj-tag severity="[[$variables.selectedJob.status === 'SUCCESS' ? 'success' : $variables.selectedJob.status === 'FAILED' ? 'error' : $variables.selectedJob.status === 'RUNNING' ? 'info' : 'warning']]">
+              <span><oj-bind-text value="[[$variables.selectedJob.status]]"></oj-bind-text></span>
+            </oj-tag>
+            <oj-button display="icons" chroming="borderless" on-oj-action="[[$listeners.closeJobDrawer]]">
+              <span slot="startIcon" class="oj-ux-ico-cross"></span>
+              <span>Close</span>
+            </oj-button>
+          </div>
+        </div>
+
+        <!-- Detail tabs: Summary / Objects / Log / Diff -->
+        <oj-tab-bar
+          id="jobDetailTabs"
+          selection="{{ $variables.jobDetailTab }}"
+          on-selection-changed="[[$listeners.jobDetailTabChanged]]"
+          display="standard"
+          edge="top"
+          class="oj-sm-padding-3x-bottom">
+          <ul>
+            <li id="summary-tab"><a href="#">Summary</a></li>
+            <li id="objects-tab"><a href="#">Objects</a></li>
+            <li id="log-tab"><a href="#">Log</a></li>
+            <li id="diff-tab"><a href="#">Diff</a></li>
+          </ul>
+        </oj-tab-bar>
+
+        <oj-bind-if test="[[$variables.jobDetailTab === 'summary-tab']]">
+          <oj-c-form-layout label-edge="top" columns="3">
+            <oj-c-input-text label-hint="Source" value="[[$variables.selectedJob.source]]" readonly="true"></oj-c-input-text>
+            <oj-c-input-text label-hint="Target" value="[[$variables.selectedJob.target]]" readonly="true"></oj-c-input-text>
+            <oj-c-input-text label-hint="Objects Migrated" value="[[$variables.selectedJob.objectCount]]" readonly="true"></oj-c-input-text>
+            <oj-c-input-text label-hint="Started" value="[[$variables.selectedJob.startedAt]]" readonly="true"></oj-c-input-text>
+            <oj-c-input-text label-hint="Completed" value="[[$variables.selectedJob.completedAt]]" readonly="true"></oj-c-input-text>
+            <oj-c-input-text label-hint="Duration" value="[[$variables.selectedJob.duration]]" readonly="true"></oj-c-input-text>
+            <oj-c-input-text label-hint="Triggered By" value="[[$variables.selectedJob.triggeredBy]]" readonly="true"></oj-c-input-text>
+          </oj-c-form-layout>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.jobDetailTab === 'objects-tab']]">
+          <oj-table
+            data="[[$variables.jobObjectsADP]]"
+            columns='[
+              {"headerText":"Object","field":"name"},
+              {"headerText":"Type","field":"type","width":"140px"},
+              {"headerText":"Status","field":"status","template":"objStatusCell","width":"110px"},
+              {"headerText":"Message","field":"message"}
+            ]'>
+            <template slot="objStatusCell">
+              <oj-tag severity="[[$current.row.status === 'SUCCESS' ? 'success' : $current.row.status === 'SKIPPED' ? 'neutral' : 'error']]">
+                <span><oj-bind-text value="[[$current.row.status]]"></oj-bind-text></span>
+              </oj-tag>
+            </template>
+            <template slot="noData">
+              <oj-illustration-message title="No object data available"></oj-illustration-message>
+            </template>
+          </oj-table>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.jobDetailTab === 'log-tab']]">
+          <div class="fmt-log-viewer oj-sm-padding-3x" style="height:calc(100vh - 300px); overflow-y:auto; background:var(--oj-core-bg-color-neutral); border-radius:var(--oj-border-radius-md); font-family:monospace; font-size:0.8125rem;">
+            <oj-bind-for-each data="[[$variables.jobLog]]">
+              <template>
+                <div class="fmt-log-line">
+                  <span class="oj-text-color-secondary">[<oj-bind-text value="[[$current.data.time]]"></oj-bind-text>] </span>
+                  <span class="[[$current.data.level === 'ERROR' ? 'oj-text-color-danger' : $current.data.level === 'WARN' ? 'oj-text-color-warning' : '']]">
+                    <oj-bind-text value="[[$current.data.message]]"></oj-bind-text>
+                  </span>
+                </div>
+              </template>
+            </oj-bind-for-each>
+          </div>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.jobDetailTab === 'diff-tab']]">
+          <div class="fmt-log-viewer oj-sm-padding-3x" style="height:calc(100vh - 300px); overflow-y:auto; background:var(--oj-core-bg-color-neutral); border-radius:var(--oj-border-radius-md); font-family:monospace; font-size:0.8125rem; white-space:pre-wrap;">
+            <oj-bind-text value="[[$variables.jobDiff]]"></oj-bind-text>
+          </div>
+        </oj-bind-if>
+
+      </div>
+    </oj-drawer-popup>
+
+  </div>
+</oj-sp-general-overview-page>

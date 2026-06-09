@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "129.158.228.138",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/fmtAtpService"
+        }
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "operationId": "get",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    }
+}

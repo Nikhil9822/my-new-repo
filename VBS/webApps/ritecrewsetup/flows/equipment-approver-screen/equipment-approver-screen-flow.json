@@ -1,8 +1,0 @@
-{
-  "id": "equipment-approver-screen",
-  "description": "Flow main",
-  "defaultPage": "equipment-approver-start",
-  "services": {},
-  "types": {},
-  "variables": {}
-}

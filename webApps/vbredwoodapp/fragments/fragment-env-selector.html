@@ -1,0 +1,9 @@
+<!-- fragment-env-selector: Environment dropdown with optional label. -->
+
+<oj-c-select-single
+  label-hint="{{ $variables.label || 'Environment' }}"
+  value="{{ $variables.selectedEnv }}"
+  data="[[$variables.envsADP]]"
+  item-text="label"
+  required="{{ $variables.required }}">
+</oj-c-select-single>

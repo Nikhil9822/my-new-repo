@@ -1,0 +1,302 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="inventoryPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Object Inventory"
+  page-subtitle="Browse and select Fusion objects for migration">
+
+  <div slot="main">
+
+    <!-- ── Scan status bar ───────────────────────────────────────────── -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span class="oj-ux-ico-databases oj-text-color-info" style="font-size:1.5rem;"></span>
+        <div>
+          <div class="oj-typography-subheading-sm">
+            Last Scan: <oj-bind-text value="[[$variables.lastScanTime]]"></oj-bind-text>
+          </div>
+          <div class="oj-typography-body-sm oj-text-color-secondary">
+            <oj-bind-text value="[[$variables.totalObjects]]"></oj-bind-text>
+            objects in <oj-bind-text value="[[$variables.scannedEnv]]"></oj-bind-text>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <oj-bind-if test="[[$variables.isScanning]]">
+          <oj-progress-circle size="sm" value="-1"></oj-progress-circle>
+          <span class="oj-typography-body-sm oj-text-color-secondary">Scanning...</span>
+        </oj-bind-if>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.scanInventory]]"
+          disabled="[[$variables.isScanning]]">
+          <span slot="startIcon" class="oj-ux-ico-refresh"></span>
+          <span>Scan Now</span>
+        </oj-button>
+        <oj-button chroming="outlined"
+          disabled="[[$variables.selectedObjects.length === 0]]"
+          on-oj-action="[[$listeners.migrateSelected]]">
+          <span slot="startIcon" class="oj-ux-ico-replace"></span>
+          <span>Migrate Selected (<oj-bind-text value="[[$variables.selectedObjects.length]]"></oj-bind-text>)</span>
+        </oj-button>
+      </div>
+    </div>
+
+    <!-- ── Filter toolbar ────────────────────────────────────────────── -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;">
+        <div style="flex:1;min-width:240px;">
+          <oj-input-text
+            id="inventorySearch"
+            label-hint="Search objects"
+            value="{{ $variables.searchText }}"
+            placeholder="Name, type, module, status or description..."
+            on-value-changed="[[$listeners.filterObjects]]">
+          </oj-input-text>
+        </div>
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.filterObjects]]">
+          <span slot="startIcon" class="oj-ux-ico-search"></span>
+          <span>Search</span>
+        </oj-button>
+        <div style="min-width:180px;">
+          <oj-select-single
+            label-hint="Module"
+            value="{{ $variables.filterEnv }}"
+            data="[[$variables.envFilterADP]]"
+            item-text="label"
+            on-value-changed="[[$listeners.filterObjects]]">
+          </oj-select-single>
+        </div>
+        <oj-button chroming="borderless" on-oj-action="[[$listeners.clearFilters]]">
+          <span slot="startIcon" class="oj-ux-ico-filter-remove"></span>
+          <span>Clear</span>
+        </oj-button>
+      </div>
+    </div>
+
+    <!-- ── Object type tab strip ─────────────────────────────────────── -->
+    <div class="fmt-tab-strip oj-sm-margin-4x-bottom">
+      <oj-button chroming="[[$variables.activeTab==='reports-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="reports-tab">Reports</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='flexfields-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="flexfields-tab">Flexfields</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='lookups-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="lookups-tab">Lookups</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='security-roles-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="security-roles-tab">Security Roles</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='profiles-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="profiles-tab">Profiles</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='workflows-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="workflows-tab">Workflows</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='integrations-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="integrations-tab">Integrations</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='notifications-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="notifications-tab">Notifications</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='translations-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="translations-tab">Translations</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='custom-objects-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="custom-objects-tab">Custom Objects</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='dff-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="dff-tab">DFF</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='value-sets-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="value-sets-tab">Value Sets</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='trees-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="trees-tab">Trees</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='approval-groups-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="approval-groups-tab">Approval Groups</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='doc-sequences-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="doc-sequences-tab">Doc Sequences</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='profile-options-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="profile-options-tab">Profile Options</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='eff-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="eff-tab">Ext Flexfields</oj-button>
+      <oj-button chroming="[[$variables.activeTab==='page-composer-tab'?'callToAction':'borderless']]" on-oj-action="[[$listeners.selectTab]]" data-tab-id="page-composer-tab">Page Composer</oj-button>
+    </div>
+
+    <!-- ── BIP API error banner ─────────────────────────────────────── -->
+    <oj-bind-if test="[[$variables.bipApiError !== '']]">
+      <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom" style="border-left:4px solid var(--oj-core-text-color-warning,#ffc107);display:flex;align-items:flex-start;gap:12px;">
+        <span class="oj-ux-ico-warning-s" style="font-size:1.4rem;color:var(--oj-core-text-color-warning,#ffc107);flex-shrink:0;margin-top:2px;"></span>
+        <div style="flex:1;">
+          <div class="oj-typography-subheading-xs" style="margin-bottom:4px;">BIP API Blocked by CORS Policy — Demo data loaded</div>
+          <div class="oj-typography-body-xs oj-text-color-secondary" style="margin-bottom:8px;">
+            <oj-bind-text value="[[$variables.bipApiError]]"></oj-bind-text>
+          </div>
+          <div class="oj-typography-body-xs" style="font-weight:500;">
+            To fix: In Oracle Fusion, go to <strong>Setup &amp; Maintenance → Security → Configure CORS</strong>
+            and add this app's origin (<strong>etao-dev20ldr1u9-demoservices001-phx.developer.ocp.oraclecloud.com</strong>) as an allowed origin. Then refresh and try again.
+          </div>
+        </div>
+        <oj-button chroming="borderless" on-oj-action="[[$listeners.dismissBipError]]" style="flex-shrink:0;">
+          <span class="oj-ux-ico-close"></span>
+        </oj-button>
+      </div>
+    </oj-bind-if>
+
+    <!-- ── Objects table ─────────────────────────────────────────────── -->
+    <div class="fmt-card oj-sm-padding-4x">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <span class="oj-typography-body-xs oj-text-color-secondary">
+          <oj-bind-text value="[[$variables.filteredData.length]]"></oj-bind-text>
+          object(s) shown — click to select, double-click to view details
+        </span>
+        <oj-bind-if test="[[$variables.selectedObjects.length > 0]]">
+          <span class="oj-typography-body-xs fmt-selected-badge">
+            <oj-bind-text value="[[$variables.selectedObjects.length]]"></oj-bind-text> selected
+          </span>
+        </oj-bind-if>
+      </div>
+      <oj-table
+        id="objectsTable"
+        data="[[$variables.filteredObjectsADP]]"
+        selection-mode.row="multiple"
+        selected.rows="{{ $variables.selectedRows }}"
+        on-selected-changed="[[$listeners.rowSelectionChanged]]"
+        on-oj-row-action="[[$listeners.viewObjectDetail]]"
+        columns='[
+          {"headerText":"Name","field":"name","sortable":"enabled"},
+          {"headerText":"Type","field":"type","sortable":"enabled","width":"130px"},
+          {"headerText":"Module","field":"module","sortable":"enabled","width":"110px"},
+          {"headerText":"Status","field":"status","template":"statusCell","sortable":"enabled","width":"120px"},
+          {"headerText":"Last Modified","field":"lastModified","sortable":"enabled","width":"140px"},
+          {"headerText":"Version","field":"version","width":"90px","sortable":"disabled"}
+        ]'
+        scroll-policy="loadMoreOnScroll"
+        scroll-policy-options.fetch-size="50">
+        <template slot="statusCell">
+          <span class="[['fmt-status-badge fmt-status-' + $current.data.status.toLowerCase()]]">
+            <oj-bind-text value="[[$current.data.status]]"></oj-bind-text>
+          </span>
+        </template>
+        <template slot="noData">
+          <oj-bind-if test="[[$variables.isLoading || $variables.isScanning]]">
+            <div style="display:flex;align-items:center;justify-content:center;padding:32px;gap:8px;">
+              <oj-progress-circle size="sm" value="-1"></oj-progress-circle>
+              <span class="oj-typography-body-sm oj-text-color-secondary">Loading objects...</span>
+            </div>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isLoading && !$variables.isScanning]]">
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px;text-align:center;">
+              <span class="oj-ux-ico-search" style="font-size:3rem;color:var(--oj-core-text-color-secondary);margin-bottom:16px;"></span>
+              <div class="oj-typography-subheading-sm">No objects found</div>
+              <div class="oj-typography-body-sm oj-text-color-secondary" style="margin-top:4px;">
+                Try adjusting your filters, switch tabs, or click Scan Now to scan an environment.
+              </div>
+            </div>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+    </div>
+
+    <!-- ── Browse BIP Reports Dialog ───────────────────────────────────── -->
+    <oj-dialog id="reportBrowseDialog" class="fmt-detail-dialog" dialog-title="Browse BIP Reports &amp; Data Models">
+      <div slot="body">
+        <p class="oj-typography-body-sm oj-text-color-secondary oj-sm-padding-3x-bottom">
+          Enter the BI Publisher catalog folder path to discover available Data Models (XDM) and Reports (XDO).
+        </p>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <oj-select-single
+            label-hint="Environment"
+            value="{{ $variables.reportBrowseEnvId }}"
+            data="[[$variables.availableEnvsADP]]"
+            item-text="label"
+            required="true"
+            style="width:100%;">
+          </oj-select-single>
+          <oj-input-text
+            label-hint="Catalog Folder Path"
+            value="{{ $variables.reportBrowsePath }}"
+            placeholder="/Custom/"
+            help.instruction="e.g. /Custom/  or  /Custom/HCM/Reports/"
+            style="width:100%;">
+          </oj-input-text>
+          <div class="fmt-readonly-notice oj-sm-padding-2x" style="display:flex;gap:8px;align-items:flex-start;">
+            <span class="oj-ux-ico-information-s oj-text-color-info" style="flex-shrink:0;margin-top:2px;"></span>
+            <span class="oj-typography-body-xs oj-text-color-secondary">
+              The tool will call <strong>/xmlpserver/rest/v1/catalog</strong> on the selected environment
+              and list all XDM and XDO files found at the specified path.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div slot="footer">
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.cancelReportBrowse]]">
+          <span>Cancel</span>
+        </oj-button>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.fetchReports]]"
+          disabled="[[!$variables.reportBrowsePath || !$variables.reportBrowseEnvId]]">
+          <span slot="startIcon" class="oj-ux-ico-search"></span>
+          <span>Fetch Reports</span>
+        </oj-button>
+      </div>
+    </oj-dialog>
+
+    <!-- ── Scan Environment Picker Dialog ────────────────────────────── -->
+    <oj-dialog id="scanEnvDialog" dialog-title="Select Environment to Scan">
+      <div slot="body">
+        <p class="oj-typography-body-md oj-sm-padding-3x-bottom">
+          Choose which Oracle Fusion environment to scan for objects. The scan discovers all deployed
+          Fusion objects and updates the inventory.
+        </p>
+        <oj-select-single
+          label-hint="Environment"
+          value="{{ $variables.scanEnvId }}"
+          data="[[$variables.availableEnvsADP]]"
+          item-text="label"
+          required="true"
+          style="width:100%;">
+        </oj-select-single>
+      </div>
+      <div slot="footer">
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.cancelScan]]">
+          <span>Cancel</span>
+        </oj-button>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.confirmScan]]"
+          disabled="[[!$variables.scanEnvId]]">
+          <span slot="startIcon" class="oj-ux-ico-refresh"></span>
+          <span>Start Scan</span>
+        </oj-button>
+      </div>
+    </oj-dialog>
+
+    <!-- ── Object Detail Dialog ───────────────────────────────────────── -->
+    <oj-dialog id="objectDetailDialog" class="fmt-detail-dialog" dialog-title="Object Details">
+      <div slot="body">
+        <oj-bind-if test="[[$variables.selectedObjectDetail !== null]]">
+          <dl class="fmt-detail-list">
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Name</dt>
+            <dd class="oj-typography-subheading-sm">
+              <oj-bind-text value="[[$variables.selectedObjectDetail.name]]"></oj-bind-text>
+            </dd>
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Type</dt>
+            <dd class="oj-typography-body-sm">
+              <oj-bind-text value="[[$variables.selectedObjectDetail.type]]"></oj-bind-text>
+            </dd>
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Module</dt>
+            <dd class="oj-typography-body-sm">
+              <oj-bind-text value="[[$variables.selectedObjectDetail.module]]"></oj-bind-text>
+            </dd>
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Status</dt>
+            <dd>
+              <span class="[['fmt-status-badge fmt-status-' + $variables.selectedObjectDetail.status.toLowerCase()]]">
+                <oj-bind-text value="[[$variables.selectedObjectDetail.status]]"></oj-bind-text>
+              </span>
+            </dd>
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Last Modified</dt>
+            <dd class="oj-typography-body-sm">
+              <oj-bind-text value="[[$variables.selectedObjectDetail.lastModified]]"></oj-bind-text>
+            </dd>
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Version</dt>
+            <dd>
+              <span class="fmt-version-ref">
+                <oj-bind-text value="[[$variables.selectedObjectDetail.version]]"></oj-bind-text>
+              </span>
+            </dd>
+            <dt class="oj-typography-body-sm oj-text-color-secondary">Description</dt>
+            <dd class="oj-typography-body-sm">
+              <oj-bind-text value="[[$variables.selectedObjectDetail.description]]"></oj-bind-text>
+            </dd>
+            <oj-bind-if test="[[$variables.selectedObjectDetail.path]]">
+              <dt class="oj-typography-body-sm oj-text-color-secondary">Catalog Path</dt>
+              <dd>
+                <span class="fmt-version-ref" style="word-break:break-all;">
+                  <oj-bind-text value="[[$variables.selectedObjectDetail.path]]"></oj-bind-text>
+                </span>
+              </dd>
+            </oj-bind-if>
+          </dl>
+        </oj-bind-if>
+      </div>
+      <div slot="footer">
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.closeDetailDrawer]]">
+          <span>Close</span>
+        </oj-button>
+      </div>
+    </oj-dialog>
+
+  </div>
+</oj-sp-general-overview-page>

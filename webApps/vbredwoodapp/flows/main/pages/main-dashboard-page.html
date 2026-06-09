@@ -1,0 +1,244 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="dashboardPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Dashboard"
+  page-subtitle="Migration activity at a glance">
+
+  <div slot="main">
+
+    <!-- KPI Summary Tiles -->
+    <div class="oj-flex oj-sm-flex-wrap oj-sm-padding-4x-bottom" style="gap:var(--oj-spacing-4x);">
+
+      <div class="oj-flex-item fmt-kpi-tile">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-flex oj-sm-align-items-center" style="gap:var(--oj-spacing-2x);">
+            <span class="oj-ux-ico-databases fmt-kpi-icon oj-text-color-info"></span>
+            <div>
+              <div class="oj-typography-heading-lg fmt-kpi-value">
+                <oj-bind-text value="[[$variables.kpiTotalObjects]]"></oj-bind-text>
+              </div>
+              <div class="oj-typography-body-sm oj-text-color-secondary">Total Objects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oj-flex-item fmt-kpi-tile">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-flex oj-sm-align-items-center" style="gap:var(--oj-spacing-2x);">
+            <span class="oj-ux-ico-replace fmt-kpi-icon oj-text-color-warning"></span>
+            <div>
+              <div class="oj-typography-heading-lg fmt-kpi-value">
+                <oj-bind-text value="[[$variables.kpiActiveMigrations]]"></oj-bind-text>
+              </div>
+              <div class="oj-typography-body-sm oj-text-color-secondary">Active Migrations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oj-flex-item fmt-kpi-tile">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-flex oj-sm-align-items-center" style="gap:var(--oj-spacing-2x);">
+            <span class="oj-ux-ico-warning fmt-kpi-icon oj-text-color-danger"></span>
+            <div>
+              <div class="oj-typography-heading-lg fmt-kpi-value">
+                <oj-bind-text value="[[$variables.kpiFailedJobs]]"></oj-bind-text>
+              </div>
+              <div class="oj-typography-body-sm oj-text-color-secondary">Failed Jobs (7d)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oj-flex-item fmt-kpi-tile">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-flex oj-sm-align-items-center" style="gap:var(--oj-spacing-2x);">
+            <span class="oj-ux-ico-cloud fmt-kpi-icon oj-text-color-info"></span>
+            <div>
+              <div class="oj-typography-heading-lg fmt-kpi-value">
+                <oj-bind-text value="[[$variables.kpiEnvironments]]"></oj-bind-text>
+              </div>
+              <div class="oj-typography-body-sm oj-text-color-secondary">Environments</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oj-flex-item fmt-kpi-tile">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-flex oj-sm-align-items-center" style="gap:var(--oj-spacing-2x);">
+            <span class="oj-ux-ico-checkmark-circle fmt-kpi-icon oj-text-color-success"></span>
+            <div>
+              <div class="oj-typography-heading-lg fmt-kpi-value">
+                <oj-bind-text value="[[$variables.kpiSuccessRate]]"></oj-bind-text>%
+              </div>
+              <div class="oj-typography-body-sm oj-text-color-secondary">Success Rate (30d)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Environment Health + Active Migrations row -->
+    <div class="oj-flex oj-sm-flex-wrap oj-sm-padding-4x-bottom" style="gap:var(--oj-spacing-4x);">
+
+      <!-- Environment Health Cards -->
+      <div class="oj-flex-item oj-sm-12 oj-lg-6">
+        <div class="fmt-section-header oj-sm-padding-2x-bottom">
+          <span class="oj-typography-heading-sm">Environment Health</span>
+        </div>
+        <div class="oj-flex oj-sm-flex-wrap" style="gap:var(--oj-spacing-3x);">
+          <oj-bind-for-each data="[[$variables.envHealthData]]">
+            <template>
+              <div class="oj-flex-item fmt-env-health-card fmt-card oj-sm-padding-3x">
+                <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between">
+                  <div>
+                    <div class="oj-typography-subheading-sm">
+                      <oj-bind-text value="[[$current.data.name]]"></oj-bind-text>
+                    </div>
+                    <div class="oj-typography-body-sm oj-text-color-secondary">
+                      <oj-bind-text value="[[$current.data.type]]"></oj-bind-text>
+                    </div>
+                  </div>
+                  <oj-tag severity="[[$current.data.severity]]">
+                    <span><oj-bind-text value="[[$current.data.status]]"></oj-bind-text></span>
+                  </oj-tag>
+                </div>
+                <div class="oj-typography-body-2xs oj-text-color-secondary oj-sm-padding-2x-top">
+                  Last synced: <oj-bind-text value="[[$current.data.lastSync]]"></oj-bind-text>
+                </div>
+              </div>
+            </template>
+          </oj-bind-for-each>
+          <oj-bind-if test="[[$variables.envHealthData.length === 0 && !$variables.isLoading]]">
+            <div class="oj-flex-item oj-sm-12">
+              <oj-illustration-message
+                title="No environments configured"
+                description="Add an environment to start monitoring health.">
+              </oj-illustration-message>
+            </div>
+          </oj-bind-if>
+        </div>
+      </div>
+
+      <!-- Active Migrations Panel -->
+      <div class="oj-flex-item oj-sm-12 oj-lg-6">
+        <div class="fmt-section-header oj-sm-padding-2x-bottom">
+          <span class="oj-typography-heading-sm">Active Migrations</span>
+        </div>
+        <oj-bind-if test="[[$variables.activeMigrations.length === 0 && !$variables.isLoading]]">
+          <oj-illustration-message
+            title="No active migrations"
+            description="Start a new migration from the Migration Wizard.">
+          </oj-illustration-message>
+        </oj-bind-if>
+        <oj-bind-for-each data="[[$variables.activeMigrations]]">
+          <template>
+            <div class="fmt-card oj-sm-padding-3x oj-sm-margin-2x-bottom">
+              <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between">
+                <div>
+                  <div class="oj-typography-subheading-sm">
+                    <oj-bind-text value="[[$current.data.name]]"></oj-bind-text>
+                  </div>
+                  <div class="oj-typography-body-sm oj-text-color-secondary">
+                    <oj-bind-text value="[[$current.data.source]]"></oj-bind-text>
+                    &nbsp;→&nbsp;
+                    <oj-bind-text value="[[$current.data.target]]"></oj-bind-text>
+                  </div>
+                </div>
+                <oj-tag severity="info">
+                  <span>Running</span>
+                </oj-tag>
+              </div>
+              <oj-c-progress-bar
+                value="[[$current.data.progress]]"
+                max="100"
+                class="oj-sm-padding-2x-top">
+              </oj-c-progress-bar>
+              <div class="oj-typography-body-2xs oj-text-color-secondary oj-sm-padding-1x-top">
+                <oj-bind-text value="[[$current.data.progress]]"></oj-bind-text>% complete
+              </div>
+            </div>
+          </template>
+        </oj-bind-for-each>
+      </div>
+
+    </div>
+
+    <!-- Recent Jobs Table -->
+    <div class="fmt-card oj-sm-padding-4x oj-sm-padding-4x-bottom">
+      <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+        <span class="oj-typography-heading-sm">Recent Jobs</span>
+        <oj-button chroming="outlined" id="viewAllJobsBtn">
+          <span>View All</span>
+        </oj-button>
+      </div>
+
+      <oj-table
+        id="recentJobsTable"
+        data="[[$variables.recentJobsADP]]"
+        columns='[
+          {"headerText":"Job ID","field":"id","sortable":"enabled","width":"100px"},
+          {"headerText":"Migration","field":"migrationName","sortable":"enabled"},
+          {"headerText":"Source","field":"source"},
+          {"headerText":"Target","field":"target"},
+          {"headerText":"Objects","field":"objectCount","width":"80px"},
+          {"headerText":"Status","field":"status","template":"statusCell","width":"110px"},
+          {"headerText":"Started","field":"startedAt","sortable":"enabled","width":"140px"}
+        ]'
+        scroll-policy="loadMoreOnScroll"
+        scroll-policy-options.fetch-size="10">
+        <template slot="statusCell">
+          <oj-tag severity="[[($current.row.status === 'SUCCESS') ? 'success' : ($current.row.status === 'FAILED') ? 'error' : ($current.row.status === 'RUNNING') ? 'info' : ($current.row.status === 'ABORTED') ? 'warning' : 'neutral']]">
+            <span><oj-bind-text value="[[$current.row.status]]"></oj-bind-text></span>
+          </oj-tag>
+        </template>
+        <template slot="noData">
+          <oj-bind-if test="[[$variables.isLoading]]">
+            <div class="oj-sm-padding-4x">
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px"></oj-c-skeleton>
+            </div>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isLoading]]">
+            <oj-illustration-message
+              title="No recent jobs"
+              description="Run a migration to see job history here.">
+            </oj-illustration-message>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+    </div>
+
+    <!-- Quick Actions Row -->
+    <div class="oj-flex oj-sm-flex-wrap oj-sm-padding-4x-top" style="gap:var(--oj-spacing-3x);">
+      <div class="oj-flex-item oj-sm-flex-initial">
+        <oj-button chroming="callToAction" id="newMigrationBtn">
+          <span slot="startIcon" class="oj-ux-ico-replace"></span>
+          <span>New Migration</span>
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-flex-initial">
+        <oj-button chroming="outlined" id="scanInventoryBtn">
+          <span slot="startIcon" class="oj-ux-ico-refresh"></span>
+          <span>Scan Inventory</span>
+        </oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-flex-initial">
+        <oj-button chroming="outlined" id="viewReportsBtn">
+          <span slot="startIcon" class="oj-ux-ico-bar-chart"></span>
+          <span>View Reports</span>
+        </oj-button>
+      </div>
+    </div>
+
+  </div>
+</oj-sp-general-overview-page>

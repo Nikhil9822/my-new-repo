@@ -1,0 +1,152 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="reportsPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Reports"
+  page-subtitle="Migration activity charts and metrics">
+
+  <div slot="main">
+
+    <!-- Date range + export toolbar -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom">
+      <div class="oj-flex oj-sm-align-items-end oj-sm-flex-wrap" style="gap:var(--oj-spacing-3x);">
+        <oj-input-date-range
+          label-hint="Date Range"
+          value="{{ $variables.dateRange }}"
+          class="oj-flex-item"
+          on-value-changed="[[$listeners.refreshReports]]">
+        </oj-input-date-range>
+        <oj-c-select-single
+          label-hint="Environment"
+          value="{{ $variables.filterEnv }}"
+          data="[[$variables.envFilterADP]]"
+          item-text="label"
+          class="oj-flex-item"
+          style="min-width:180px;"
+          on-value-changed="[[$listeners.refreshReports]]">
+        </oj-c-select-single>
+        <div class="oj-flex-item oj-sm-flex-initial oj-flex" style="gap:var(--oj-spacing-2x);">
+          <oj-button chroming="outlined" on-oj-action="[[$listeners.exportPDF]]">
+            <span slot="startIcon" class="oj-ux-ico-download"></span>
+            <span>Export PDF</span>
+          </oj-button>
+          <oj-button chroming="outlined" on-oj-action="[[$listeners.exportCSV]]">
+            <span slot="startIcon" class="oj-ux-ico-download"></span>
+            <span>Export CSV</span>
+          </oj-button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts row 1: Migration Trends + Object Types -->
+    <div class="oj-flex oj-sm-flex-wrap oj-sm-padding-4x-bottom" style="gap:var(--oj-spacing-4x);">
+
+      <div class="oj-flex-item oj-sm-12 oj-lg-7">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom">Migration Trends (30 days)</div>
+          <oj-chart
+            id="trendChart"
+            type="line"
+            data="[[$variables.trendChartData]]"
+            groups="[[$variables.trendGroups]]"
+            series="[[$variables.trendSeries]]"
+            style-defaults.line-type="curved"
+            style-defaults.marker-displayed="off"
+            animation-on-display="auto"
+            overview.rendered="off"
+            style="height:280px; width:100%;">
+          </oj-chart>
+        </div>
+      </div>
+
+      <div class="oj-flex-item oj-sm-12 oj-lg-5">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom">Objects by Type</div>
+          <oj-chart
+            id="typeDonutChart"
+            type="donut"
+            data="[[$variables.typeChartData]]"
+            groups="[[$variables.typeGroups]]"
+            series="[[$variables.typeSeries]]"
+            animation-on-display="auto"
+            style="height:280px; width:100%;">
+          </oj-chart>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Charts row 2: Jobs by Status + Success Rate -->
+    <div class="oj-flex oj-sm-flex-wrap oj-sm-padding-4x-bottom" style="gap:var(--oj-spacing-4x);">
+
+      <div class="oj-flex-item oj-sm-12 oj-lg-6">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom">Jobs by Status</div>
+          <oj-chart
+            id="statusBarChart"
+            type="bar"
+            data="[[$variables.statusChartData]]"
+            groups="[[$variables.statusGroups]]"
+            series="[[$variables.statusSeries]]"
+            animation-on-display="auto"
+            style="height:240px; width:100%;">
+          </oj-chart>
+        </div>
+      </div>
+
+      <div class="oj-flex-item oj-sm-12 oj-lg-6">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom">Success Rate by Environment</div>
+          <oj-chart
+            id="successRateChart"
+            type="line"
+            data="[[$variables.successRateData]]"
+            groups="[[$variables.successRateGroups]]"
+            series="[[$variables.successRateSeries]]"
+            animation-on-display="auto"
+            style="height:240px; width:100%;">
+          </oj-chart>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Summary Metrics Table -->
+    <div class="fmt-card oj-sm-padding-4x">
+      <div class="oj-typography-heading-sm oj-sm-padding-3x-bottom">Summary Metrics</div>
+      <oj-table
+        id="metricsTable"
+        data="[[$variables.metricsADP]]"
+        columns='[
+          {"headerText":"Environment","field":"environment","sortable":"enabled"},
+          {"headerText":"Total Jobs","field":"totalJobs","width":"100px"},
+          {"headerText":"Successful","field":"successCount","width":"100px"},
+          {"headerText":"Failed","field":"failedCount","width":"100px"},
+          {"headerText":"Objects Migrated","field":"objectsMigrated","width":"140px"},
+          {"headerText":"Avg Duration","field":"avgDuration","width":"110px"},
+          {"headerText":"Success Rate","field":"successRate","template":"rateCell","width":"110px"}
+        ]'>
+        <template slot="rateCell">
+          <span class="[[$current.row.successRate >= 90 ? 'oj-text-color-success' : $current.row.successRate >= 70 ? 'oj-text-color-warning' : 'oj-text-color-danger']]">
+            <oj-bind-text value="[[$current.row.successRate]]"></oj-bind-text>%
+          </span>
+        </template>
+        <template slot="noData">
+          <oj-bind-if test="[[$variables.isLoading]]">
+            <div class="oj-sm-padding-4x">
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px"></oj-c-skeleton>
+            </div>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isLoading]]">
+            <oj-illustration-message title="No data available" description="Select a date range to view metrics."></oj-illustration-message>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+    </div>
+
+  </div>
+</oj-sp-general-overview-page>

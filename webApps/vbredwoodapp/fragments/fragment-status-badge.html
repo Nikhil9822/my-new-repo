@@ -1,0 +1,8 @@
+<!-- fragment-status-badge: Renders a Redwood oj-tag with correct severity for job/migration status.
+     Parameters: status (string) — SUCCESS | FAILED | RUNNING | QUEUED | DRAFT | ABORTED -->
+
+<oj-tag
+  severity="{{ $variables.severity }}"
+  class="fmt-status-badge">
+  <span><oj-bind-text value="[[$variables.status]]"></oj-bind-text></span>
+</oj-tag>

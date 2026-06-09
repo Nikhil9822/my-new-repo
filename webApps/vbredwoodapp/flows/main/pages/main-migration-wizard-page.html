@@ -1,0 +1,358 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="workbenchPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Migration Workbench"
+  page-subtitle="Select object type, fetch from source, choose items, and migrate to target">
+
+  <div slot="main">
+
+    <!-- ── Action bar: env summary + main action buttons ────────────────── -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div style="display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;flex:1;min-width:0;">
+        <div style="min-width:220px;flex:1;">
+          <oj-select-single
+            id="sourceEnvSelect"
+            label-hint="Source Environment"
+            value="{{ $variables.sourceEnvId }}"
+            data="[[$variables.availableEnvsADP]]"
+            item-text="label">
+          </oj-select-single>
+        </div>
+        <div style="display:flex;align-items:center;padding-bottom:8px;">
+          <span class="oj-ux-ico-arrow-right" style="font-size:1.25rem;color:var(--oj-core-text-color-secondary);"></span>
+        </div>
+        <div style="min-width:220px;flex:1;">
+          <oj-select-single
+            id="targetEnvSelect"
+            label-hint="Target Environment"
+            value="{{ $variables.targetEnvId }}"
+            data="[[$variables.availableEnvsADP]]"
+            item-text="label">
+          </oj-select-single>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;padding-bottom:4px;">
+        <oj-bind-if test="[[$variables.isFetching || $variables.isMigrating]]">
+          <oj-progress-circle size="sm" value="-1"></oj-progress-circle>
+        </oj-bind-if>
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.validateWorkbenchSelection]]"
+          disabled="[[$variables.selectionCount === 0]]">
+          <span slot="startIcon" class="oj-ux-ico-checkmark-circle"></span>
+          <span>Validate Selected</span>
+        </oj-button>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.openMigrateDialog]]"
+          disabled="[[$variables.selectionCount === 0]]">
+          <span slot="startIcon" class="oj-ux-ico-replace"></span>
+          <span>Migrate Selected
+            <oj-bind-if test="[[$variables.selectionCount > 0]]">
+              (<oj-bind-text value="[[$variables.selectionCount]]"></oj-bind-text>)
+            </oj-bind-if>
+          </span>
+        </oj-button>
+      </div>
+    </div>
+
+    <!-- ── Object type chip strip ────────────────────────────────────────── -->
+    <div class="fmt-tab-strip oj-sm-margin-4x-bottom">
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='bip'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="bip">
+        BIP Reports
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='lookup'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="lookup">
+        Lookups
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='profile'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="profile">
+        Profile Options
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='valueset'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="valueset">
+        Value Sets
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='dff'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="dff">
+        DFF
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='kff'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="kff">
+        KFF
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='oic'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="oic">
+        OIC Integrations
+      </oj-button>
+      <oj-button
+        chroming="[[$variables.selectedObjectType==='vbcs'?'callToAction':'borderless']]"
+        on-oj-action="[[$listeners.selectWorkbenchTab]]"
+        data-type-key="vbcs">
+        VBCS Apps
+      </oj-button>
+    </div>
+
+    <!-- ── Fetch controls card ───────────────────────────────────────────── -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom">
+      <div class="oj-typography-subheading-sm oj-sm-margin-2x-bottom" style="margin-bottom:12px;">
+        <span class="oj-ux-ico-download" style="margin-right:6px;"></span>Fetch from Source
+      </div>
+
+      <!-- BIP Reports: free-text path input only -->
+      <oj-bind-if test="[[$variables.selectedObjectType === 'bip']]">
+        <div style="display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px;">
+          <div style="flex:1;min-width:260px;">
+            <oj-input-text
+              id="bipReportPathInput"
+              label-hint="Catalog Folder Path"
+              value="{{ $variables.bipReportPath }}"
+              placeholder="/Custom/EquipmentRite/">
+            </oj-input-text>
+          </div>
+          <div style="flex-shrink:0;padding-bottom:4px;">
+            <oj-button chroming="callToAction" on-oj-action="[[$listeners.fetchWorkbenchObjects]]"
+              disabled="[[$variables.isFetching]]">
+              <oj-bind-if test="[[$variables.isFetching]]">
+                <span slot="startIcon"><oj-progress-circle size="sm" value="-1"></oj-progress-circle></span>
+                <span>Fetching...</span>
+              </oj-bind-if>
+              <oj-bind-if test="[[!$variables.isFetching]]">
+                <span slot="startIcon" class="oj-ux-ico-download"></span>
+                <span>Fetch Objects</span>
+              </oj-bind-if>
+            </oj-button>
+          </div>
+        </div>
+      </oj-bind-if>
+
+      <!-- Other types: filter1 + filter2 dropdowns -->
+      <oj-bind-if test="[[$variables.selectedObjectType !== 'bip']]">
+        <div style="display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px;">
+          <div style="min-width:200px;flex:1;">
+            <oj-select-single
+              id="filter1Select"
+              label-hint="[[$variables.filter1Label]]"
+              value="{{ $variables.filter1Value }}"
+              data="[[$variables.filter1ADP]]"
+              item-text="label">
+            </oj-select-single>
+          </div>
+          <div style="min-width:200px;flex:1;">
+            <oj-select-single
+              id="filter2Select"
+              label-hint="[[$variables.filter2Label]]"
+              value="{{ $variables.filter2Value }}"
+              data="[[$variables.filter2ADP]]"
+              item-text="label">
+            </oj-select-single>
+          </div>
+          <div style="flex-shrink:0;padding-bottom:4px;">
+            <oj-button chroming="callToAction" on-oj-action="[[$listeners.fetchWorkbenchObjects]]"
+              disabled="[[$variables.isFetching]]">
+              <oj-bind-if test="[[$variables.isFetching]]">
+                <span slot="startIcon"><oj-progress-circle size="sm" value="-1"></oj-progress-circle></span>
+                <span>Fetching...</span>
+              </oj-bind-if>
+              <oj-bind-if test="[[!$variables.isFetching]]">
+                <span slot="startIcon" class="oj-ux-ico-download"></span>
+                <span>Fetch Objects</span>
+              </oj-bind-if>
+            </oj-button>
+          </div>
+        </div>
+      </oj-bind-if>
+
+    </div>
+
+    <!-- ── BIP CORS/API error banner ───────────────────────────────────── -->
+    <oj-bind-if test="[[$variables.bipApiError !== '']]">
+      <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom"
+           style="display:flex;align-items:flex-start;gap:12px;border-left:4px solid var(--oj-core-text-color-warning,#ffc107);">
+        <span class="oj-ux-ico-warning-s" style="font-size:1.25rem;color:var(--oj-core-text-color-warning,#ffc107);flex-shrink:0;margin-top:2px;"></span>
+        <div style="flex:1;">
+          <div class="oj-typography-subheading-xs" style="margin-bottom:4px;">BIP API Notice — Demo data loaded</div>
+          <div class="oj-typography-body-sm oj-text-color-secondary">
+            <oj-bind-text value="[[$variables.bipApiError]]"></oj-bind-text>
+          </div>
+        </div>
+        <oj-button chroming="borderless" on-oj-action="[[$listeners.dismissBipError]]">
+          <span slot="startIcon" class="oj-ux-ico-close"></span>
+          <span>Dismiss</span>
+        </oj-button>
+      </div>
+    </oj-bind-if>
+
+    <!-- ── Results table card ────────────────────────────────────────────── -->
+    <div class="fmt-card oj-sm-padding-4x">
+
+      <!-- Table header row -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="oj-typography-subheading-sm">
+            <oj-bind-text value="[[$variables.currentTypeLabel]]"></oj-bind-text>
+          </span>
+          <span class="oj-typography-body-xs oj-text-color-secondary">
+            <oj-bind-text value="[[$variables.filteredData.length]]"></oj-bind-text> objects
+          </span>
+          <oj-bind-if test="[[$variables.selectionCount > 0]]">
+            <span class="fmt-selected-badge oj-typography-body-xs">
+              <oj-bind-text value="[[$variables.selectionCount]]"></oj-bind-text> selected
+            </span>
+          </oj-bind-if>
+        </div>
+      </div>
+
+      <!-- Search / filter toolbar -->
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px;margin-bottom:12px;">
+        <div style="flex:1;min-width:200px;">
+          <oj-input-text
+            id="workbenchSearch"
+            label-hint="Search objects"
+            value="{{ $variables.searchText }}"
+            placeholder="Search by name, type, module..."
+            on-raw-value-changed="[[$listeners.filterWorkbenchObjects]]"
+            on-value-changed="[[$listeners.filterWorkbenchObjects]]">
+          </oj-input-text>
+        </div>
+        <div style="min-width:160px;">
+          <oj-select-single
+            id="statusFilterSelect"
+            label-hint="Status"
+            value="{{ $variables.statusFilter }}"
+            data="[[$variables.statusFilterADP]]"
+            item-text="label"
+            on-value-changed="[[$listeners.filterWorkbenchObjects]]">
+          </oj-select-single>
+        </div>
+        <div style="flex-shrink:0;padding-bottom:4px;">
+          <oj-button chroming="borderless" on-oj-action="[[$listeners.clearWorkbenchFilters]]">
+            <span slot="startIcon" class="oj-ux-ico-filter-remove"></span>
+            <span>Clear</span>
+          </oj-button>
+        </div>
+      </div>
+
+      <!-- Objects table -->
+      <oj-table
+        id="workbenchTable"
+        data="[[$variables.filteredObjectsADP]]"
+        columns="[[$variables.tableColumns]]"
+        selection-mode.row="multiple"
+        selected.rows="{{ $variables.selectedRows }}"
+        on-selected-changed="[[$listeners.workbenchRowSelectionChanged]]"
+        scroll-policy="loadMoreOnScroll"
+        scroll-policy-options.fetch-size="50">
+        <template slot="statusCell">
+          <span class="[['fmt-status-badge fmt-status-' + $current.data.status.toLowerCase()]]">
+            <oj-bind-text value="[[$current.data.status]]"></oj-bind-text>
+          </span>
+        </template>
+        <template slot="noData">
+          <oj-bind-if test="[[$variables.isFetching]]">
+            <div style="display:flex;align-items:center;justify-content:center;padding:32px;gap:8px;">
+              <oj-progress-circle size="sm" value="-1"></oj-progress-circle>
+              <span class="oj-typography-body-sm oj-text-color-secondary">Fetching objects from source...</span>
+            </div>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isFetching]]">
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px;text-align:center;">
+              <span class="oj-ux-ico-search" style="font-size:3rem;color:var(--oj-core-text-color-secondary);margin-bottom:16px;"></span>
+              <div class="oj-typography-subheading-sm">No objects loaded</div>
+              <div class="oj-typography-body-sm oj-text-color-secondary" style="margin-top:4px;">
+                Select filters above and click <strong>Fetch Objects</strong> to load data from the source environment.
+              </div>
+            </div>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+
+    </div>
+
+    <!-- ── Migration Confirm Dialog ──────────────────────────────────────── -->
+    <oj-dialog id="workbenchMigrateDialog" class="fmt-detail-dialog" dialog-title="Confirm Migration">
+      <div slot="body">
+
+        <!-- Summary -->
+        <div class="oj-sm-margin-4x-bottom" style="padding:12px 16px;background:var(--oj-core-bg-color-neutral,#f5f5f5);border-radius:6px;">
+          <div class="oj-typography-subheading-sm" style="margin-bottom:4px;">
+            You are about to migrate
+            <strong><oj-bind-text value="[[$variables.migrationDialogCount]]"></oj-bind-text></strong>
+            item<oj-bind-if test="[[$variables.migrationDialogCount !== 1]]">s</oj-bind-if>
+            of type <strong><oj-bind-text value="[[$variables.migrationDialogType]]"></oj-bind-text></strong>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+            <span class="oj-typography-body-sm oj-text-color-secondary">
+              <strong>Source:</strong> <oj-bind-text value="[[$variables.sourceEnvLabel]]"></oj-bind-text>
+            </span>
+            <span class="oj-ux-ico-arrow-right oj-text-color-secondary"></span>
+            <span class="oj-typography-body-sm oj-text-color-secondary">
+              <strong>Target:</strong> <oj-bind-text value="[[$variables.targetEnvLabel]]"></oj-bind-text>
+            </span>
+          </div>
+        </div>
+
+        <!-- Options -->
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+            <input type="checkbox" id="cbBackup" checked style="width:16px;height:16px;cursor:pointer;" />
+            <span class="oj-typography-body-sm">Create backup before migration</span>
+          </label>
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+            <input type="checkbox" id="cbAuditLog" checked style="width:16px;height:16px;cursor:pointer;" />
+            <span class="oj-typography-body-sm">Log in audit trail</span>
+          </label>
+        </div>
+
+        <!-- Progress (shown when migrating) -->
+        <oj-bind-if test="[[$variables.isMigrating]]">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px 0;">
+            <oj-progress-circle size="md" value="-1"></oj-progress-circle>
+            <span class="oj-typography-body-sm oj-text-color-secondary">
+              <oj-bind-text value="[[$variables.migrationMessage]]"></oj-bind-text>
+            </span>
+            <div style="width:100%;">
+              <oj-progress-bar value="[[$variables.migrationProgress]]" max="100"></oj-progress-bar>
+            </div>
+          </div>
+        </oj-bind-if>
+
+      </div>
+      <div slot="footer">
+        <oj-button chroming="outlined"
+          on-oj-action="[[$listeners.cancelWorkbenchMigration]]"
+          disabled="[[$variables.isMigrating]]">
+          <span>Cancel</span>
+        </oj-button>
+        <oj-button chroming="callToAction"
+          on-oj-action="[[$listeners.startWorkbenchMigration]]"
+          disabled="[[$variables.isMigrating]]">
+          <oj-bind-if test="[[$variables.isMigrating]]">
+            <span slot="startIcon"><oj-progress-circle size="sm" value="-1"></oj-progress-circle></span>
+            <span>Migrating...</span>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isMigrating]]">
+            <span slot="startIcon" class="oj-ux-ico-replace"></span>
+            <span>Start Migration</span>
+          </oj-bind-if>
+        </oj-button>
+      </div>
+    </oj-dialog>
+
+  </div>
+</oj-sp-general-overview-page>

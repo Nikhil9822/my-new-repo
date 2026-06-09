@@ -1,0 +1,86 @@
+{
+  "title": "Settings",
+  "description": "Application configuration: general, storage, notifications, security",
+  "variables": {
+    "isAdmin": {"type": "boolean", "defaultValue": false},
+    "activeTab": {"type": "string", "defaultValue": "general-tab"},
+    "settings": {
+      "type": "object",
+      "defaultValue": {
+        "appName": "Fusion Object Migration Tool",
+        "defaultEnv": "",
+        "defaultSelectionMode": "manual",
+        "dateFormat": "YYYY-MM-DD HH:mm",
+        "scanTimeout": 300,
+        "autoScanFrequency": "manual",
+        "storageProvider": "git",
+        "gitDefaultRepo": "",
+        "gitDefaultBranch": "main",
+        "gitAuthorName": "",
+        "gitAuthorEmail": "",
+        "ociNamespace": "",
+        "ociDefaultBucket": "",
+        "ociRegion": "",
+        "notifySuccess": true,
+        "notifyFailure": true,
+        "notifyApproval": true,
+        "dailySummary": false,
+        "notificationRecipients": "",
+        "sessionTimeout": 60,
+        "maxSessions": 5,
+        "requireMfaProd": true,
+        "enforceIpAllowlist": false,
+        "auditRetentionDays": 365,
+        "logAllCalls": false
+      }
+    },
+    "selectionModeADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{"value": "manual", "label": "Manual Selection"}, {"value": "pattern", "label": "Pattern Match"}],
+        "keyAttributes": "value"
+      }
+    },
+    "dateFormatADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{"value": "YYYY-MM-DD HH:mm", "label": "YYYY-MM-DD HH:mm"}, {"value": "DD/MM/YYYY HH:mm", "label": "DD/MM/YYYY HH:mm"}],
+        "keyAttributes": "value"
+      }
+    },
+    "autoScanADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{"value": "manual", "label": "Manual Only"}, {"value": "daily", "label": "Daily"}, {"value": "weekly", "label": "Weekly"}],
+        "keyAttributes": "value"
+      }
+    },
+    "storageProviderADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{"value": "git", "label": "Git Repository"}, {"value": "oci", "label": "OCI Object Storage"}, {"value": "none", "label": "None"}],
+        "keyAttributes": "value"
+      }
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadSettings"}]},
+    "tabChanged": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "tabChanged"}]},
+    "saveSettings": {"chains": [{"chain": "saveSettings"}]},
+    "discardChanges": {"chains": [{"chain": "loadSettings"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-tab-bar": {"path": "ojs/ojtabbar"},
+      "oj-c-form-layout": {"path": "oj-c/form-layout/loader"},
+      "oj-c-input-text": {"path": "oj-c/input-text/loader"},
+      "oj-c-select-single": {"path": "oj-c/select-single/loader"},
+      "oj-c-checkbox": {"path": "oj-c/checkbox/loader"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

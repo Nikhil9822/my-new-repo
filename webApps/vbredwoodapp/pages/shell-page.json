@@ -1,0 +1,94 @@
+{
+  "description": "Application shell — top header, router outlet, and bottom navigation bar",
+  "routerFlow": "main",
+  "variables": {
+    "messageToast": {
+      "type": "string"
+    },
+    "messagesBannerADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "MessagesBannerType",
+        "keyAttributes": "id"
+      }
+    },
+    "messageId": {
+      "type": "number",
+      "defaultValue": 1
+    },
+    "currentPage": {
+      "type": "string",
+      "defaultValue": "main-dashboard"
+    },
+    "currentEnv": {
+      "type": "string",
+      "defaultValue": "Production"
+    },
+    "notificationCount": {
+      "type": "number",
+      "defaultValue": 0
+    }
+  },
+  "metadata": {},
+  "types": {
+    "MessagesBannerType": {
+      "id": "number",
+      "messageType": "string",
+      "primaryText": "string",
+      "primaryActionLabel": "string",
+      "secondaryText": "any",
+      "secondaryActionLabel": "string"
+    }
+  },
+  "eventListeners": {
+    "application:spShowToast": {
+      "chains": [
+        {
+          "parameters": { "event": "{{ $event }}" },
+          "chain": "showMessageToast"
+        }
+      ]
+    },
+    "messagesBannerSpClose": {
+      "chains": [
+        {
+          "parameters": { "event": "{{ $event }}" },
+          "chain": "closeMessageBanner"
+        }
+      ]
+    },
+    "vbNotification": {
+      "chains": [
+        {
+          "parameters": { "event": "{{ $event }}" },
+          "chain": "showNotificationMessage"
+        }
+      ]
+    },
+    "navItemClick": {
+      "chains": [
+        {
+          "parameters": { "pageId": "{{ $event.currentTarget.id }}" },
+          "chain": "navigate"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-sp-messages-banner": {
+        "path": "oj-sp/messages-banner/loader"
+      },
+      "oj-sp-messages-toast": {
+        "path": "oj-sp/messages-toast/loader"
+      },
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-tag": {
+        "path": "ojs/ojtag"
+      }
+    }
+  },
+  "translations": {}
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Object Inventory",
+  "description": "Browse, filter and select Fusion objects across 19 object types",
+  "variables": {
+    "isLoading": { "type": "boolean", "defaultValue": true },
+    "isScanning": { "type": "boolean", "defaultValue": false },
+    "lastScanTime": { "type": "string", "defaultValue": "Never" },
+    "totalObjects": { "type": "number", "defaultValue": 0 },
+    "scannedEnv": { "type": "string", "defaultValue": "No environment scanned yet" },
+    "activeTab": { "type": "string", "defaultValue": "reports-tab" },
+    "searchText": { "type": "string", "defaultValue": "" },
+    "filterEnv": { "type": "string", "defaultValue": "all" },
+    "envFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          {"value": "all", "label": "All Modules"},
+          {"value": "HCM", "label": "HCM"},
+          {"value": "ERP", "label": "ERP / Finance"},
+          {"value": "CX",  "label": "CX / Sales"},
+          {"value": "SCM", "label": "SCM"}
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "objectsData": { "type": "object[]", "defaultValue": [] },
+    "filteredData": { "type": "object[]", "defaultValue": [] },
+    "filteredObjectsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [],
+        "keyAttributes": "id"
+      }
+    },
+    "selectedObjects": { "type": "string[]", "defaultValue": [] },
+    "selectedRows": { "type": "object", "defaultValue": { "row": { "keys": [] } } },
+    "selectedObjectDetail": { "type": "object", "defaultValue": null },
+    "scanEnvId": { "type": "string", "defaultValue": "demo" },
+    "reportBrowsePath": { "type": "string", "defaultValue": "/Custom/" },
+    "reportBrowseEnvId": { "type": "string", "defaultValue": "" },
+    "availableEnvsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{"value": "demo", "label": "Oracle Fusion (Demo)"}],
+        "keyAttributes": "value"
+      }
+    },
+    "bipApiError": { "type": "string", "defaultValue": "" }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter":             { "chains": [{"chain": "loadInventory"}] },
+    "scanInventory":       { "chains": [{"chain": "scanInventory"}] },
+    "confirmScan":         { "chains": [{"chain": "confirmScan"}] },
+    "cancelScan":          { "chains": [{"chain": "cancelScan"}] },
+    "migrateSelected":     { "chains": [{"chain": "migrateSelected"}] },
+    "filterObjects":       { "chains": [{"chain": "filterObjects"}] },
+    "clearFilters":        { "chains": [{"chain": "clearFilters"}] },
+    "selectTab":           { "chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "selectTab"}] },
+    "fetchReports":        { "chains": [{"chain": "fetchReports"}] },
+    "cancelReportBrowse":  { "chains": [{"chain": "cancelReportBrowse"}] },
+    "dismissBipError":     { "chains": [{"chain": "dismissBipError"}] },
+    "rowSelectionChanged": { "chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "rowSelectionChanged"}] },
+    "viewObjectDetail":    { "chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "viewObjectDetail"}] },
+    "closeDetailDrawer":   { "chains": [{"chain": "closeDetailDrawer"}] }
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": { "path": "oj-sp/general-overview-page/loader" },
+      "oj-table":              { "path": "ojs/ojtable" },
+      "oj-button":             { "path": "ojs/ojbutton" },
+      "oj-input-text":         { "path": "ojs/ojinputtext" },
+      "oj-select-single":      { "path": "ojs/ojselectsingle" },
+      "oj-progress-circle":    { "path": "ojs/ojprogress" },
+      "oj-dialog":             { "path": "ojs/ojdialog" }
+    }
+  }
+}

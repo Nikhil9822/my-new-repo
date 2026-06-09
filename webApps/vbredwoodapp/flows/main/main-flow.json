@@ -1,0 +1,44 @@
+{
+  "id": "main",
+  "description": "Main application flow — contains all 11 feature pages",
+  "defaultPage": "main-dashboard",
+  "pages": {
+    "main-dashboard": {
+      "path": "pages/main-dashboard-page"
+    },
+    "main-environments": {
+      "path": "pages/main-environments-page"
+    },
+    "main-inventory": {
+      "path": "pages/main-inventory-page"
+    },
+    "main-migration-wizard": {
+      "path": "pages/main-migration-wizard-page"
+    },
+    "main-version-control": {
+      "path": "pages/main-version-control-page"
+    },
+    "main-pipelines": {
+      "path": "pages/main-pipelines-page"
+    },
+    "main-job-history": {
+      "path": "pages/main-job-history-page"
+    },
+    "main-reports": {
+      "path": "pages/main-reports-page"
+    },
+    "main-user-management": {
+      "path": "pages/main-user-management-page"
+    },
+    "main-audit-trail": {
+      "path": "pages/main-audit-trail-page"
+    },
+    "main-settings": {
+      "path": "pages/main-settings-page"
+    }
+  },
+  "chains": {},
+  "services": {},
+  "types": {},
+  "variables": {}
+}

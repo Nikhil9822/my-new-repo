@@ -1,0 +1,166 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="pipelinesPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Pipelines"
+  page-subtitle="Define and run automated migration pipelines">
+
+  <div slot="main">
+    <div class="oj-flex" style="gap:var(--oj-spacing-4x); min-height:600px;">
+
+      <!-- Left: Pipeline list -->
+      <div class="oj-flex-item oj-sm-12 oj-md-4" style="border-right:1px solid var(--oj-core-divider-color); padding-right:var(--oj-spacing-4x);">
+
+        <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+          <span class="oj-typography-heading-sm">Pipelines</span>
+          <oj-button chroming="callToAction" id="newPipelineBtn" on-oj-action="[[$listeners.createPipeline]]">
+            <span slot="startIcon" class="oj-ux-ico-plus"></span>
+            <span>New</span>
+          </oj-button>
+        </div>
+
+        <oj-bind-if test="[[$variables.isLoading]]">
+          <oj-c-skeleton height="60px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+          <oj-c-skeleton height="60px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+          <oj-c-skeleton height="60px"></oj-c-skeleton>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[!$variables.isLoading && $variables.pipelines.length === 0]]">
+          <oj-illustration-message title="No pipelines" description="Create a pipeline to automate recurring migrations."></oj-illustration-message>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[!$variables.isLoading]]">
+          <oj-bind-for-each data="[[$variables.pipelines]]">
+            <template>
+              <div class="fmt-env-list-item oj-sm-padding-3x oj-sm-margin-2x-bottom"
+                on-click="[[$listeners.selectPipeline]]"
+                data-pipeline-id="[[$current.data.id]]">
+                <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between">
+                  <div>
+                    <div class="oj-typography-subheading-sm"><oj-bind-text value="[[$current.data.name]]"></oj-bind-text></div>
+                    <div class="oj-typography-body-sm oj-text-color-secondary">
+                      <oj-bind-text value="[[$current.data.schedule]]"></oj-bind-text>
+                    </div>
+                  </div>
+                  <oj-tag severity="[[$current.data.enabled ? 'success' : 'neutral']]">
+                    <span><oj-bind-text value="[[$current.data.enabled ? 'Active' : 'Disabled']]"></oj-bind-text></span>
+                  </oj-tag>
+                </div>
+              </div>
+            </template>
+          </oj-bind-for-each>
+        </oj-bind-if>
+
+      </div>
+
+      <!-- Right: Pipeline detail -->
+      <div class="oj-flex-item oj-sm-12 oj-md-8">
+
+        <oj-bind-if test="[[!$variables.selectedPipeline]]">
+          <oj-illustration-message title="Select a pipeline" description="Choose a pipeline from the list to view details, runs, and YAML."></oj-illustration-message>
+        </oj-bind-if>
+
+        <oj-bind-if test="[[$variables.selectedPipeline !== null]]">
+
+          <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+            <span class="oj-typography-heading-sm"><oj-bind-text value="[[$variables.selectedPipeline.name]]"></oj-bind-text></span>
+            <div class="oj-flex" style="gap:var(--oj-spacing-2x);">
+              <oj-button chroming="callToAction" id="runPipelineBtn" on-oj-action="[[$listeners.runPipeline]]">
+                <span slot="startIcon" class="oj-ux-ico-play"></span>
+                <span>Run Now</span>
+              </oj-button>
+              <oj-button chroming="outlined" id="editPipelineBtn" on-oj-action="[[$listeners.editPipeline]]">
+                <span slot="startIcon" class="oj-ux-ico-edit"></span>
+                <span>Edit</span>
+              </oj-button>
+            </div>
+          </div>
+
+          <!-- Detail tabs: Definition / Runs / YAML -->
+          <oj-tab-bar
+            id="pipelineDetailTabs"
+            selection="{{ $variables.pipelineDetailTab }}"
+            on-selection-changed="[[$listeners.pipelineDetailTabChanged]]"
+            display="standard"
+            edge="top"
+            class="oj-sm-padding-3x-bottom">
+            <ul>
+              <li id="def-tab"><a href="#">Definition</a></li>
+              <li id="runs-tab"><a href="#">Runs</a></li>
+              <li id="yaml-tab"><a href="#">YAML</a></li>
+            </ul>
+          </oj-tab-bar>
+
+          <!-- Definition tab -->
+          <oj-bind-if test="[[$variables.pipelineDetailTab === 'def-tab']]">
+            <oj-c-form-layout label-edge="top" columns="2">
+              <oj-c-input-text label-hint="Pipeline Name" value="[[$variables.selectedPipeline.name]]" readonly="true"></oj-c-input-text>
+              <oj-c-input-text label-hint="Schedule" value="[[$variables.selectedPipeline.schedule]]" readonly="true"></oj-c-input-text>
+              <oj-c-input-text label-hint="Source" value="[[$variables.selectedPipeline.source]]" readonly="true"></oj-c-input-text>
+              <oj-c-input-text label-hint="Target" value="[[$variables.selectedPipeline.target]]" readonly="true"></oj-c-input-text>
+              <oj-c-input-text label-hint="Object Types" value="[[$variables.selectedPipeline.objectTypes]]" readonly="true"></oj-c-input-text>
+              <oj-c-input-text label-hint="Conflict Resolution" value="[[$variables.selectedPipeline.conflictResolution]]" readonly="true"></oj-c-input-text>
+            </oj-c-form-layout>
+          </oj-bind-if>
+
+          <!-- Runs tab -->
+          <oj-bind-if test="[[$variables.pipelineDetailTab === 'runs-tab']]">
+            <oj-table
+              data="[[$variables.pipelineRunsADP]]"
+              columns='[
+                {"headerText":"Run ID","field":"id","width":"100px"},
+                {"headerText":"Triggered","field":"triggered","width":"140px"},
+                {"headerText":"Status","field":"status","template":"runStatusCell","width":"110px"},
+                {"headerText":"Objects","field":"objectCount","width":"80px"},
+                {"headerText":"Duration","field":"duration","width":"100px"}
+              ]'>
+              <template slot="runStatusCell">
+                <oj-tag severity="[[$current.row.status === 'SUCCESS' ? 'success' : $current.row.status === 'FAILED' ? 'error' : $current.row.status === 'RUNNING' ? 'info' : 'neutral']]">
+                  <span><oj-bind-text value="[[$current.row.status]]"></oj-bind-text></span>
+                </oj-tag>
+              </template>
+              <template slot="noData">
+                <oj-illustration-message title="No runs yet" description="This pipeline hasn't run yet."></oj-illustration-message>
+              </template>
+            </oj-table>
+          </oj-bind-if>
+
+          <!-- YAML tab -->
+          <oj-bind-if test="[[$variables.pipelineDetailTab === 'yaml-tab']]">
+            <div class="fmt-log-viewer oj-sm-padding-3x" style="height:400px; overflow-y:auto; background:var(--oj-core-bg-color-neutral); border-radius:var(--oj-border-radius-md); font-family:monospace; font-size:0.8125rem; white-space:pre-wrap;">
+              <oj-bind-text value="[[$variables.pipelineYaml]]"></oj-bind-text>
+            </div>
+          </oj-bind-if>
+
+          <!-- Active run approval panel -->
+          <oj-bind-if test="[[$variables.activeRun !== null && $variables.activeRun.status === 'AWAITING_APPROVAL']]">
+            <div class="fmt-card oj-sm-padding-4x oj-sm-margin-4x-top" style="border:2px solid var(--oj-core-color-warning);">
+              <div class="oj-flex oj-sm-align-items-center oj-sm-padding-3x-bottom" style="gap:var(--oj-spacing-2x);">
+                <span class="oj-ux-ico-warning oj-text-color-warning" style="font-size:1.25rem;"></span>
+                <span class="oj-typography-subheading-sm">Awaiting Approval</span>
+              </div>
+              <p class="oj-typography-body-sm oj-sm-padding-3x-bottom">
+                Run <strong><oj-bind-text value="[[$variables.activeRun.id]]"></oj-bind-text></strong>
+                requires your approval before proceeding to production deployment.
+              </p>
+              <div class="oj-flex" style="gap:var(--oj-spacing-2x);">
+                <oj-button chroming="callToAction" on-oj-action="[[$listeners.approveRun]]">
+                  <span slot="startIcon" class="oj-ux-ico-checkmark"></span>
+                  <span>Approve</span>
+                </oj-button>
+                <oj-button chroming="danger" on-oj-action="[[$listeners.rejectRun]]">
+                  <span slot="startIcon" class="oj-ux-ico-cross"></span>
+                  <span>Reject</span>
+                </oj-button>
+              </div>
+            </div>
+          </oj-bind-if>
+
+        </oj-bind-if>
+      </div>
+    </div>
+  </div>
+</oj-sp-general-overview-page>

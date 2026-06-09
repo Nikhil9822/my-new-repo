@@ -1,0 +1,26 @@
+<!-- fragment-progress-card: Card showing a named operation with a progress bar and status tag. -->
+
+<div class="fmt-card oj-sm-padding-4x">
+  <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-2x-bottom">
+    <div>
+      <div class="oj-typography-subheading-sm">
+        <oj-bind-text value="[[$variables.title]]"></oj-bind-text>
+      </div>
+      <div class="oj-typography-body-sm oj-text-color-secondary">
+        <oj-bind-text value="[[$variables.subtitle]]"></oj-bind-text>
+      </div>
+    </div>
+    <oj-tag severity="[[$variables.statusSeverity]]">
+      <span><oj-bind-text value="[[$variables.status]]"></oj-bind-text></span>
+    </oj-tag>
+  </div>
+  <oj-c-progress-bar value="[[$variables.progress]]" max="100"></oj-c-progress-bar>
+  <div class="oj-flex oj-sm-justify-content-between oj-sm-padding-2x-top">
+    <span class="oj-typography-body-2xs oj-text-color-secondary">
+      <oj-bind-text value="[[$variables.progress]]"></oj-bind-text>% complete
+    </span>
+    <span class="oj-typography-body-2xs oj-text-color-secondary">
+      <oj-bind-text value="[[$variables.elapsed]]"></oj-bind-text>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,148 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<div class="fmt-app-root">
+
+  <!-- Fixed top header -->
+  <header class="fmt-top-header">
+    <div class="fmt-header-inner">
+
+      <span class="oj-typography-heading-xs fmt-brand-name">Fusion Object Migration Tool</span>
+      <div class="fmt-header-spacer"></div>
+
+      <oj-tag severity="neutral" class="fmt-env-pill oj-sm-only-hide">
+        <span><oj-bind-text value="[[$variables.currentEnv]]"></oj-bind-text></span>
+      </oj-tag>
+
+      <oj-button display="icons" chroming="borderless">
+        <span slot="startIcon" class="oj-ux-ico-search fmt-header-icon"></span>
+        <span>Search</span>
+      </oj-button>
+
+      <div class="fmt-notif-wrap">
+        <oj-button display="icons" chroming="borderless">
+          <span slot="startIcon" class="oj-ux-ico-notification fmt-header-icon"></span>
+          <span>Notifications</span>
+        </oj-button>
+        <oj-bind-if test="[[$variables.notificationCount > 0]]">
+          <span class="fmt-notif-badge oj-typography-body-2xs">
+            <oj-bind-text value="[[$variables.notificationCount]]"></oj-bind-text>
+          </span>
+        </oj-bind-if>
+      </div>
+
+      <oj-button display="icons" chroming="borderless">
+        <span slot="startIcon" class="oj-ux-ico-user fmt-header-icon"></span>
+        <span>User</span>
+      </oj-button>
+
+    </div>
+  </header>
+
+  <!-- Page content area -->
+  <main class="fmt-page-content">
+
+    <oj-sp-messages-banner
+      data="[[$variables.messagesBannerADP]]"
+      on-sp-close="[[$listeners.messagesBannerSpClose]]">
+    </oj-sp-messages-banner>
+
+    <oj-sp-messages-toast
+      primary-text="[[$variables.messageToast]]"
+      id="messageToast">
+    </oj-sp-messages-toast>
+
+    <oj-vb-content
+      id="vbRouterContent"
+      config="[[vbRouterFlow]]">
+    </oj-vb-content>
+
+  </main>
+
+  <!-- Bottom navigation bar — inline styles guarantee layout regardless of framework overrides -->
+  <nav class="fmt-bottom-nav" style="position:fixed;bottom:0;left:0;right:0;height:52px;z-index:9999;overflow-x:auto;overflow-y:hidden;background:var(--oj-palette-brand-60,#5c0f30);">
+    <ul style="display:flex;flex-direction:row;list-style:none;padding:0;margin:0;height:52px;width:max-content;min-width:100%;">
+
+      <li id="main-dashboard"
+          class$="[[$variables.currentPage === 'main-dashboard' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-home" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Dashboard</span>
+      </li>
+
+      <li id="main-environments"
+          class$="[[$variables.currentPage === 'main-environments' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-cloud" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Environments</span>
+      </li>
+
+<li id="main-migration-wizard"
+          class$="[[$variables.currentPage === 'main-migration-wizard' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-transfer" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Workbench</span>
+      </li>
+
+      <li id="main-version-control"
+          class$="[[$variables.currentPage === 'main-version-control' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-code-git" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Version Control</span>
+      </li>
+
+      <li id="main-pipelines"
+          class$="[[$variables.currentPage === 'main-pipelines' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-workflow" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Pipelines</span>
+      </li>
+
+      <li id="main-job-history"
+          class$="[[$variables.currentPage === 'main-job-history' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-clock" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Job History</span>
+      </li>
+
+      <li id="main-reports"
+          class$="[[$variables.currentPage === 'main-reports' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-bar-chart-2" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Reports</span>
+      </li>
+
+      <li id="main-user-management"
+          class$="[[$variables.currentPage === 'main-user-management' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-user-group" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Users</span>
+      </li>
+
+      <li id="main-audit-trail"
+          class$="[[$variables.currentPage === 'main-audit-trail' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-doc-report" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Audit</span>
+      </li>
+
+      <li id="main-settings"
+          class$="[[$variables.currentPage === 'main-settings' ? 'fmt-nav-item fmt-nav-active' : 'fmt-nav-item']]"
+          style="display:flex;flex-direction:row;align-items:center;justify-content:center;gap:6px;flex:1;min-width:max-content;padding:0 16px;height:52px;cursor:pointer;color:rgba(255,255,255,0.75);white-space:nowrap;font-size:0.8125rem;font-weight:500;"
+          on-click="[[$listeners.navItemClick]]">
+        <span class="oj-ux-ico-settings" style="font-size:1.1rem;color:inherit;"></span>
+        <span>Settings</span>
+      </li>
+
+    </ul>
+  </nav>
+
+</div>

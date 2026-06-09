@@ -1,0 +1,473 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   Fusion Object Migration Tool — Global Styles
+   Theme: Oracle Redwood (oj-sp-theme-global-pt-hcm)
+   Layout: sticky top header, scrollable content, fixed bottom nav bar.
+   All colours via Redwood CSS tokens — no hardcoded hex except #ffffff.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ─── Hide oj-sp-general-overview-page built-in navigator ───────────── */
+
+oj-sp-general-overview-page .oj-sp-general-overview-page-navigator,
+oj-sp-general-overview-page .oj-navigationlist-container,
+oj-sp-general-overview-page .oj-sp-general-overview-page-start-column,
+oj-sp-general-overview-page .oj-sp-general-overview-page-region-start {
+  display: none !important;
+}
+
+/* ─── Force main content to full width ──────────────────────────────── */
+
+oj-sp-general-overview-page .oj-sp-general-overview-page-main,
+oj-sp-general-overview-page .oj-sp-general-overview-page-region-main,
+oj-sp-general-overview-page .oj-sp-general-overview-page-content {
+  width: 100% !important;
+  max-width: none !important;
+  flex: 1 1 100% !important;
+}
+
+/* ─── Reset / Root ──────────────────────────────────────────────────── */
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* ─── App Root ───────────────────────────────────────────────────────── */
+
+.fmt-app-root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--oj-core-bg-color-primary);
+}
+
+/* ─── Top Header ─────────────────────────────────────────────────────── */
+
+.fmt-top-header {
+  background: var(--oj-palette-brand-60);
+  height: 56px;
+  min-height: 56px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+.fmt-header-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 var(--oj-spacing-3x);
+  gap: var(--oj-spacing-1x);
+}
+
+.fmt-brand-name {
+  color: #ffffff;
+  white-space: nowrap;
+  font-weight: 600;
+  margin-left: var(--oj-spacing-2x);
+}
+
+.fmt-header-spacer { flex: 1; }
+
+.fmt-header-icon {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.25rem;
+}
+
+.fmt-header-icon:hover {
+  color: #ffffff !important;
+}
+
+.fmt-env-pill {
+  font-weight: 600;
+  margin-right: var(--oj-spacing-1x);
+}
+
+.fmt-notif-wrap {
+  position: relative;
+}
+
+.fmt-notif-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 16px;
+  height: 16px;
+  background: var(--oj-core-color-danger);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0 var(--oj-spacing-1x);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  line-height: 1;
+  font-size: 0.65rem;
+}
+
+/* ─── Page Content ───────────────────────────────────────────────────── */
+
+.fmt-page-content {
+  flex: 1;
+  padding: var(--oj-spacing-4x);
+  padding-bottom: calc(var(--oj-spacing-4x) + 60px);
+  overflow: auto;
+  width: 100%;
+}
+
+/* ─── Bottom Navigation Bar ─────────────────────────────────────────── */
+
+.fmt-bottom-nav {
+  background: var(--oj-palette-brand-60) !important;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.18) !important;
+}
+
+.fmt-bottom-navlist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 52px;
+  min-width: 100%;
+  width: max-content;
+}
+
+.fmt-nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+  min-width: max-content;
+  height: 52px;
+  padding: 0 16px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  white-space: nowrap;
+  user-select: none;
+  transition: background 0.15s, color 0.15s;
+  border-top: 3px solid transparent;
+}
+
+.fmt-nav-item:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+}
+
+.fmt-nav-item.fmt-nav-active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-top-color: #ffffff;
+}
+
+.fmt-nav-icon {
+  font-size: 1.1rem;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.fmt-nav-label {
+  color: inherit;
+}
+
+/* ─── Card ───────────────────────────────────────────────────────────── */
+
+.fmt-card {
+  background: var(--oj-core-bg-color-container);
+  border: 1px solid var(--oj-core-divider-color);
+  border-radius: var(--oj-border-radius-lg);
+}
+
+/* ─── KPI Tiles ──────────────────────────────────────────────────────── */
+
+.fmt-kpi-tile {
+  min-width: 160px;
+  flex: 1;
+}
+
+.fmt-kpi-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.fmt-kpi-value {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ─── Environment / list items ───────────────────────────────────────── */
+
+.fmt-env-list-item {
+  border: 1px solid var(--oj-core-divider-color);
+  border-radius: var(--oj-border-radius-md);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.fmt-env-list-item:hover {
+  background: var(--oj-core-bg-color-hover);
+  border-color: var(--oj-palette-brand-60);
+}
+
+.fmt-env-health-card {
+  flex: 1;
+  min-width: 180px;
+  cursor: default;
+}
+
+/* ─── Section headings ───────────────────────────────────────────────── */
+
+.fmt-section-title {
+  color: var(--oj-core-text-color-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+}
+
+.fmt-form-section {
+  border-bottom: 1px solid var(--oj-core-divider-color);
+  padding-bottom: var(--oj-spacing-4x);
+  margin-bottom: var(--oj-spacing-4x);
+}
+
+.fmt-form-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* ─── Log viewer ─────────────────────────────────────────────────────── */
+
+.fmt-log-viewer {
+  background: var(--oj-core-bg-color-neutral);
+  border-radius: var(--oj-border-radius-md);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.fmt-log-line {
+  padding: 1px 0;
+  word-break: break-all;
+}
+
+/* ─── Danger confirm box ─────────────────────────────────────────────── */
+
+.fmt-danger-confirm {
+  background: color-mix(in srgb, var(--oj-core-color-danger) 8%, transparent);
+  border: 1px solid var(--oj-core-color-danger);
+  border-radius: var(--oj-border-radius-md);
+}
+
+/* ─── Review grid ────────────────────────────────────────────────────── */
+
+.fmt-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--oj-spacing-3x);
+}
+
+.fmt-review-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--oj-spacing-1x);
+}
+
+/* ─── Detail list ────────────────────────────────────────────────────── */
+
+.fmt-detail-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--oj-spacing-2x) var(--oj-spacing-4x);
+  margin: 0;
+}
+
+.fmt-detail-list dt { padding-top: var(--oj-spacing-1x); }
+.fmt-detail-list dd { margin: 0; padding-top: var(--oj-spacing-1x); }
+
+/* ─── Inventory — tab strip ──────────────────────────────────────────── */
+
+.fmt-tab-strip {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 2px;
+  padding: 4px;
+  background: var(--oj-core-bg-color-container);
+  border: 1px solid var(--oj-core-divider-color);
+  border-radius: var(--oj-border-radius-lg);
+  scrollbar-width: thin;
+  scrollbar-color: var(--oj-palette-brand-40) transparent;
+}
+
+.fmt-tab-strip::-webkit-scrollbar { height: 4px; }
+.fmt-tab-strip::-webkit-scrollbar-track { background: transparent; }
+.fmt-tab-strip::-webkit-scrollbar-thumb {
+  background: var(--oj-palette-brand-40);
+  border-radius: 2px;
+}
+
+.fmt-tab-strip oj-button {
+  flex-shrink: 0;
+}
+
+/* ─── Inventory — status badges ──────────────────────────────────────── */
+
+.fmt-status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.fmt-status-active {
+  background: color-mix(in srgb, var(--oj-status-success-icon-color, #0a7f0a) 12%, transparent);
+  color: var(--oj-status-success-icon-color, #0a7f0a);
+}
+
+.fmt-status-modified {
+  background: color-mix(in srgb, #f5a200 12%, transparent);
+  color: #8a5c00;
+}
+
+.fmt-status-deprecated {
+  background: var(--oj-core-bg-color-neutral);
+  color: var(--oj-core-text-color-secondary);
+  border: 1px solid var(--oj-core-divider-color);
+}
+
+/* ─── Inventory — selected count badge ──────────────────────────────── */
+
+.fmt-selected-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--oj-palette-brand-60) 12%, transparent);
+  color: var(--oj-palette-brand-60);
+  font-weight: 600;
+}
+
+/* ─── Status / tags ──────────────────────────────────────────────────── */
+
+.fmt-object-type-tag { font-size: 0.75rem; }
+
+/* ─── Version ref chip ───────────────────────────────────────────────── */
+
+.fmt-version-ref {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  background: var(--oj-core-bg-color-neutral);
+  padding: 2px var(--oj-spacing-2x);
+  border-radius: var(--oj-border-radius-sm);
+  border: 1px solid var(--oj-core-divider-color);
+}
+
+/* ─── Read-only notice ───────────────────────────────────────────────── */
+
+.fmt-readonly-notice {
+  background: color-mix(in srgb, var(--oj-core-color-info) 8%, transparent);
+  border: 1px solid var(--oj-core-color-info);
+  border-radius: var(--oj-border-radius-sm);
+}
+
+/* ─── Environment list — connection name hyperlink ───────────────────── */
+
+.fmt-env-name-link {
+  color: var(--oj-link-text-color, var(--oj-palette-brand-60));
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--oj-link-text-color, var(--oj-palette-brand-60));
+}
+
+/* ─── Environment card — clickable chevron indicator ────────────────── */
+
+.fmt-env-card-chevron {
+  color: var(--oj-core-text-color-secondary);
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  transition: color 0.15s, transform 0.15s;
+}
+
+.fmt-env-list-item:hover .fmt-env-card-chevron {
+  color: var(--oj-palette-brand-60);
+  transform: translateX(3px);
+}
+
+/* ─── Connection Details Dialog ──────────────────────────────────────── */
+
+.fmt-detail-dialog {
+  --oj-dialog-width: 640px;
+}
+
+.fmt-dialog-section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--oj-core-text-color-secondary);
+  padding-bottom: var(--oj-spacing-2x);
+  border-bottom: 1px solid var(--oj-core-divider-color);
+  margin-bottom: var(--oj-spacing-3x);
+}
+
+/* ─── Test connection result banners ─────────────────────────────────── */
+
+.fmt-test-result {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.fmt-test-result--success {
+  background: var(--oj-status-success-bg-color, #edfaed);
+  border-left: 4px solid var(--oj-status-success-icon-color, #0a7f0a);
+}
+
+.fmt-test-result--error {
+  background: var(--oj-status-error-bg-color, #fff5f5);
+  border-left: 4px solid var(--oj-status-error-icon-color, #c00);
+}
+
+.fmt-test-result__icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.fmt-test-result--success .fmt-test-result__icon {
+  color: var(--oj-status-success-icon-color, #0a7f0a);
+}
+
+.fmt-test-result--error .fmt-test-result__icon {
+  color: var(--oj-status-error-icon-color, #c00);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .fmt-kpi-tile    { min-width: 130px; }
+  .fmt-review-grid { grid-template-columns: 1fr; }
+
+  .fmt-nav-item {
+    padding: 0 10px;
+    font-size: 0.75rem;
+  }
+}

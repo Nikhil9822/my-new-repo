@@ -1,0 +1,172 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="settingsPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Settings"
+  page-subtitle="Application configuration">
+
+  <div slot="main">
+
+    <!-- Settings tabs -->
+    <oj-tab-bar
+      id="settingsTabBar"
+      selection="{{ $variables.activeTab }}"
+      on-selection-changed="[[$listeners.tabChanged]]"
+      display="standard"
+      edge="top"
+      class="oj-sm-margin-4x-bottom">
+      <ul>
+        <li id="general-tab"><a href="#"><span slot="startIcon" class="oj-ux-ico-settings"></span>General</a></li>
+        <li id="storage-tab"><a href="#"><span slot="startIcon" class="oj-ux-ico-cloud"></span>Storage</a></li>
+        <li id="notifications-tab"><a href="#"><span slot="startIcon" class="oj-ux-ico-notification"></span>Notifications</a></li>
+        <li id="security-tab"><a href="#"><span slot="startIcon" class="oj-ux-ico-shield"></span>Security</a></li>
+        <li id="about-tab"><a href="#"><span slot="startIcon" class="oj-ux-ico-info-s"></span>About</a></li>
+      </ul>
+    </oj-tab-bar>
+
+    <!-- General tab -->
+    <oj-bind-if test="[[$variables.activeTab === 'general-tab']]">
+      <div class="fmt-card oj-sm-padding-4x">
+        <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Application</div>
+        <oj-c-form-layout label-edge="top" columns="2">
+          <oj-c-input-text label-hint="Application Name" value="{{ $variables.settings.appName }}"></oj-c-input-text>
+          <oj-c-input-text label-hint="Default Environment" value="{{ $variables.settings.defaultEnv }}"></oj-c-input-text>
+          <oj-c-select-single
+            label-hint="Default Object Selection Mode"
+            value="{{ $variables.settings.defaultSelectionMode }}"
+            data="[[$variables.selectionModeADP]]"
+            item-text="label">
+          </oj-c-select-single>
+          <oj-c-select-single
+            label-hint="Date Format"
+            value="{{ $variables.settings.dateFormat }}"
+            data="[[$variables.dateFormatADP]]"
+            item-text="label">
+          </oj-c-select-single>
+        </oj-c-form-layout>
+        <div class="oj-typography-subheading-sm oj-sm-padding-3x-top oj-sm-padding-2x-bottom fmt-section-title">Scan Behaviour</div>
+        <oj-c-form-layout label-edge="top" columns="2">
+          <oj-c-input-text label-hint="Scan Timeout (seconds)" value="{{ $variables.settings.scanTimeout }}"></oj-c-input-text>
+          <oj-c-select-single
+            label-hint="Auto-scan Frequency"
+            value="{{ $variables.settings.autoScanFrequency }}"
+            data="[[$variables.autoScanADP]]"
+            item-text="label">
+          </oj-c-select-single>
+        </oj-c-form-layout>
+      </div>
+    </oj-bind-if>
+
+    <!-- Storage tab -->
+    <oj-bind-if test="[[$variables.activeTab === 'storage-tab']]">
+      <div class="fmt-card oj-sm-padding-4x">
+        <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Default Storage Provider</div>
+        <oj-c-form-layout label-edge="top" columns="1">
+          <oj-c-select-single
+            label-hint="Provider"
+            value="{{ $variables.settings.storageProvider }}"
+            data="[[$variables.storageProviderADP]]"
+            item-text="label">
+          </oj-c-select-single>
+        </oj-c-form-layout>
+        <oj-bind-if test="[[$variables.settings.storageProvider === 'git']]">
+          <div class="oj-typography-subheading-sm oj-sm-padding-3x-top oj-sm-padding-2x-bottom fmt-section-title">Git Configuration</div>
+          <oj-c-form-layout label-edge="top" columns="2">
+            <oj-c-input-text label-hint="Default Repository URL" value="{{ $variables.settings.gitDefaultRepo }}"></oj-c-input-text>
+            <oj-c-input-text label-hint="Default Branch" value="{{ $variables.settings.gitDefaultBranch }}" placeholder="main"></oj-c-input-text>
+            <oj-c-input-text label-hint="Commit Author Name" value="{{ $variables.settings.gitAuthorName }}"></oj-c-input-text>
+            <oj-c-input-text label-hint="Commit Author Email" value="{{ $variables.settings.gitAuthorEmail }}"></oj-c-input-text>
+          </oj-c-form-layout>
+        </oj-bind-if>
+        <oj-bind-if test="[[$variables.settings.storageProvider === 'oci']]">
+          <div class="oj-typography-subheading-sm oj-sm-padding-3x-top oj-sm-padding-2x-bottom fmt-section-title">OCI Object Storage</div>
+          <oj-c-form-layout label-edge="top" columns="2">
+            <oj-c-input-text label-hint="Namespace" value="{{ $variables.settings.ociNamespace }}"></oj-c-input-text>
+            <oj-c-input-text label-hint="Default Bucket" value="{{ $variables.settings.ociDefaultBucket }}"></oj-c-input-text>
+            <oj-c-input-text label-hint="Region" value="{{ $variables.settings.ociRegion }}"></oj-c-input-text>
+          </oj-c-form-layout>
+        </oj-bind-if>
+      </div>
+    </oj-bind-if>
+
+    <!-- Notifications tab -->
+    <oj-bind-if test="[[$variables.activeTab === 'notifications-tab']]">
+      <div class="fmt-card oj-sm-padding-4x">
+        <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Email Notifications</div>
+        <oj-c-form-layout label-edge="top" columns="2">
+          <oj-c-checkbox label-hint="Notify on migration success" value="{{ $variables.settings.notifySuccess }}"></oj-c-checkbox>
+          <oj-c-checkbox label-hint="Notify on migration failure" value="{{ $variables.settings.notifyFailure }}"></oj-c-checkbox>
+          <oj-c-checkbox label-hint="Notify on pending approval" value="{{ $variables.settings.notifyApproval }}"></oj-c-checkbox>
+          <oj-c-checkbox label-hint="Send daily summary report" value="{{ $variables.settings.dailySummary }}"></oj-c-checkbox>
+          <oj-c-input-text
+            label-hint="Notification Recipients (comma-separated)"
+            value="{{ $variables.settings.notificationRecipients }}"
+            class="oj-col oj-sm-12">
+          </oj-c-input-text>
+        </oj-c-form-layout>
+      </div>
+    </oj-bind-if>
+
+    <!-- Security tab — Admin only -->
+    <oj-bind-if test="[[$variables.activeTab === 'security-tab']]">
+      <oj-bind-if test="[[!$variables.isAdmin]]">
+        <oj-illustration-message
+          title="Admin Required"
+          description="Security settings can only be modified by Administrators.">
+        </oj-illustration-message>
+      </oj-bind-if>
+      <oj-bind-if test="[[$variables.isAdmin]]">
+        <div class="fmt-card oj-sm-padding-4x">
+          <div class="oj-typography-subheading-sm oj-sm-padding-2x-bottom fmt-section-title">Session Security</div>
+          <oj-c-form-layout label-edge="top" columns="2">
+            <oj-c-input-text label-hint="Session Timeout (minutes)" value="{{ $variables.settings.sessionTimeout }}"></oj-c-input-text>
+            <oj-c-input-text label-hint="Max Concurrent Sessions" value="{{ $variables.settings.maxSessions }}"></oj-c-input-text>
+            <oj-c-checkbox label-hint="Require MFA for Production actions" value="{{ $variables.settings.requireMfaProd }}"></oj-c-checkbox>
+            <oj-c-checkbox label-hint="Enforce IP allowlist" value="{{ $variables.settings.enforceIpAllowlist }}"></oj-c-checkbox>
+          </oj-c-form-layout>
+          <div class="oj-typography-subheading-sm oj-sm-padding-3x-top oj-sm-padding-2x-bottom fmt-section-title">Audit & Compliance</div>
+          <oj-c-form-layout label-edge="top" columns="2">
+            <oj-c-input-text label-hint="Audit Retention (days)" value="{{ $variables.settings.auditRetentionDays }}"></oj-c-input-text>
+            <oj-c-checkbox label-hint="Log all REST calls" value="{{ $variables.settings.logAllCalls }}"></oj-c-checkbox>
+          </oj-c-form-layout>
+        </div>
+      </oj-bind-if>
+    </oj-bind-if>
+
+    <!-- About tab -->
+    <oj-bind-if test="[[$variables.activeTab === 'about-tab']]">
+      <div class="fmt-card oj-sm-padding-4x">
+        <div class="oj-flex oj-sm-align-items-center oj-sm-padding-4x-bottom" style="gap:var(--oj-spacing-4x);">
+          <span class="oj-ux-ico-databases" style="font-size:3rem; color:var(--oj-palette-brand-60);"></span>
+          <div>
+            <div class="oj-typography-heading-md">Fusion Object Migration Tool</div>
+            <div class="oj-typography-body-sm oj-text-color-secondary">Built on Oracle Visual Builder Cloud Service</div>
+          </div>
+        </div>
+        <oj-c-form-layout label-edge="top" columns="2">
+          <oj-c-input-text label-hint="Version" value="[['1.0.0']]" readonly="true"></oj-c-input-text>
+          <oj-c-input-text label-hint="Build Date" value="[['2026-05-22']]" readonly="true"></oj-c-input-text>
+          <oj-c-input-text label-hint="Oracle JET Version" value="[['15.x (Redwood)']]" readonly="true"></oj-c-input-text>
+          <oj-c-input-text label-hint="VBCS Target" value="[['23.x / 24.x']]" readonly="true"></oj-c-input-text>
+        </oj-c-form-layout>
+      </div>
+    </oj-bind-if>
+
+    <!-- Save button (not shown on About/Security-non-admin) -->
+    <oj-bind-if test="[[$variables.activeTab !== 'about-tab' && ($variables.activeTab !== 'security-tab' || $variables.isAdmin)]]">
+      <div class="oj-flex oj-sm-justify-content-end oj-sm-padding-4x-top" style="gap:var(--oj-spacing-2x);">
+        <oj-button chroming="outlined" on-oj-action="[[$listeners.discardChanges]]">
+          <span>Discard</span>
+        </oj-button>
+        <oj-button chroming="callToAction" on-oj-action="[[$listeners.saveSettings]]">
+          <span slot="startIcon" class="oj-ux-ico-save"></span>
+          <span>Save Settings</span>
+        </oj-button>
+      </div>
+    </oj-bind-if>
+
+  </div>
+</oj-sp-general-overview-page>

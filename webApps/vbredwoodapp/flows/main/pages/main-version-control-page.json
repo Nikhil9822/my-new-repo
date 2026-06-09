@@ -1,0 +1,55 @@
+{
+  "title": "Version Control",
+  "description": "Browse object versions, diffs and tags in Git or OCI storage",
+  "variables": {
+    "isLoading": {"type": "boolean", "defaultValue": true},
+    "activeStorageTab": {"type": "string", "defaultValue": "git-tab"},
+    "gitConfig": {"type": "object", "defaultValue": {"repoUrl": "", "branch": "main"}},
+    "ociConfig": {"type": "object", "defaultValue": {"bucket": "", "region": ""}},
+    "versionFilter": {"type": "string", "defaultValue": ""},
+    "versionsData": {"type": "object[]", "defaultValue": []},
+    "versionsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.versionsData", "keyAttributes": "ref"}
+    },
+    "diffDrawerOpen": {"type": "boolean", "defaultValue": false},
+    "diffRef": {"type": "string", "defaultValue": ""},
+    "diffContent": {"type": "string", "defaultValue": ""},
+    "newTagName": {"type": "string", "defaultValue": ""},
+    "newTagRef": {"type": "string", "defaultValue": null},
+    "tagsData": {"type": "object[]", "defaultValue": []},
+    "tagsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {"data": "$page.variables.tagsData", "keyAttributes": "name"}
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {"chains": [{"chain": "loadVersions"}]},
+    "storageTabChanged": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "storageTabChanged"}]},
+    "filterVersions": {"chains": [{"chain": "filterVersions"}]},
+    "viewDiff": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "viewDiff"}]},
+    "restoreVersion": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "restoreVersion"}]},
+    "closeDiffDrawer": {"chains": [{"chain": "closeDiffDrawer"}]},
+    "openTagManager": {"chains": [{"chain": "openTagManager"}]},
+    "closeTagManager": {"chains": [{"chain": "closeTagManager"}]},
+    "createTag": {"chains": [{"chain": "createTag"}]},
+    "deleteTag": {"chains": [{"parameters": {"event": "{{ $event }}"}, "chain": "deleteTag"}]}
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": {"path": "oj-sp/general-overview-page/loader"},
+      "oj-tab-bar": {"path": "ojs/ojtabbar"},
+      "oj-table": {"path": "ojs/ojtable"},
+      "oj-button": {"path": "ojs/ojbutton"},
+      "oj-tag": {"path": "ojs/ojtag"},
+      "oj-c-input-text": {"path": "oj-c/input-text/loader"},
+      "oj-c-select-single": {"path": "oj-c/select-single/loader"},
+      "oj-c-skeleton": {"path": "oj-c/skeleton/loader"},
+      "oj-drawer-popup": {"path": "ojs/ojdrawerpopup"},
+      "oj-dialog": {"path": "ojs/ojdialog"},
+      "oj-illustration-message": {"path": "ojs/ojillustrationmessage"}
+    }
+  }
+}

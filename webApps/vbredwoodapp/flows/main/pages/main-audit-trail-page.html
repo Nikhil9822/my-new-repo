@@ -1,0 +1,113 @@
+<!-- Copyright (c) 2026, Oracle and/or its affiliates -->
+
+<oj-sp-general-overview-page
+  id="auditTrailPage"
+  display-options.responsive-padding="on"
+  display-options.navigator="off"
+  display-mode="mixed"
+  page-title="Audit Trail"
+  page-subtitle="Read-only log of all system actions and changes">
+
+  <div slot="main">
+
+    <!-- Filter toolbar -->
+    <div class="fmt-card oj-sm-padding-3x oj-sm-margin-4x-bottom">
+      <div class="oj-flex oj-sm-flex-wrap oj-sm-align-items-end" style="gap:var(--oj-spacing-3x);">
+        <oj-c-input-text
+          label-hint="Search by user or action"
+          value="{{ $variables.searchText }}"
+          class="oj-flex-item"
+          style="min-width:220px;"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-c-input-text>
+        <oj-c-select-single
+          label-hint="Action Type"
+          value="{{ $variables.filterAction }}"
+          data="[[$variables.actionFilterADP]]"
+          item-text="label"
+          class="oj-flex-item"
+          style="min-width:160px;"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-c-select-single>
+        <oj-c-select-single
+          label-hint="User"
+          value="{{ $variables.filterUser }}"
+          data="[[$variables.userFilterADP]]"
+          item-text="label"
+          class="oj-flex-item"
+          style="min-width:160px;"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-c-select-single>
+        <oj-input-date-range
+          label-hint="Date Range"
+          value="{{ $variables.filterDateRange }}"
+          class="oj-flex-item"
+          on-value-changed="[[$listeners.applyFilters]]">
+        </oj-input-date-range>
+        <div class="oj-flex-item oj-sm-flex-initial oj-flex" style="gap:var(--oj-spacing-2x);">
+          <oj-button chroming="borderless" on-oj-action="[[$listeners.clearFilters]]">
+            <span slot="startIcon" class="oj-ux-ico-filter-remove"></span>
+            <span>Clear</span>
+          </oj-button>
+          <oj-button chroming="outlined" on-oj-action="[[$listeners.exportAudit]]">
+            <span slot="startIcon" class="oj-ux-ico-download"></span>
+            <span>Export</span>
+          </oj-button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Read-only notice -->
+    <div class="oj-flex oj-sm-align-items-center oj-sm-padding-2x oj-sm-margin-2x-bottom fmt-readonly-notice" style="background:var(--oj-core-bg-color-info); border-radius:var(--oj-border-radius-sm); gap:var(--oj-spacing-2x);">
+      <span class="oj-ux-ico-info oj-text-color-info"></span>
+      <span class="oj-typography-body-sm oj-text-color-info">
+        Audit Trail is read-only. Records cannot be modified or deleted.
+      </span>
+    </div>
+
+    <!-- Audit table (50/page) -->
+    <div class="fmt-card oj-sm-padding-4x">
+      <div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-between oj-sm-padding-3x-bottom">
+        <span class="oj-typography-body-sm oj-text-color-secondary">
+          <oj-bind-text value="[[$variables.totalRecords]]"></oj-bind-text> records
+        </span>
+      </div>
+
+      <oj-table
+        id="auditTable"
+        data="[[$variables.auditADP]]"
+        scroll-policy="loadMoreOnScroll"
+        scroll-policy-options.fetch-size="50"
+        columns='[
+          {"headerText":"Timestamp","field":"timestamp","sortable":"enabled","width":"160px"},
+          {"headerText":"User","field":"userEmail","sortable":"enabled","width":"200px"},
+          {"headerText":"Action","field":"action","sortable":"enabled","width":"140px"},
+          {"headerText":"Resource","field":"resource"},
+          {"headerText":"Environment","field":"environment","width":"130px"},
+          {"headerText":"IP Address","field":"ip","width":"120px"},
+          {"headerText":"Result","field":"result","template":"resultCell","width":"100px"},
+          {"headerText":"Details","field":"details","width":"200px"}
+        ]'>
+        <template slot="resultCell">
+          <oj-tag severity="[[$current.row.result === 'SUCCESS' ? 'success' : $current.row.result === 'FAILED' ? 'error' : 'neutral']]">
+            <span><oj-bind-text value="[[$current.row.result]]"></oj-bind-text></span>
+          </oj-tag>
+        </template>
+        <template slot="noData">
+          <oj-bind-if test="[[$variables.isLoading]]">
+            <div class="oj-sm-padding-4x">
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px" class="oj-sm-margin-2x-bottom"></oj-c-skeleton>
+              <oj-c-skeleton height="40px"></oj-c-skeleton>
+            </div>
+          </oj-bind-if>
+          <oj-bind-if test="[[!$variables.isLoading]]">
+            <oj-illustration-message title="No audit records found" description="Adjust your filters to see more results."></oj-illustration-message>
+          </oj-bind-if>
+        </template>
+      </oj-table>
+    </div>
+
+  </div>
+</oj-sp-general-overview-page>

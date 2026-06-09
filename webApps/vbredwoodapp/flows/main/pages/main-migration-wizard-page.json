@@ -1,0 +1,122 @@
+{
+  "title": "Migration Workbench",
+  "description": "Select object type, fetch from source, choose items, and migrate to target",
+  "variables": {
+    "isLoading": { "type": "boolean", "defaultValue": true },
+    "isFetching": { "type": "boolean", "defaultValue": false },
+    "isMigrating": { "type": "boolean", "defaultValue": false },
+    "migrationProgress": { "type": "number", "defaultValue": 0 },
+    "migrationMessage": { "type": "string", "defaultValue": "" },
+    "sourceEnvId": { "type": "string", "defaultValue": "" },
+    "targetEnvId": { "type": "string", "defaultValue": "" },
+    "sourceEnvLabel": { "type": "string", "defaultValue": "Not selected" },
+    "targetEnvLabel": { "type": "string", "defaultValue": "Not selected" },
+    "selectedObjectType": { "type": "string", "defaultValue": "bip" },
+    "currentTypeLabel": { "type": "string", "defaultValue": "BIP Reports" },
+    "filter1Label": { "type": "string", "defaultValue": "Folder Path" },
+    "filter1Value": { "type": "string", "defaultValue": "" },
+    "filter1ADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{ "value": "", "label": "All folders" }],
+        "keyAttributes": "value"
+      }
+    },
+    "filter2Label": { "type": "string", "defaultValue": "Fetch Type" },
+    "filter2Value": { "type": "string", "defaultValue": "" },
+    "filter2ADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{ "value": "all", "label": "Reports + Data Models" }],
+        "keyAttributes": "value"
+      }
+    },
+    "objectsData": { "type": "object[]", "defaultValue": [] },
+    "filteredData": { "type": "object[]", "defaultValue": [] },
+    "filteredObjectsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [],
+        "keyAttributes": "id"
+      }
+    },
+    "tableColumns": { "type": "object[]", "defaultValue": [] },
+    "selectedObjects": { "type": "string[]", "defaultValue": [] },
+    "selectedRows": { "type": "object", "defaultValue": { "row": { "keys": [] } } },
+    "selectionCount": { "type": "number", "defaultValue": 0 },
+    "searchText": { "type": "string", "defaultValue": "" },
+    "statusFilter": { "type": "string", "defaultValue": "" },
+    "statusFilterADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [
+          { "value": "", "label": "All statuses" },
+          { "value": "Active", "label": "Active" },
+          { "value": "Inactive", "label": "Inactive" },
+          { "value": "Draft", "label": "Draft" }
+        ],
+        "keyAttributes": "value"
+      }
+    },
+    "availableEnvsADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": [{ "value": "demo", "label": "Oracle Fusion (Demo)" }],
+        "keyAttributes": "value"
+      }
+    },
+    "migrationDialogCount": { "type": "number", "defaultValue": 0 },
+    "migrationDialogType": { "type": "string", "defaultValue": "" },
+    "bipReportPath": { "type": "string", "defaultValue": "/Custom/" },
+    "bipApiError": { "type": "string", "defaultValue": "" }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [{ "chain": "loadWorkbench" }]
+    },
+    "selectWorkbenchTab": {
+      "chains": [{ "parameters": { "event": "{{ $event }}" }, "chain": "selectWorkbenchTab" }]
+    },
+    "fetchWorkbenchObjects": {
+      "chains": [{ "chain": "fetchWorkbenchObjects" }]
+    },
+    "filterWorkbenchObjects": {
+      "chains": [{ "parameters": { "event": "{{ $event }}" }, "chain": "filterWorkbenchObjects" }]
+    },
+    "clearWorkbenchFilters": {
+      "chains": [{ "chain": "clearWorkbenchFilters" }]
+    },
+    "workbenchRowSelectionChanged": {
+      "chains": [{ "parameters": { "event": "{{ $event }}" }, "chain": "workbenchRowSelectionChanged" }]
+    },
+    "openMigrateDialog": {
+      "chains": [{ "chain": "openMigrateDialog" }]
+    },
+    "startWorkbenchMigration": {
+      "chains": [{ "chain": "startWorkbenchMigration" }]
+    },
+    "cancelWorkbenchMigration": {
+      "chains": [{ "chain": "cancelWorkbenchMigration" }]
+    },
+    "validateWorkbenchSelection": {
+      "chains": [{ "chain": "validateWorkbenchSelection" }]
+    },
+    "dismissBipError": {
+      "chains": [{ "chain": "dismissBipError" }]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-sp-general-overview-page": { "path": "oj-sp/general-overview-page/loader" },
+      "oj-table":           { "path": "ojs/ojtable" },
+      "oj-button":          { "path": "ojs/ojbutton" },
+      "oj-input-text":      { "path": "ojs/ojinputtext" },
+      "oj-select-single":   { "path": "ojs/ojselectsingle" },
+      "oj-progress-circle": { "path": "ojs/ojprogress" },
+      "oj-dialog":          { "path": "ojs/ojdialog" },
+      "oj-progress-bar":    { "path": "ojs/ojprogress" }
+    }
+  }
+}
